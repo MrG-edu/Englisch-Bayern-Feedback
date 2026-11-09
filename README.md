@@ -37,7 +37,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 |---|---|
 | outline / summarize / sum up | ✅ fertig |
 | analyze / examine | ✅ fertig |
-| discuss | 🧪 Entwurf, wird noch geprüft |
+| discuss | ✅ fertig (mit verbindlichem Aufbau) |
 | alle anderen | allgemeines Feedback zu Inhalt und Sprache, noch ohne eigene Checkliste |
 
 ## So benutzt du den Skill

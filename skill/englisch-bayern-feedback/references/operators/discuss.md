@@ -33,7 +33,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 ### Aufbau
 1. **Alle drei Teile vorhanden:** Einleitung, Hauptteil, Schluss, klar durch Absätze getrennt.
 2. **Genau die Reihenfolge oben:** erst die beiden Gegenargumente, dann die beiden Argumente für die eigene Meinung. Nicht abwechselnd pro und contra.
-3. **Mindestens zwei Argumente pro Seite.** Weniger ist ein Fehler. Jedes Argument steht in einem eigenen Absatz.
+3. **Genau zwei Argumente pro Seite,** also genau vier Argumente im Hauptteil. Mehr oder weniger ist ein Fehler. Jedes Argument steht **unbedingt in einem eigenen Absatz**; zwei Argumente in einem Absatz sind ein Fehler.
 4. **Gewichtung plausibel:** Das erste Gegenargument ist stärker als das zweite, das letzte Argument für die eigene Meinung ist das stärkste. Ist die Reihenfolge offensichtlich vertauscht, benennst du das und sagst, welche Argumente die Plätze tauschen sollten.
 5. **Meinung im Schluss passt zur Anordnung.** Die eigene Meinung ist die Seite, deren Argumente am Ende stehen. Widerspricht das Fazit der Anordnung, ist das ein Fehler.
 6. **Einleitung:** stellt das Thema knapp vor. Verlangt die Aufgabe einen Ausgangspunkt (*Taking the article/quotation as a starting point …*), greift die Einleitung diesen auf. Keine Argumente, keine eigene Meinung.
@@ -50,11 +50,11 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 
 ### Sprache
 15. **Argumentative Verknüpfungen,** abwechslungsreich: *firstly, furthermore, moreover, in addition, admittedly, on the other hand, however, nevertheless, consequently, therefore, above all*.
-16. **Meinungsäußerung im Schluss** mit passenden Wendungen. *I* ist im Schluss erlaubt. Im Hauptteil sachlich formulieren.
+16. **Meinungsäußerung nur im Schluss** mit passenden Wendungen. *I* ist **nur im Schluss** erlaubt. Einleitung und Hauptteil sind sachlich formuliert, ohne *I*.
 17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, keine Übertreibungen wie *everybody knows*.
 18. **Zeitform:** meist simple present. Andere Zeiten, wo der Inhalt sie verlangt (z. B. bei Beispielen aus der Vergangenheit).
 
-**Länge:** keine feste Wortzahl. Maßstab ist, ob vier vollständige Argumente und ein begründetes Fazit drin sind.
+**Länge:** keine feste Wortzahl. Maßstab ist, ob genau vier vollständige Argumente und ein begründetes Fazit drin sind.
 
 **Kombiniert mit write + Textsorte** (z. B. *Write a letter to the editor, discussing …*): Der Pflichtaufbau gilt trotzdem. Prüfe zusätzlich die Merkmale der Textsorte und den Adressatenbezug.
 
@@ -63,7 +63,9 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Fehler | Woran du es merkst | In der Korrektur |
 |---|---|---|
 | Falsche Reihenfolge | pro und contra abwechselnd, oder eigene Seite zuerst | Den Pflichtaufbau nennen und für jeden Absatz sagen, an welche Stelle er gehört. |
-| Zu wenige Argumente | nur ein Gegenargument oder nur ein eigenes | Sagen, welche Seite ein Argument zu wenig hat, und ein passendes Argument vorschlagen. |
+| Falsche Anzahl | weniger oder mehr als zwei Argumente pro Seite | Sagen, welche Seite ein Argument zu wenig oder zu viel hat. Bei zu wenig ein passendes Argument vorschlagen, bei zu viel sagen, welches wegfallen kann. |
+| Zwei Argumente in einem Absatz | ein Absatz enthält zwei Gedanken | Sagen, wo der Absatz geteilt werden muss. |
+| *I* im Hauptteil | *I think …*, *I believe …* vor dem Schluss | Kürzel St, sachliche Formulierung vorschlagen. |
 | Gewichtung vertauscht | das schwächste eigene Argument steht am Ende | Sagen, welche Absätze tauschen sollen, und kurz begründen, warum das andere Argument stärker ist. |
 | Meinung passt nicht zur Anordnung | Fazit vertritt die Seite, die im Hauptteil zuerst kam | Den Widerspruch benennen: entweder die Blöcke tauschen oder das Fazit anpassen. |
 | Meinung schon in der Einleitung | *In my opinion …* im ersten Absatz | Sagen, dass die Meinung erst in den Schluss gehört. |
