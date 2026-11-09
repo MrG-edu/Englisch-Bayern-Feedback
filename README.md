@@ -43,7 +43,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 ## So benutzt du den Skill
 
 ### Variante 1: Claude
-1. Lade die Datei [`dist/oberstufe-englisch-bayern-feedback.zip`](dist/oberstufe-englisch-bayern-feedback.zip) herunter (nicht entpacken).
+1. Lade die Datei [`dist/englisch-bayern-feedback.zip`](dist/englisch-bayern-feedback.zip) herunter (nicht entpacken).
 2. Öffne in Claude die Einstellungen und lade die ZIP-Datei bei den **Skills** hoch.
 3. Starte einen neuen Chat und füge Aufgabenstellung, Ausgangstext und deinen Text ein.
 
@@ -55,8 +55,8 @@ Claude zeigt die korrigierte Fassung direkt als Seite an, die du auch drucken ka
 
 ### Variante 3: Eigener GPT (für Lehrkräfte, damit Schüler ihn per Link nutzen)
 1. In ChatGPT einen neuen GPT anlegen.
-2. Den Inhalt von [`SKILL.md`](skill/oberstufe-englisch-bayern-feedback/SKILL.md) **ohne** den Kopfbereich zwischen den `---`-Zeilen in das Feld **Instructions** kopieren.
-3. Alle Dateien aus [`references/`](skill/oberstufe-englisch-bayern-feedback/references/) als **Knowledge** hochladen.
+2. Den Inhalt von [`SKILL.md`](skill/englisch-bayern-feedback/SKILL.md) **ohne** den Kopfbereich zwischen den `---`-Zeilen in das Feld **Instructions** kopieren.
+3. Alle Dateien aus [`references/`](skill/englisch-bayern-feedback/references/) als **Knowledge** hochladen.
 4. Unter **Capabilities** „Canvas“ aktivieren, damit die korrigierte Fassung als Seite angezeigt werden kann.
 5. Den GPT per Link teilen.
 
@@ -70,7 +70,7 @@ In ChatGPT erscheint die korrigierte Fassung im Canvas. Dort auf **Vorschau** ti
 ## Aufbau des Repos
 
 ```
-skill/oberstufe-englisch-bayern-feedback/
+skill/englisch-bayern-feedback/
 ├── SKILL.md                 Hauptanweisungen (unter 8000 Zeichen)
 └── references/
     ├── operators/           eine Datei pro Operator

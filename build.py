@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Baut die Download-Dateien im Ordner dist/.
 
-- dist/oberstufe-englisch-bayern-feedback.zip  -> Skill zum Hochladen (Claude, ChatGPT)
+- dist/englisch-bayern-feedback.zip  -> Skill zum Hochladen (Claude, ChatGPT)
 - dist/einfuegen.md                             -> alles in einem Text zum Einfügen in jeden Chat
 
 Aufruf im Hauptordner des Repos:  python3 build.py
@@ -11,7 +11,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SKILL_NAME = "oberstufe-englisch-bayern-feedback"
+SKILL_NAME = "englisch-bayern-feedback"
 SKILL_DIR = ROOT / "skill" / SKILL_NAME
 DIST = ROOT / "dist"
 GPT_LIMIT = 8000  # Zeichengrenze für Anweisungen eines eigenen GPT
