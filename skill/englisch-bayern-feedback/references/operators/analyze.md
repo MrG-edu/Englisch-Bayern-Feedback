@@ -31,7 +31,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 8. **Bei Erzähltexten:** Erzähler und Autor nicht gleichsetzen. Erzählperspektive richtig bestimmen.
 
 ### Aufbau
-9. **Einleitung mit These:** ein bis zwei Sätze, die die Fragestellung aufgreifen und die Antwort vorwegnehmen (*The author conveys her critical attitude mainly through ironic word choice and a contrastive structure.*). Keine ausführliche Inhaltsangabe.
+9. **Einleitung nicht nötig.** Fehlt sie, ist das kein Fehler. Steht eine da, prüfst du, ob sie zur Fragestellung passt und keine ausführliche Inhaltsangabe ist. Gut gelungen ist sie, wenn sie die Antwort kurz vorwegnimmt (*The author conveys her critical attitude mainly through ironic word choice and a contrastive structure.*).
 10. **Hauptteil nach Gesichtspunkten gegliedert**, z. B. nach den Schwerpunkten der Aufgabe oder nach Funktionen. Nicht Zeile für Zeile durch den Text. Jeder Absatz beginnt mit einem Satz, der sagt, worum es geht (*topic sentence*).
 11. **Schluss:** knappe Zusammenführung, die die Fragestellung beantwortet. Keine neuen Beobachtungen, keine eigene Meinung.
 
@@ -55,7 +55,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | In der Sprachtabelle eine eingebettete Formulierung vorschlagen. |
 | Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Kürzel Zi, richtige Form angeben. |
-| Fehlende These | Einleitung fasst nur den Inhalt zusammen | Einen Vorschlag für eine These geben, die die Fragestellung beantwortet. |
+| Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
 | Immer *shows* | *This shows … This shows …* | Kürzel W oder A, abwechslungsreiche Verben vorschlagen. |
