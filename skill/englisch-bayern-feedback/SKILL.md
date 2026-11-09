@@ -75,6 +75,14 @@ Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nic
 | St | Stil, Register (z. B. Umgangssprache, Kurzformen wie *don't*) |
 | A | Ausdruck holprig oder unklar |
 | Ü | wörtlich aus dem Ausgangstext übernommen |
+| Zi | Zitierweise, Zeilenangabe |
+
+## Zitieren und Zeilenangaben
+
+Gilt für alle Operatoren. Fehler hier bekommen das Kürzel Zi.
+- **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
+- **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
+- **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*
 
 ## Maßstab
 

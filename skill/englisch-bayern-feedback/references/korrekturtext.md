@@ -75,7 +75,7 @@ Regeln:
     <!-- KOMMENTARE: <li>…</li>, Nummern passen zu n="…" im Text -->
   </ol>
 
-  <p class="legende">G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen</p>
+  <p class="legende">G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen · Zi Zitierweise</p>
 </div>
 <script>
 (function () {

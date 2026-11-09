@@ -74,6 +74,14 @@ Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nic
 | St | Stil, Register (z. B. Umgangssprache, Kurzformen wie *don't*) |
 | A | Ausdruck holprig oder unklar |
 | Ü | wörtlich aus dem Ausgangstext übernommen |
+| Zi | Zitierweise, Zeilenangabe |
+
+## Zitieren und Zeilenangaben
+
+Gilt für alle Operatoren. Fehler hier bekommen das Kürzel Zi.
+- **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
+- **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
+- **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*
 
 ## Maßstab
 
@@ -161,7 +169,7 @@ Regeln:
     <!-- KOMMENTARE: <li>…</li>, Nummern passen zu n="…" im Text -->
   </ol>
 
-  <p class="legende">G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen</p>
+  <p class="legende">G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen · Zi Zitierweise</p>
 </div>
 <script>
 (function () {
@@ -343,7 +351,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 
 ### Sprache
 12. **Simple present** als Grundzeit.
-13. **Belege korrekt einbauen:** kurze Zitate in Anführungszeichen, in den eigenen Satz eingebaut, mit Zeilenangabe (*l. 12*, *ll. 12–14*). Auslassungen mit *[…]*. Zitate ersetzen keine Erklärung.
+13. **Belege korrekt einbauen:** kurze Zitate, in den eigenen Satz eingebaut, Zitierweise nach den Regeln in SKILL.md (Abschnitt „Zitieren und Zeilenangaben“): *"…" (l. 12)*, *(ll. 12-14)*, *(ll. 12, 20)*, Verweise mit *(cf. l. 12)*. Auslassungen mit *[…]*. Zitate ersetzen keine Erklärung.
 14. **Analysewortschatz:** *convey, illustrate, emphasize, highlight, underline, suggest, imply, evoke, create, reinforce, contrast with*. Statt immer *shows*.
 15. **Eigene Formulierungen** außerhalb der Zitate. Zitate sind hier erlaubt und erwünscht, aber nur als Belege.
 16. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I think*.
@@ -360,6 +368,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | In der Sprachtabelle eine eingebettete Formulierung vorschlagen. |
+| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Kürzel Zi, richtige Form angeben. |
 | Fehlende These | Einleitung fasst nur den Inhalt zusammen | Einen Vorschlag für eine These geben, die die Fragestellung beantwortet. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
@@ -382,6 +391,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 - *The author conveys his/her … attitude mainly by …*
 - *By using …, the author emphasizes / highlights …*
 - *The metaphor "…" (l. 7) suggests that …*
+- *The narrator's isolation becomes obvious when he describes … (cf. ll. 12-15).*
 - *This creates the impression that … / This evokes a feeling of …*
 - *The reader is thus encouraged to … / The reader is likely to …*
 - *Furthermore, the structure of the text reinforces …*
@@ -427,7 +437,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 
 ### Sprache
 10. **Simple present** als Grundzeit. Vorzeitiges mit present perfect oder simple past. Das gilt auch für die Handlung fiktionaler Texte.
-11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Kürzel Ü). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen.
+11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Kürzel Ü). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
 12. **Berichtende Verben, abwechslungsreich:** *state, claim, point out, explain, argue, emphasize, criticize, describe, report, suggest*. Statt *says … says … says*.
 13. **Wiedergabe statt direkter Rede.** Indirekte Rede bzw. eigene Umschreibung. Bei Erzähltexten den Erzähler (*the narrator*) nicht mit der Autorin oder dem Autor gleichsetzen.
 14. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I*.
