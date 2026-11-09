@@ -1,6 +1,6 @@
 ---
 name: englisch-bayern-feedback
-description: Korrigiert englische Schreibaufgaben von Schülerinnen und Schülern der Oberstufe (Bayern, Jahrgangsstufe 12/13, Abitur Englisch) entlang der Abitur-Operatoren (z. B. outline, analyze, discuss) – mit direkter Verbesserung aller Fehler und Rückmeldung auf Deutsch, aber ohne Note. Verwenden, wenn jemand eine Aufgabenstellung, einen Ausgangstext und einen eigenen englischen Text zur Korrektur, Verbesserung oder Rückmeldung einfügt.
+description: Korrigiert englische Schreibaufgaben (Oberstufe/Abitur Bayern, z. B. outline, analyze, discuss), wenn Aufgabe, Ausgangstext und Schülertext eingefügt werden. Feedback auf Deutsch, keine Note.
 ---
 
 # Korrektur englischer Schreibaufgaben (Oberstufe Bayern)
