@@ -6,16 +6,16 @@ Der Skill funktioniert mit **Claude** und **ChatGPT**.
 
 ## Was der Skill macht – und was nicht
 
-Du schickst deinen Text **einmal** und bekommst die fertige Korrektur in einer Antwort:
+Du schickst deinen Text **einmal** und bekommst einen fertigen **Bericht**, für jede Teilaufgabe:
 
-✅ ob du die Aufgabe und den Operator erfüllt hast, was inhaltlich fehlt, falsch oder überflüssig ist,
-✅ Hinweise zum Aufbau,
+✅ dein **Profil** als Grafik: wo deine Stärken und Baustellen liegen (Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz, Satzbau),
+✅ ein **Diagramm deiner Fehlerarten**, damit du siehst, was du am meisten üben solltest,
+✅ was inhaltlich gelungen ist, was fehlt, falsch oder überflüssig ist, und Hinweise zum Aufbau,
 ✅ **jeden Sprachfehler mit Verbesserung**, Fehlerkürzel und kurzer Erklärung,
-✅ Vorschläge für einen besseren Ausdruck,
-✅ drei Punkte, auf die du beim nächsten Mal achten solltest,
+✅ Vorschläge für einen besseren Ausdruck und drei Punkte für das nächste Mal,
 ✅ zum Schluss **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Kürzel am Rand, Kommentare darunter. Korrigiert wird dabei nur die Sprache, dein Inhalt bleibt.
 
-So sieht die korrigierte Fassung aus: [Beispiel öffnen](beispiele/outline-beispiel-korrektur.html) (zum Ansehen herunterladen und im Browser öffnen). Die komplette Beispielkorrektur steht in [`beispiele/outline-beispiel.md`](beispiele/outline-beispiel.md).
+So sieht ein Bericht aus: [Beispiel öffnen](beispiele/outline-beispiel-bericht.html) (herunterladen und im Browser öffnen).
 
 Das Feedback ist auf Deutsch.
 
@@ -75,7 +75,7 @@ skill/englisch-bayern-feedback/
 └── references/
     ├── operators/           eine Datei pro Operator
     ├── kriterien/           Kriterien für Inhalt und Sprache
-    └── korrekturtext.md     Vorlage für den korrigierten Text im Lehrerstil
+    └── bericht.md           Vorlage für den Bericht als HTML-Seite
 beispiele/                   erfundene Beispieltexte mit Musterfeedback
 dist/                        fertige Dateien zum Herunterladen
 build.py                     erzeugt dist/ neu

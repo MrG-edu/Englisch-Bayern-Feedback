@@ -1,5 +1,7 @@
 # Beispiel: outline
 
+So antwortet der Skill in einem Chat ohne HTML-Anzeige. Mit HTML-Anzeige bekommst du dasselbe als gestaltete Seite: [`outline-beispiel-bericht.html`](outline-beispiel-bericht.html).
+
 Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 
 ## Aufgabenstellung
@@ -32,6 +34,28 @@ Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 
 **Gesamteindruck**
 Du hast den Text grundsätzlich verstanden, und die beiden Gründe, die du nennst, sind richtig. Die größte Schwäche: Ein Drittel deines Textes beantwortet nicht die Frage nach den Gründen, und ein wichtiger Grund fehlt. Sprachlich fallen vor allem die Zeitform, das fehlende 3rd-person -s und Stellen auf, die du aus dem Text abgeschrieben hast.
+
+**Profil** (keine Note)
+
+| Bereich | Stufe | Kommentar |
+|---|---|---|
+| Aufgabenerfüllung | ●●○○ ausbaufähig | Nur zwei von drei Gründen, dazu viel, was nicht gefragt ist. |
+| Inhalt | ●●●○ solide | Was du nennst, ist richtig verstanden, aber zu detailreich. |
+| Aufbau | ●●○○ ausbaufähig | Nacherzählung der Reihe nach statt Gliederung nach Gründen. |
+| Sprachrichtigkeit | ●●○○ ausbaufähig | Zeitform und 3rd-person -s wiederholt falsch. |
+| Wortschatz & Ausdruck | ●●○○ ausbaufähig | Teilweise abgeschrieben, wenig Abwechslung bei den Verben. |
+| Satzbau & Verknüpfungen | ●●●○ solide | Verständlich, aber einfach gebaut. |
+
+**Fehler nach Art:** Z 3 · Id 2 · T 2 · Ü 2 · G 2 · W 1 · St 1
+
+**Das kannst du schon**
+- ✓ Die zwei genannten Gründe hast du richtig verstanden.
+- ✓ Deine Sätze sind klar verständlich.
+
+**Hier lohnt sich Üben**
+- ! Nur über das schreiben, was die Aufgabe fragt
+- ! Simple present und 3rd-person -s
+- ! In eigenen Worten statt abgeschrieben
 
 **1. Aufgabe und Inhalt**
 - **Es fehlt** der dritte Grund aus Absatz 4: Viele Rückkehrer sehnen sich nach Gemeinschaft. In der Stadt kannten sie ihre Nachbarn kaum, in der Kleinstadt hilft man sich gegenseitig, und Kinder können draußen spielen.
@@ -70,4 +94,4 @@ Mit *First … Then …* erzählst du den Text der Reihe nach nach. Besser ist e
 
 **6. Dein korrigierter Text**
 
-Siehe [`outline-beispiel-korrektur.html`](outline-beispiel-korrektur.html): der Schülertext mit roten Korrekturen über dem Text, Kürzeln am Rand und Kommentaren darunter. Inhaltliche Mängel (z. B. die eigene Meinung am Ende) bleiben dort stehen, weil diese Fassung nur sprachlich korrigiert. Sie sind oben unter „Aufgabe und Inhalt“ benannt.
+Der ganze Bericht mit Profil, Fehlerdiagramm und korrigiertem Text als Seite: [`outline-beispiel-bericht.html`](outline-beispiel-bericht.html). Inhaltliche Mängel (z. B. die eigene Meinung am Ende) bleiben im korrigierten Text stehen, weil er nur sprachlich korrigiert wird. Sie sind oben unter „Aufgabe und Inhalt“ benannt.
