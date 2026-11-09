@@ -49,6 +49,8 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
 Claude zeigt die korrigierte Fassung direkt als Seite an, die du auch drucken kannst.
 
+**Updates:** Ein hochgeladener Skill aktualisiert sich nicht von selbst. Wenn sich hier im Repo etwas ändert, lösch den alten Skill in Claude und lade die neue ZIP-Datei hoch.
+
 ### Variante 2: ChatGPT mit Skills (nur in Business-, Enterprise- und Edu-Konten)
 1. Lade dieselbe ZIP-Datei herunter.
 2. In ChatGPT: **Skills → Create → Upload** und die ZIP-Datei auswählen.

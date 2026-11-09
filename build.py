@@ -60,6 +60,9 @@ def check_gpt_limit() -> None:
     n = len(body)
     status = "ok" if n <= GPT_LIMIT else "ZU LANG für eigene GPTs"
     print(f"SKILL.md ohne Frontmatter: {n} Zeichen (Grenze {GPT_LIMIT}) -> {status}")
+    m = re.search(r"^description: (.*)$", (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8"), flags=re.M)
+    d = len(m.group(1)) if m else 0
+    print(f"Beschreibung: {d} Zeichen (Grenze 200) -> {'ok' if d <= 200 else 'ZU LANG für den Upload in Claude'}")
 
 
 if __name__ == "__main__":
