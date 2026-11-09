@@ -36,8 +36,8 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 | Operator | Status |
 |---|---|
 | outline / summarize / sum up | ✅ fertig |
-| analyze / examine | 🔜 als Nächstes |
-| discuss | 🔜 geplant |
+| analyze / examine | 🧪 Entwurf, wird noch geprüft |
+| discuss | 🔜 als Nächstes |
 | alle anderen | allgemeines Feedback zu Inhalt und Sprache, noch ohne eigene Checkliste |
 
 ## So benutzt du den Skill
