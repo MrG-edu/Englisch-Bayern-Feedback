@@ -40,6 +40,12 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 | discuss | ✅ fertig (mit verbindlichem Aufbau) |
 | alle anderen | allgemeines Feedback zu Inhalt und Sprache, noch ohne eigene Checkliste |
 
+## Merkblätter
+
+| Operator | Merkblatt |
+|---|---|
+| discuss | [Merkblatt_discuss.pdf](merkblaetter/Merkblatt_discuss.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
+
 ## So benutzt du den Skill
 
 ### Variante 1: Claude

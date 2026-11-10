@@ -752,7 +752,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 
 ### Inhalt
 9. **Thema getroffen.** Die Argumente beziehen sich genau auf die Frage der Aufgabe, nicht auf ein Nachbarthema.
-10. **Jeder Absatz vollständig** (Begriffe wie im Unterricht): **thesis statement** (allgemeiner Satz, der das Thema des Absatzes einführt) → **development** (der Gedanke genauer ausgeführt und begründet) → **example** (Beleg, der zeigt, dass der Punkt stimmt). Fehlt development oder example, ist das Argument unvollständig. Eine *summary* am Ende des Absatzes ist **nicht nötig**, weil die Absätze kurz sind; verlange sie nicht.
+10. **Jeder Absatz vollständig** (Begriffe wie im Unterricht): **thesis statement** (allgemeiner Satz, der das Thema des Absatzes einführt) → **development** (der Gedanke genauer ausgeführt und begründet) → **example** (Beleg, der zeigt, dass der Punkt stimmt). Fehlt development oder example, ist das Argument unvollständig. Alle drei Teile gehören zum **selben Gedanken**: Das example muss genau das thesis statement belegen und etwas Neues, Konkretes zeigen, statt das development nur zu wiederholen. Eine *summary* am Ende des Absatzes ist **nicht nötig**, weil die Absätze kurz sind; verlange sie nicht.
 11. **Beispiele konkret und glaubwürdig:** aus dem Text, aus dem Unterricht, aus Alltag oder Zeitgeschehen. Keine erfundenen Statistiken oder Studien.
 12. **Argumente verschieden.** Zwei Argumente dürfen nicht dasselbe mit anderen Worten sagen.
 13. **Differenziert.** Gegenargumente werden ernsthaft dargestellt, nicht als Strohmann.
@@ -781,6 +781,8 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Meinung schon in der Einleitung | *In my opinion …* im ersten Absatz | Sagen, dass die Meinung erst in den Schluss gehört. |
 | Neues Argument im Schluss | Gedanke, der im Hauptteil nicht vorkam | Sagen, dass er in den Hauptteil gehört oder gestrichen werden sollte. |
 | Argument ohne example | nur thesis statement und development | Ein passendes, konkretes example vorschlagen. |
+| Example ohne Belegfunktion | Das example wiederholt nur das development in anderen Worten | Ein konkreteres example vorschlagen (Situation, Text, Ereignis). |
+| Zwei Gedanken in einem Absatz | thesis statement spricht von A, development oder example von B | Benennen und vorschlagen, das thesis statement an den Rest anzupassen oder umgekehrt. |
 | Fehlendes thesis statement | Absatz beginnt direkt mit Details oder einem Beispiel | Einen einleitenden Satz vorschlagen, der den Gedanken des Absatzes nennt. |
 | Argumente doppelt | zwei Absätze sagen im Kern dasselbe | Die Überschneidung benennen und ein anderes Argument vorschlagen. |
 | Thema verfehlt | Argumente zu einer anderen Frage | Den Unterschied zur Aufgabenstellung erklären. |
@@ -802,6 +804,10 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 **Beispiele:** *For example, … / This can be seen in … / A good example of this is …*
 
 **Schluss:** *All things considered, I believe that … / Weighing up both sides, I am convinced that … / To sum up, the arguments in favour of … outweigh …*
+
+## Merkblatt für Schülerinnen und Schüler
+
+Zum Operator gibt es ein Merkblatt mit Aufbau, Formulierungshilfen und Musteraufsatz (`merkblaetter/Merkblatt_discuss.pdf` im Repository). Verweise im Feedback darauf, wenn der Aufbau grundlegend nicht stimmt.
 
 
 ============================================================
