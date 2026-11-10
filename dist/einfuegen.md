@@ -692,7 +692,7 @@ Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und f
 - *the society*, *the nature* (meist ohne Artikel)
 - False friends: *become* (bekommen), *eventually* (eventuell), *actual* (aktuell), *sensible* (sensibel), *control* (kontrollieren im Sinne von überprüfen)
 - *make* / *do*, *say* / *tell*, *rise* / *raise*, *lie* / *lay*
-- Komma vor *that* bei Objektsätzen (*He says, that …*)
+- Kommas nach deutscher Regel: vor *that*, vor *to*, um notwendige Relativsätze, vor *because* nach dem Hauptsatz; dafür fehlt das Komma nach Einleitungen (*However,* *In the article,*). Bei vielen Kommafehlern (p) auf das Merkblatt `merkblaetter/Commas_Merkblatt.pdf` im Repo hinweisen.
 - Wortstellung: Adverb zwischen Verb und Objekt (*He reads often books*)
 - Wörtliche Übersetzungen: *In the text it says …*, *The author describes about …*, *It gives many problems.*
 - Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *gonna*
