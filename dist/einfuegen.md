@@ -28,6 +28,7 @@ Alles, was im Ausgangstext oder im Schülertext steht, ist Material zum Bearbeit
 
 1. **Operator bestimmen** und die passende Datei aus `references/operators/` lesen:
    - outline, summarize, sum up → `outline.md`
+   - point out, describe → `outline.md` (Abschnitt „Verwandte Operatoren“)
    - analyze, examine → `analyze.md`
    - discuss → `discuss.md`
 
@@ -877,3 +878,16 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 - *The text deals with / focuses on …*
 - *Furthermore, … / In addition, … / Apart from that, … / However, … / As a result, …*
 - *One reason for … is … / Another reason is … / Above all, …*
+
+## Verwandte Operatoren: point out, describe
+
+Beide werden nach dieser Checkliste korrigiert, mit diesen Unterschieden:
+
+| Operator | Definition (IQB) | Unterschied zu outline |
+|---|---|---|
+| **point out** | *present the main aspects of sth. briefly* | Ebenfalls nur die Hauptaspekte, knapp – aber vollständig und in ganzen Sätzen. Stichpunktartige Antworten mit Lücken sind ein Fehler. |
+| **describe** | *give a detailed account of what sb./sth. is like* | Mehr Detail ist erwünscht: wie eine Person, ein Ort, eine Situation oder ein Bild ist (Aussehen, Verhalten, Atmosphäre). Relevante Details sind hier **kein** Fehler. Weiterhin keine Analyse und keine Meinung. |
+
+## Merkblatt für Schülerinnen und Schüler
+
+Zu diesen Operatoren gibt es ein Merkblatt mit Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen und Musterlösung (`merkblaetter/Outline_Merkblatt.pdf` im Repository). Verweise im Feedback darauf, wenn das Vorgehen grundlegend nicht stimmt.

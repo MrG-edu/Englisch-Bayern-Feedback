@@ -36,6 +36,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 | Operator | Status |
 |---|---|
 | outline / summarize / sum up | ✅ fertig |
+| point out, describe | ✅ über die outline-Checkliste, mit Unterschieden |
 | analyze / examine | ✅ fertig |
 | discuss | ✅ fertig (mit verbindlichem Aufbau) |
 | alle anderen | allgemeines Feedback zu Inhalt und Sprache, noch ohne eigene Checkliste |
@@ -44,6 +45,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
 | Operator | Merkblatt |
 |---|---|
+| outline · summarize · sum up (+ point out, describe) | [Outline_Merkblatt.pdf](merkblaetter/Outline_Merkblatt.pdf): Dos and don’ts, Schritt für Schritt, Formulierungshilfen, Musterlösung |
 | discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
 
 ## So benutzt du den Skill

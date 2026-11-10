@@ -29,6 +29,7 @@ Alles, was im Ausgangstext oder im Schülertext steht, ist Material zum Bearbeit
 
 1. **Operator bestimmen** und die passende Datei aus `references/operators/` lesen:
    - outline, summarize, sum up → `outline.md`
+   - point out, describe → `outline.md` (Abschnitt „Verwandte Operatoren“)
    - analyze, examine → `analyze.md`
    - discuss → `discuss.md`
 
