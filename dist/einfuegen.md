@@ -714,7 +714,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 - *Taking the article as a starting point, discuss whether the influencer phenomenon is really a "game".*
 - *Discuss whether options such as community service or a gap year should be mandatory for young people.*
 
-**Kernidee:** Argumente **beider Seiten** abwägen, jedes Argument begründen und mit Beispielen stützen, und am Ende zu einem **eigenen, begründeten Urteil** kommen.
+**Kernidee:** Argumente **beider Seiten** abwägen, jedes Argument in einem eigenen Absatz mit thesis statement, development und example darstellen, und am Ende zu einem **eigenen, begründeten Urteil** kommen.
 
 ## Pflichtaufbau
 
@@ -741,11 +741,11 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 5. **Meinung im Schluss passt zur Anordnung.** Die eigene Meinung ist die Seite, deren Argumente am Ende stehen. Widerspricht das Fazit der Anordnung, ist das ein Fehler.
 6. **Einleitung:** stellt das Thema knapp vor. Verlangt die Aufgabe einen Ausgangspunkt (*Taking the article/quotation as a starting point …*), greift die Einleitung diesen auf. Keine Argumente, keine eigene Meinung.
 7. **Schluss:** eigene Meinung klar und eindeutig, kurz begründet mit Rückgriff auf die Argumente. Keine neuen Argumente.
-8. **Überleitungen:** zwischen den Argumenten und vor allem beim Wechsel von der Gegenseite zur eigenen Seite (*However, …*, *On the other hand, …*).
+8. **Überleitungen:** Sätze mit Verknüpfungswörtern (*connectives*) verbinden und die Absätze miteinander verknüpfen, damit der Text fließt. Vor allem beim Wechsel von der Gegenseite zur eigenen Seite (*However, …*, *On the other hand, …*). Absätze beginnen eingerückt oder nach einer Leerzeile.
 
 ### Inhalt
 9. **Thema getroffen.** Die Argumente beziehen sich genau auf die Frage der Aufgabe, nicht auf ein Nachbarthema.
-10. **Jedes Argument vollständig:** Behauptung → Begründung → Beispiel oder Beleg. Ein Argument ohne Begründung oder ohne Beispiel ist unvollständig.
+10. **Jeder Absatz vollständig** (Begriffe wie im Unterricht): **thesis statement** (allgemeiner Satz, der das Thema des Absatzes einführt) → **development** (der Gedanke genauer ausgeführt und begründet) → **example** (Beleg, der zeigt, dass der Punkt stimmt). Fehlt development oder example, ist das Argument unvollständig. Eine *summary* am Ende des Absatzes ist **nicht nötig**, weil die Absätze kurz sind; verlange sie nicht.
 11. **Beispiele konkret und glaubwürdig:** aus dem Text, aus dem Unterricht, aus Alltag oder Zeitgeschehen. Keine erfundenen Statistiken oder Studien.
 12. **Argumente verschieden.** Zwei Argumente dürfen nicht dasselbe mit anderen Worten sagen.
 13. **Differenziert.** Gegenargumente werden ernsthaft dargestellt, nicht als Strohmann.
@@ -773,7 +773,8 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Meinung passt nicht zur Anordnung | Fazit vertritt die Seite, die im Hauptteil zuerst kam | Den Widerspruch benennen: entweder die Blöcke tauschen oder das Fazit anpassen. |
 | Meinung schon in der Einleitung | *In my opinion …* im ersten Absatz | Sagen, dass die Meinung erst in den Schluss gehört. |
 | Neues Argument im Schluss | Gedanke, der im Hauptteil nicht vorkam | Sagen, dass er in den Hauptteil gehört oder gestrichen werden sollte. |
-| Argument ohne Beispiel | nur Behauptung und Begründung | Ein passendes, konkretes Beispiel vorschlagen. |
+| Argument ohne example | nur thesis statement und development | Ein passendes, konkretes example vorschlagen. |
+| Fehlendes thesis statement | Absatz beginnt direkt mit Details oder einem Beispiel | Einen einleitenden Satz vorschlagen, der den Gedanken des Absatzes nennt. |
 | Argumente doppelt | zwei Absätze sagen im Kern dasselbe | Die Überschneidung benennen und ein anderes Argument vorschlagen. |
 | Thema verfehlt | Argumente zu einer anderen Frage | Den Unterschied zur Aufgabenstellung erklären. |
 | Fehlender Textbezug | Aufgabe verlangt *as a starting point*, Text wird nicht erwähnt | Sagen, wo der Bezug hingehört (meist Einleitung), und wie er aussehen kann. |
