@@ -28,7 +28,7 @@ Weitere Muster:
 ### Inhalt
 1. **Fragestellung beantwortet.** Der Text erklärt, **wie** der in der Aufgabe genannte Aspekt (Haltung des Autors, Charakterisierung, Atmosphäre …) vermittelt wird. Er beantwortet nicht eine andere Frage und erzählt nicht den Inhalt nach.
 2. **Alle Schwerpunkte bearbeitet.** Jeder Bereich hinter *Focus on …* kommt vor, z. B. *structure*, *use of language*, *narrative techniques*, *communicative strategies*, *the function of the photo/cartoon*. Fehlt einer, ist die Aufgabe nur teilweise erfüllt.
-3. **Point – evidence – effect** (so heißt es auch im Merkblatt): Mittel benennen (*point*) → mit Zitat oder Zeilenangabe belegen (*evidence*) → **Wirkung bzw. Funktion** erklären und auf die Fragestellung beziehen (*effect*). Der häufigste Fehler ist das bloße Aufzählen von Stilmitteln ohne Wirkung.
+3. **Point – evidence – effect** (so heißt es auch im Merkblatt): Leitsatz, was die Autorin tut (*point*) → Mittel benennen und mit Zitat oder Zeilenangabe belegen (*evidence*) → **Wirkung bzw. Funktion** erklären und auf die Fragestellung beziehen (*effect*). Der häufigste Fehler ist das bloße Aufzählen von Stilmitteln ohne Wirkung.
 4. **Richtig erkannt und benannt.** Fachbegriffe passen zum Beleg (nicht jede Wiederholung ist eine Anapher, nicht jeder Vergleich eine Metapher).
 5. **Textbezug und Plausibilität.** Die Deutung ergibt sich aus dem Text, nicht aus Vermutungen oder Weltwissen. Keine Überinterpretation.
 6. **Auswahl und Tiefe.** Die wichtigsten Mittel genau erklärt ist besser als viele Mittel oberflächlich aufgezählt.
@@ -59,7 +59,7 @@ Weitere Muster:
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | Unter „Inhalt und Aufbau“ eine eingebettete Formulierung vorschlagen, z. B. *… describes each closure as tearing “another hole” (l. 8), which …* |
-| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Zeichen cit, richtige Form angeben. |
+| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Korrekturzeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
