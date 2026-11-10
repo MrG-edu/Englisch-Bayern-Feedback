@@ -104,4 +104,4 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 
 ## Merkblatt für Schülerinnen und Schüler
 
-Zum Operator gibt es ein Merkblatt mit Aufbau, Formulierungshilfen und Musteraufsatz (`merkblaetter/Merkblatt_discuss.pdf` im Repository). Verweise im Feedback darauf, wenn der Aufbau grundlegend nicht stimmt.
+Zum Operator gibt es ein Merkblatt mit Aufbau, Formulierungshilfen und Musteraufsatz (`merkblaetter/Discuss_Merkblatt.pdf` im Repository). Verweise im Feedback darauf, wenn der Aufbau grundlegend nicht stimmt.

@@ -44,7 +44,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
 | Operator | Merkblatt |
 |---|---|
-| discuss | [Merkblatt_discuss.pdf](merkblaetter/Merkblatt_discuss.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
+| discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
 
 ## So benutzt du den Skill
 
