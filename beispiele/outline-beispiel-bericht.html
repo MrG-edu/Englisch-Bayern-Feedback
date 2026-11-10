@@ -110,6 +110,23 @@
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
   ol.kommentare li::marker { color: var(--rot); font-weight: 700; }
+  /* Erklärungen im Text */
+  .info-wrap { position: relative; display: inline-block; line-height: 1; }
+  .korr.mit-info { cursor: pointer; }
+  .info { display: inline-grid; place-items: center; width: 19px; height: 19px; margin: 0 2px 0 3px; padding: 0; border: 0; border-radius: 50%; background: var(--akzent); color: #fff; font: italic 700 12px/1 Georgia, serif; vertical-align: 3px; cursor: pointer; box-shadow: 0 0 0 3px var(--akzent-hell); }
+  .info:hover, .korr.offen .info { filter: brightness(1.15); }
+  .info:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .blase { display: none; position: absolute; top: calc(100% + 6px); left: -8px; z-index: 5; width: max-content; max-width: 300px; background: var(--ink); color: #fff; font: 400 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; padding: 9px 12px; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.18); white-space: normal; text-align: left; }
+  .blase i { color: #fff; }
+  .korr.offen .blase { display: block; }
+  @media (hover: hover) { .korr.mit-info:hover .blase { display: block; } }
+  .info-hinweis { font-size: 14px; color: var(--ink-2); margin: 0 0 10px; }
+  .info-hinweis .info { cursor: default; }
+  @media screen { .nur-druck { display: none !important; } }
+  /* Inhalt und Aufbau */
+  .block-titel { margin: 18px 0 0; font-size: 15px; }
+  .sw.kompakt { margin-top: 8px; }
+  .sw.kompakt li { font-size: 15px; }
   footer { font-size: 13px; color: var(--ink-3); text-align: center; margin-top: 8px; }
   footer p { margin: 4px 0; }
   .fehler-daten { background: var(--rot-hell); color: var(--rot); padding: 16px; border-radius: 12px; }
@@ -124,6 +141,7 @@
     body { background: #fff; } nav.sprung { display: none; }
     section.aufgabe { box-shadow: none; break-inside: auto; border: 0; padding: 0; }
     .karte, .blatt, ol.schritte li { break-inside: avoid; }
+    .info, .blase, .info-hinweis, .nur-bild { display: none !important; }
   }
 </style>
 </head>
@@ -196,16 +214,9 @@
     "gut": [
      "Wohnkosten (Absatz 2) und Arbeit von zu Hause dank schnellem Internet (Absatz 3) sind richtig erkannt."
     ],
-    "fehlt": [
-     "Der dritte Grund aus Absatz 4: der Wunsch nach Gemeinschaft."
-    ],
-    "falsch": [],
-    "ueberfluessig": [
-     "Erster und letzter Absatz (Abwanderung früher, Nachteile, Bürgermeisterin, eigene Meinung) beantworten die Frage nicht.",
-     "Details wie 40 percent, Seattle und die Namen."
-    ],
-    "aufbau": [
-     "Du erzählst den Text mit <i>First … Then …</i> der Reihe nach nach. Gliedere besser nach den drei Gründen, verbunden mit <i>furthermore, in addition</i>."
+    "schlecht": [
+     "Fehlt: der dritte Grund aus Absatz 4, der Wunsch nach Gemeinschaft.",
+     "Überflüssig: erster und letzter Absatz (Abwanderung früher, Nachteile, eigene Meinung) sowie Details wie 40 percent und die Namen."
     ]
    },
    "naechstesMal": {
@@ -226,7 +237,15 @@
     "Zwei Fehler: 3rd-person -s fehlt, und <i>tell</i> braucht ein Objekt. Hier passt <i>point out</i>.",
     "Bei zählbaren Nomen im Plural steht <i>fewer</i>, bei nicht zählbaren <i>less</i> (<i>less money</i>)."
    ],
-   "sprache": "Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd-person -s, außerdem fehlen oft Kommas, und zwei Stellen sind abgeschrieben."
+   "sprache": "Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd-person -s, außerdem fehlen oft Kommas, und zwei Stellen sind abgeschrieben.",
+   "aufbau": {
+    "gut": [
+     "Jeder Grund steht in einem eigenen Satz und ist klar erkennbar."
+    ],
+    "schlecht": [
+     "Du erzählst den Text mit <i>First … Then …</i> der Reihe nach nach. Gliedere besser nach den drei Gründen, verbunden mit <i>furthermore, in addition</i>."
+    ]
+   }
   }
  ]
 }
@@ -325,25 +344,42 @@
         else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
         else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
         else { s.innerHTML = "<ruby><del></del><rt></rt></ruby>"; s.querySelector("del").innerHTML = orig; }
-        s.querySelector("rt").textContent = v;
-        var r = el("span", "rand"); r.textContent = z + (n ? " " + (KREIS[+n - 1] || "(" + n + ")") : ""); s.appendChild(r);
+        var nr = n ? (KREIS[+n - 1] || "(" + n + ")") : "", text = n && a.kommentare ? a.kommentare[+n - 1] : "";
+        var rt = s.querySelector("rt"); rt.textContent = v;
+        if (text && /[①-⑳]|\(\d+\)/.test(v)) { rt.textContent = ""; rt.appendChild(el("span", "nur-bild", "")).textContent = v.replace(/[①-⑳]|\(\d+\)/g, "i"); rt.appendChild(el("span", "nur-druck", "")).textContent = v; }
+        if (text) {
+          var id = "erkl-" + idx + "-" + n, b = el("button", "info", "i"); b.type = "button";
+          b.setAttribute("aria-expanded", "false"); b.setAttribute("aria-describedby", id); b.setAttribute("aria-label", "Erklärung anzeigen");
+          var bl = el("span", "blase", text); bl.id = id; bl.setAttribute("role", "tooltip");
+          var w = el("span", "info-wrap"); w.appendChild(b); w.appendChild(bl); s.appendChild(w); s.classList.add("mit-info");
+        }
+        var r = el("span", "rand"); r.innerHTML = z + (nr ? ' <span class="rn nur-druck">' + nr + "</span>" : ""); s.appendChild(r);
         k.replaceWith(s);
       });
+      if (blatt.querySelector(".info")) { var hw = el("p", "info-hinweis"); hw.innerHTML = 'Hinter manchen Korrekturen steht ein blaues <span class="info" aria-hidden="true">i</span>. Fahr mit der Maus darüber oder tipp darauf, dann erscheint eine Erklärung.'; sec.appendChild(hw); }
       sec.appendChild(blatt);
-      if (a.kommentare && a.kommentare.length) { sec.appendChild(el("h3", null, "Kommentare")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); sec.appendChild(ok); }
+      if (a.kommentare && a.kommentare.length) { var dk = el("div", "nur-druck"); dk.appendChild(el("h3", null, "Erklärungen")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); dk.appendChild(ok); sec.appendChild(dk); }
     }
 
-    // 2 Aufgabe, Inhalt und Aufbau
-    sec.appendChild(h2(2, "Aufgabe, Inhalt und Aufbau"));
-    var inh = a.inhalt || {};
-    if (a.aufbau && a.aufbau.length && !inh.aufbau) inh.aufbau = a.aufbau;
-    [["gut", "l-gut", "Gelungen"], ["fehlt", "l-fehlt", "Fehlt"], ["falsch", "l-falsch", "Falsch wiedergegeben"], ["ueberfluessig", "l-ueber", "Überflüssig"], ["aufbau", "l-aufbau", "Aufbau"]].forEach(function (t) {
-      if (inh[t[0]] && inh[t[0]].length) { var gr = el("div", "gruppe"); gr.appendChild(el("span", "label " + t[1], t[2])); gr.appendChild(liste(inh[t[0]])); sec.appendChild(gr); }
+    // 2 Inhalt und Aufbau
+    sec.appendChild(h2(2, "Inhalt und Aufbau"));
+    var inh = a.inhalt || {}, auf = a.aufbau || {};
+    if (Array.isArray(auf)) auf = { schlecht: auf };
+    if (Array.isArray(inh.aufbau)) auf = { gut: auf.gut || [], schlecht: (auf.schlecht || []).concat(inh.aufbau) };
+    var inhS = (inh.schlecht || []).slice();
+    [["fehlt", "Fehlt: "], ["falsch", "Falsch: "], ["ueberfluessig", "Überflüssig: "]].forEach(function (t) { (inh[t[0]] || []).forEach(function (x) { inhS.push(t[1] + x); }); });
+    [["Inhalt", inh.gut || [], inhS], ["Aufbau", auf.gut || [], auf.schlecht || []]].forEach(function (b) {
+      if (!b[1].length && !b[2].length) return;
+      sec.appendChild(el("h3", "block-titel", b[0]));
+      var g = el("div", "sw kompakt");
+      if (b[1].length) { var kg = el("div", "karte staerken"); kg.appendChild(el("h3", null, "Gelungen")); kg.appendChild(liste(b[1])); g.appendChild(kg); }
+      if (b[2].length) { var kz = el("div", "karte schwaechen"); kz.appendChild(el("h3", null, "Zu verbessern")); kz.appendChild(liste(b[2])); g.appendChild(kz); }
+      sec.appendChild(g);
     });
     naechstes(nm.inhalt);
 
     // 3 Sprachliche Rückmeldung
-    sec.appendChild(h2(3, "Sprachliche Rückmeldung"));
+    sec.appendChild(h2(3, "Sprache"));
     if (a.sprache) sec.appendChild(el("p", "sprache-text", a.sprache));
     naechstes(nm.sprache);
 
@@ -353,11 +389,34 @@
   function rand() {
     document.querySelectorAll(".blatt").forEach(function (blatt) {
       var prev = null;
-      blatt.querySelectorAll(".rand").forEach(function (r) { r.style.display = ""; if (r.dataset.t) r.textContent = r.dataset.t; else r.dataset.t = r.textContent; });
-      blatt.querySelectorAll(".rand").forEach(function (r) { if (prev && Math.abs(r.offsetTop - prev.offsetTop) < 8) { prev.textContent += " " + r.textContent; r.style.display = "none"; } else prev = r; });
+      blatt.querySelectorAll(".rand").forEach(function (r) { r.style.display = ""; if (r.dataset.t) r.innerHTML = r.dataset.t; else r.dataset.t = r.innerHTML; });
+      blatt.querySelectorAll(".rand").forEach(function (r) { if (prev && Math.abs(r.offsetTop - prev.offsetTop) < 8) { prev.innerHTML += " " + r.innerHTML; r.style.display = "none"; } else prev = r; });
     });
   }
   rand(); window.addEventListener("resize", rand);
+  if (window.matchMedia) window.matchMedia("print").addListener(rand);
+
+  // Erklärungen: Hover (Maus) oder Tippen (Tablet)
+  function platz(k) {
+    var bl = k.querySelector(".blase"), blatt = k.closest(".blatt"); if (!bl || !blatt) return;
+    bl.style.left = "-8px";
+    var rb = blatt.getBoundingClientRect(), r = bl.getBoundingClientRect(), rechts = rb.right - 16, links = rb.left + 12;
+    var dx = 0; if (r.right > rechts) dx = rechts - r.right; if (r.left + dx < links) dx = links - r.left;
+    bl.style.left = (dx - 8) + "px";
+  }
+  function zu(ausser) { document.querySelectorAll(".korr.offen").forEach(function (k) { if (k !== ausser) { k.classList.remove("offen"); k.querySelector(".info").setAttribute("aria-expanded", "false"); } }); }
+  document.querySelectorAll(".korr.mit-info").forEach(function (k) {
+    var b = k.querySelector(".info");
+    k.addEventListener("mouseenter", function () { platz(k); });
+    k.addEventListener("click", function (e) {
+      e.stopPropagation(); zu(k);
+      var auf = !k.classList.contains("offen"); k.classList.toggle("offen", auf); b.setAttribute("aria-expanded", auf ? "true" : "false");
+      if (auf) platz(k);
+    });
+    b.addEventListener("focus", function () { platz(k); });
+  });
+  document.addEventListener("click", function () { zu(null); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") zu(null); });
 })();
 </script>
 </body>

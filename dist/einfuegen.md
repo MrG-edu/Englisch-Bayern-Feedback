@@ -45,11 +45,11 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen in dieser Reihenfolge, bei m
 
 **Stärken und Schwächen** – zwei bis drei Stärken, zwei bis drei Schwächen, jeweils kurz.
 
-**1. Dein korrigierter Text** – der ganze Schülertext, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Eine eigene Fehlerliste gibt es nicht. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären, bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
+**1. Dein korrigierter Text** – der ganze Schülertext, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Erklärungen zum Antippen oder Überfahren. Eine eigene Fehlerliste gibt es nicht. Eine kurze Erklärung mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären, bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
 
-**2. Aufgabe, Inhalt und Aufbau** – kurz und auf den Punkt: Was ist **gelungen**, was **fehlt** (mit Stelle im Ausgangstext), was ist **falsch**, was **überflüssig**, was ist am **Aufbau** zu verbessern? Je höchstens zwei Angaben, je ein Satz. Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
+**2. Inhalt und Aufbau** – getrennt nach **Inhalt** und **Aufbau**, jeweils **gelungen** und **zu verbessern**, kurz und auf den Punkt (was fehlt, falsch oder überflüssig ist, mit Stelle im Ausgangstext). Höchstens zwei, drei Punkte pro Liste, je ein Satz. Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
-**3. Sprachliche Rückmeldung** – ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich? Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
+**3. Sprache** – ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich? Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
 ### Ausgabe
 
@@ -111,7 +111,7 @@ DATEI: references/bericht.md  (bericht.md)
 
 # Bericht als HTML-Seite
 
-Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe in dieser Reihenfolge: das Profil als Grafik, Stärken und Schwächen, den korrigierten Text im Lehrerstil mit allen Korrekturen (darüber eine ausklappbare Liste der Korrekturzeichen), die Rückmeldung zu Aufgabe, Inhalt und Aufbau und die sprachliche Rückmeldung, jeweils mit den Punkten fürs nächste Mal. Dateiname: `korrektur.html`.
+Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe in dieser Reihenfolge: das Profil als Grafik, Stärken und Schwächen, den korrigierten Text im Lehrerstil mit allen Korrekturen (darüber eine ausklappbare Liste der Korrekturzeichen, Erklärungen als Sprechblase am blauen „i“ zum Überfahren oder Antippen), dann „Inhalt und Aufbau“ und „Sprache“, jeweils mit den Punkten fürs nächste Mal. Beim Drucken stehen die Erklärungen als Liste unter dem Text. Dateiname: `korrektur.html`.
 
 ## So füllst du die Vorlage
 
@@ -141,13 +141,14 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafik und die Liste 
       ],
       "staerken": ["…", "…"],
       "schwaechen": ["…", "…"],
-      "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"], "aufbau": ["…"]},
+      "inhalt": {"gut": ["…"], "schlecht": ["Fehlt: … (Absatz 4)", "…"]},
+      "aufbau": {"gut": ["…"], "schlecht": ["…"]},
       "sprache": "Ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich?",
       "naechstesMal": {
         "inhalt": ["…", "…"],
         "sprache": ["…", "…"]
       },
-      "kommentare": ["Kommentar ① zum korrigierten Text", "Kommentar ②"]
+      "kommentare": ["Erklärung zur Korrektur mit n=\"1\"", "Erklärung zu n=\"2\""]
     }
   ]
 }
@@ -157,7 +158,7 @@ Regeln für das JSON:
 - **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 0 bis 5 (5 sehr sicher, 4 sicher, 3 solide, 2 ausbaufähig, 1 lückenhaft, 0 Baustelle), Maßstab in `kriterien/niveau.md`.
-- **inhalt:** pro Liste höchstens zwei Punkte, je ein kurzer Satz. `aufbau` gehört mit hinein.
+- **inhalt** und **aufbau:** je `gut` (gelungen) und `schlecht` (zu verbessern), höchstens zwei, drei Punkte pro Liste, je ein kurzer Satz. Ein Punkt in `schlecht` darf mit *Fehlt:*, *Falsch:* oder *Überflüssig:* beginnen, mit Stelle im Ausgangstext.
 - **naechstesMal:** `inhalt` (Inhalt und Aufbau) und `sprache` mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
@@ -178,8 +179,8 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 | Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
 - **Alle** Sprachfehler stehen hier, eine Fehlerliste gibt es nicht. Korrekturzeichen wie in SKILL.md, klein geschrieben, mehrere mit Leerzeichen: `z="gr voc"`. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
-- Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`.
-- `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich aus Zeichen und Verbesserung nicht von selbst erklären (z. B. Zeitform, False Friend, Satzbau), bei Wiederholung nur das erste Vorkommen.
+- Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`. Auf dem Bildschirm steht dann `→ i`.
+- `n` ist die Position in der Liste `kommentare`. Jede Korrektur mit `n` bekommt hinter dem Wort ein blaues „i“, das die Erklärung als Sprechblase zeigt (Maus darüber oder antippen). Eine Liste unter dem Text gibt es nur beim Drucken. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich aus Zeichen und Verbesserung nicht von selbst erklären (z. B. Zeitform, False Friend, Satzbau), bei Wiederholung nur das erste Vorkommen.
 - Im Template: `<` im Schülertext als `&lt;`, `&` als `&amp;`, Anführungszeichen in `v` als `&quot;`.
 
 Beispiel für eine Teilaufgabe:
@@ -306,6 +307,23 @@ Beispiel für eine Teilaufgabe:
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
   ol.kommentare li::marker { color: var(--rot); font-weight: 700; }
+  /* Erklärungen im Text */
+  .info-wrap { position: relative; display: inline-block; line-height: 1; }
+  .korr.mit-info { cursor: pointer; }
+  .info { display: inline-grid; place-items: center; width: 19px; height: 19px; margin: 0 2px 0 3px; padding: 0; border: 0; border-radius: 50%; background: var(--akzent); color: #fff; font: italic 700 12px/1 Georgia, serif; vertical-align: 3px; cursor: pointer; box-shadow: 0 0 0 3px var(--akzent-hell); }
+  .info:hover, .korr.offen .info { filter: brightness(1.15); }
+  .info:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .blase { display: none; position: absolute; top: calc(100% + 6px); left: -8px; z-index: 5; width: max-content; max-width: 300px; background: var(--ink); color: #fff; font: 400 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; padding: 9px 12px; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.18); white-space: normal; text-align: left; }
+  .blase i { color: #fff; }
+  .korr.offen .blase { display: block; }
+  @media (hover: hover) { .korr.mit-info:hover .blase { display: block; } }
+  .info-hinweis { font-size: 14px; color: var(--ink-2); margin: 0 0 10px; }
+  .info-hinweis .info { cursor: default; }
+  @media screen { .nur-druck { display: none !important; } }
+  /* Inhalt und Aufbau */
+  .block-titel { margin: 18px 0 0; font-size: 15px; }
+  .sw.kompakt { margin-top: 8px; }
+  .sw.kompakt li { font-size: 15px; }
   footer { font-size: 13px; color: var(--ink-3); text-align: center; margin-top: 8px; }
   footer p { margin: 4px 0; }
   .fehler-daten { background: var(--rot-hell); color: var(--rot); padding: 16px; border-radius: 12px; }
@@ -320,6 +338,7 @@ Beispiel für eine Teilaufgabe:
     body { background: #fff; } nav.sprung { display: none; }
     section.aufgabe { box-shadow: none; break-inside: auto; border: 0; padding: 0; }
     .karte, .blatt, ol.schritte li { break-inside: avoid; }
+    .info, .blase, .info-hinweis, .nur-bild { display: none !important; }
   }
 </style>
 </head>
@@ -432,25 +451,42 @@ Beispiel für eine Teilaufgabe:
         else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
         else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
         else { s.innerHTML = "<ruby><del></del><rt></rt></ruby>"; s.querySelector("del").innerHTML = orig; }
-        s.querySelector("rt").textContent = v;
-        var r = el("span", "rand"); r.textContent = z + (n ? " " + (KREIS[+n - 1] || "(" + n + ")") : ""); s.appendChild(r);
+        var nr = n ? (KREIS[+n - 1] || "(" + n + ")") : "", text = n && a.kommentare ? a.kommentare[+n - 1] : "";
+        var rt = s.querySelector("rt"); rt.textContent = v;
+        if (text && /[①-⑳]|\(\d+\)/.test(v)) { rt.textContent = ""; rt.appendChild(el("span", "nur-bild", "")).textContent = v.replace(/[①-⑳]|\(\d+\)/g, "i"); rt.appendChild(el("span", "nur-druck", "")).textContent = v; }
+        if (text) {
+          var id = "erkl-" + idx + "-" + n, b = el("button", "info", "i"); b.type = "button";
+          b.setAttribute("aria-expanded", "false"); b.setAttribute("aria-describedby", id); b.setAttribute("aria-label", "Erklärung anzeigen");
+          var bl = el("span", "blase", text); bl.id = id; bl.setAttribute("role", "tooltip");
+          var w = el("span", "info-wrap"); w.appendChild(b); w.appendChild(bl); s.appendChild(w); s.classList.add("mit-info");
+        }
+        var r = el("span", "rand"); r.innerHTML = z + (nr ? ' <span class="rn nur-druck">' + nr + "</span>" : ""); s.appendChild(r);
         k.replaceWith(s);
       });
+      if (blatt.querySelector(".info")) { var hw = el("p", "info-hinweis"); hw.innerHTML = 'Hinter manchen Korrekturen steht ein blaues <span class="info" aria-hidden="true">i</span>. Fahr mit der Maus darüber oder tipp darauf, dann erscheint eine Erklärung.'; sec.appendChild(hw); }
       sec.appendChild(blatt);
-      if (a.kommentare && a.kommentare.length) { sec.appendChild(el("h3", null, "Kommentare")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); sec.appendChild(ok); }
+      if (a.kommentare && a.kommentare.length) { var dk = el("div", "nur-druck"); dk.appendChild(el("h3", null, "Erklärungen")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); dk.appendChild(ok); sec.appendChild(dk); }
     }
 
-    // 2 Aufgabe, Inhalt und Aufbau
-    sec.appendChild(h2(2, "Aufgabe, Inhalt und Aufbau"));
-    var inh = a.inhalt || {};
-    if (a.aufbau && a.aufbau.length && !inh.aufbau) inh.aufbau = a.aufbau;
-    [["gut", "l-gut", "Gelungen"], ["fehlt", "l-fehlt", "Fehlt"], ["falsch", "l-falsch", "Falsch wiedergegeben"], ["ueberfluessig", "l-ueber", "Überflüssig"], ["aufbau", "l-aufbau", "Aufbau"]].forEach(function (t) {
-      if (inh[t[0]] && inh[t[0]].length) { var gr = el("div", "gruppe"); gr.appendChild(el("span", "label " + t[1], t[2])); gr.appendChild(liste(inh[t[0]])); sec.appendChild(gr); }
+    // 2 Inhalt und Aufbau
+    sec.appendChild(h2(2, "Inhalt und Aufbau"));
+    var inh = a.inhalt || {}, auf = a.aufbau || {};
+    if (Array.isArray(auf)) auf = { schlecht: auf };
+    if (Array.isArray(inh.aufbau)) auf = { gut: auf.gut || [], schlecht: (auf.schlecht || []).concat(inh.aufbau) };
+    var inhS = (inh.schlecht || []).slice();
+    [["fehlt", "Fehlt: "], ["falsch", "Falsch: "], ["ueberfluessig", "Überflüssig: "]].forEach(function (t) { (inh[t[0]] || []).forEach(function (x) { inhS.push(t[1] + x); }); });
+    [["Inhalt", inh.gut || [], inhS], ["Aufbau", auf.gut || [], auf.schlecht || []]].forEach(function (b) {
+      if (!b[1].length && !b[2].length) return;
+      sec.appendChild(el("h3", "block-titel", b[0]));
+      var g = el("div", "sw kompakt");
+      if (b[1].length) { var kg = el("div", "karte staerken"); kg.appendChild(el("h3", null, "Gelungen")); kg.appendChild(liste(b[1])); g.appendChild(kg); }
+      if (b[2].length) { var kz = el("div", "karte schwaechen"); kz.appendChild(el("h3", null, "Zu verbessern")); kz.appendChild(liste(b[2])); g.appendChild(kz); }
+      sec.appendChild(g);
     });
     naechstes(nm.inhalt);
 
     // 3 Sprachliche Rückmeldung
-    sec.appendChild(h2(3, "Sprachliche Rückmeldung"));
+    sec.appendChild(h2(3, "Sprache"));
     if (a.sprache) sec.appendChild(el("p", "sprache-text", a.sprache));
     naechstes(nm.sprache);
 
@@ -460,11 +496,34 @@ Beispiel für eine Teilaufgabe:
   function rand() {
     document.querySelectorAll(".blatt").forEach(function (blatt) {
       var prev = null;
-      blatt.querySelectorAll(".rand").forEach(function (r) { r.style.display = ""; if (r.dataset.t) r.textContent = r.dataset.t; else r.dataset.t = r.textContent; });
-      blatt.querySelectorAll(".rand").forEach(function (r) { if (prev && Math.abs(r.offsetTop - prev.offsetTop) < 8) { prev.textContent += " " + r.textContent; r.style.display = "none"; } else prev = r; });
+      blatt.querySelectorAll(".rand").forEach(function (r) { r.style.display = ""; if (r.dataset.t) r.innerHTML = r.dataset.t; else r.dataset.t = r.innerHTML; });
+      blatt.querySelectorAll(".rand").forEach(function (r) { if (prev && Math.abs(r.offsetTop - prev.offsetTop) < 8) { prev.innerHTML += " " + r.innerHTML; r.style.display = "none"; } else prev = r; });
     });
   }
   rand(); window.addEventListener("resize", rand);
+  if (window.matchMedia) window.matchMedia("print").addListener(rand);
+
+  // Erklärungen: Hover (Maus) oder Tippen (Tablet)
+  function platz(k) {
+    var bl = k.querySelector(".blase"), blatt = k.closest(".blatt"); if (!bl || !blatt) return;
+    bl.style.left = "-8px";
+    var rb = blatt.getBoundingClientRect(), r = bl.getBoundingClientRect(), rechts = rb.right - 16, links = rb.left + 12;
+    var dx = 0; if (r.right > rechts) dx = rechts - r.right; if (r.left + dx < links) dx = links - r.left;
+    bl.style.left = (dx - 8) + "px";
+  }
+  function zu(ausser) { document.querySelectorAll(".korr.offen").forEach(function (k) { if (k !== ausser) { k.classList.remove("offen"); k.querySelector(".info").setAttribute("aria-expanded", "false"); } }); }
+  document.querySelectorAll(".korr.mit-info").forEach(function (k) {
+    var b = k.querySelector(".info");
+    k.addEventListener("mouseenter", function () { platz(k); });
+    k.addEventListener("click", function (e) {
+      e.stopPropagation(); zu(k);
+      var auf = !k.classList.contains("offen"); k.classList.toggle("offen", auf); b.setAttribute("aria-expanded", auf ? "true" : "false");
+      if (auf) platz(k);
+    });
+    b.addEventListener("focus", function () { platz(k); });
+  });
+  document.addEventListener("click", function () { zu(null); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") zu(null); });
 })();
 </script>
 </body>
@@ -477,9 +536,9 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **Maßstab** als erste Zeile: *Maßstab: Q13 · eA · Ziel C1*
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als fünf Punkte: ●●●●● sehr sicher, ●●●●○ sicher, ●●●○○ solide, ●●○○○ ausbaufähig, ●○○○○ lückenhaft, ○○○○○ Baustelle.
 - **Stärken** mit ✓, **Schwächen** mit !
-- **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit Liste darunter. Absätze bleiben erhalten.
-- **2. Aufgabe, Inhalt und Aufbau** mit *Darauf achtest du beim nächsten Mal*
-- **3. Sprachliche Rückmeldung** mit *Darauf achtest du beim nächsten Mal*
+- **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Erklärung `⟨voc ①⟩` mit Liste „Erklärungen“ darunter. Absätze bleiben erhalten.
+- **2. Inhalt und Aufbau:** *Inhalt* und *Aufbau* je mit ✓ gelungen und ! zu verbessern, dann *Darauf achtest du beim nächsten Mal*
+- **3. Sprache** mit *Darauf achtest du beim nächsten Mal*
 
 
 ============================================================

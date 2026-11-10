@@ -62,6 +62,7 @@ Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 >
 > The author also ~~tell~~ **points out** ⟨gr voc ⑤⟩ that public transport is almost non-existent and there are ~~less~~ **fewer** ⟨voc ⑥⟩ cultural events. ~~But~~ **However,** ⟨reg⟩ the mayor is very optimistic and I think she is right because young people _make the towns better_ (revitalize) ⟨~⟩.
 
+*Erklärungen* (im Bericht zum Antippen am blauen i)
 - ① „Es geht um“ ist ein Germanismus. Im Englischen ist der Text das Subjekt: *The article deals with / focuses on …*
 - ② Im outline schreibst du im simple present.
 - ③ Fast wörtlich übernommen. Eigene Formulierung, z. B.: *living in a small town is much cheaper than living in a city*.
@@ -69,17 +70,22 @@ Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 - ⑤ Zwei Fehler: 3rd-person -s fehlt, und *tell* braucht ein Objekt. Hier passt *point out*.
 - ⑥ Bei zählbaren Nomen im Plural steht *fewer*, bei nicht zählbaren *less* (*less money*).
 
-**2. Aufgabe, Inhalt und Aufbau**
-- **Gelungen:** Wohnkosten (Absatz 2) und Arbeit von zu Hause dank schnellem Internet (Absatz 3) sind richtig erkannt.
-- **Fehlt:** der dritte Grund aus Absatz 4, der Wunsch nach Gemeinschaft.
-- **Überflüssig:** Erster und letzter Absatz (Abwanderung früher, Nachteile, Bürgermeisterin, eigene Meinung) beantworten die Frage nicht. Dazu Details wie 40 percent, Seattle und die Namen.
-- **Aufbau:** Du erzählst den Text mit *First … Then …* der Reihe nach nach. Gliedere besser nach den drei Gründen, verbunden mit *furthermore, in addition*.
+**2. Inhalt und Aufbau**
+
+*Inhalt*
+- ✓ Wohnkosten (Absatz 2) und Arbeit von zu Hause dank schnellem Internet (Absatz 3) sind richtig erkannt.
+- ! Fehlt: der dritte Grund aus Absatz 4, der Wunsch nach Gemeinschaft.
+- ! Überflüssig: erster und letzter Absatz (Abwanderung früher, Nachteile, eigene Meinung) sowie Details wie 40 percent und die Namen.
+
+*Aufbau*
+- ✓ Jeder Grund steht in einem eigenen Satz und ist klar erkennbar.
+- ! Du erzählst den Text mit *First … Then …* der Reihe nach nach. Gliedere besser nach den drei Gründen, verbunden mit *furthermore, in addition*.
 
 *Darauf achtest du beim nächsten Mal*
 1. Lies die Aufgabe genau und schreib nur über den gefragten Aspekt – hier die Gründe.
 2. Gliedere nach den Gründen und lass Zahlen, Namen und deine Meinung weg.
 
-**3. Sprachliche Rückmeldung**
+**3. Sprache**
 
 Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd-person -s, außerdem fehlen oft Kommas, und zwei Stellen sind abgeschrieben.
 
@@ -87,4 +93,4 @@ Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd
 1. Schreib im simple present und denk an das 3rd-person -s (*the author points out, the town has*).
 2. Formuliere in eigenen Worten statt abzuschreiben, direkte Rede gibst du indirekt wieder.
 
-Der ganze Bericht als gestaltete Seite: [`outline-beispiel-bericht.html`](outline-beispiel-bericht.html). Inhaltliche Mängel (z. B. die eigene Meinung am Ende) bleiben im korrigierten Text stehen, weil er nur sprachlich korrigiert wird. Sie sind unter „Aufgabe, Inhalt und Aufbau“ benannt.
+Der ganze Bericht als gestaltete Seite: [`outline-beispiel-bericht.html`](outline-beispiel-bericht.html). Inhaltliche Mängel (z. B. die eigene Meinung am Ende) bleiben im korrigierten Text stehen, weil er nur sprachlich korrigiert wird. Sie sind unter „Inhalt und Aufbau“ benannt.

@@ -46,11 +46,11 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen in dieser Reihenfolge, bei m
 
 **Stärken und Schwächen** – zwei bis drei Stärken, zwei bis drei Schwächen, jeweils kurz.
 
-**1. Dein korrigierter Text** – der ganze Schülertext, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Eine eigene Fehlerliste gibt es nicht. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären, bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
+**1. Dein korrigierter Text** – der ganze Schülertext, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Erklärungen zum Antippen oder Überfahren. Eine eigene Fehlerliste gibt es nicht. Eine kurze Erklärung mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären, bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
 
-**2. Aufgabe, Inhalt und Aufbau** – kurz und auf den Punkt: Was ist **gelungen**, was **fehlt** (mit Stelle im Ausgangstext), was ist **falsch**, was **überflüssig**, was ist am **Aufbau** zu verbessern? Je höchstens zwei Angaben, je ein Satz. Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
+**2. Inhalt und Aufbau** – getrennt nach **Inhalt** und **Aufbau**, jeweils **gelungen** und **zu verbessern**, kurz und auf den Punkt (was fehlt, falsch oder überflüssig ist, mit Stelle im Ausgangstext). Höchstens zwei, drei Punkte pro Liste, je ein Satz. Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
-**3. Sprachliche Rückmeldung** – ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich? Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
+**3. Sprache** – ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich? Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
 ### Ausgabe
 
