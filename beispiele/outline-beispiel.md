@@ -87,7 +87,7 @@ Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 
 **3. Sprache**
 
-Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd-person -s, außerdem fehlen oft Kommas, und zwei Stellen sind abgeschrieben.
+Deine Sätze sind gut verständlich. Es häufen sich Fehler bei Zeitform und 3rd-person -s, außerdem fehlen oft Kommas, und zwei Stellen sind abgeschrieben. Zu den Kommas hilft dir das [Merkblatt Kommasetzung](https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Commas_Merkblatt.pdf).
 
 *Darauf achtest du beim nächsten Mal*
 1. Schreib im simple present und denk an das 3rd-person -s (*the author points out, the town has*).

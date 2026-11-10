@@ -73,5 +73,5 @@ Beide werden nach dieser Checkliste korrigiert, mit diesen Unterschieden:
 
 ## Merkblatt für Schülerinnen und Schüler
 
-Zu diesen Operatoren gibt es ein Merkblatt mit Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen und Musterlösung (`merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf` im Repository). Verweise im Feedback darauf, wenn das Vorgehen grundlegend nicht stimmt.
+Zu diesen Operatoren gibt es ein Merkblatt mit Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen und Musterlösung (https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf). Verlinke es unter „Inhalt und Aufbau“, wenn das Vorgehen grundlegend nicht stimmt.
 

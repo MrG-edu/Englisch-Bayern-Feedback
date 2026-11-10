@@ -50,7 +50,7 @@ Regeln für das JSON:
 - **inhalt** und **aufbau:** je `gut` (gelungen) und `schlecht` (zu verbessern), höchstens zwei, drei Punkte pro Liste, je ein kurzer Satz. Ein Punkt in `schlecht` darf mit *Fehlt:*, *Falsch:* oder *Überflüssig:* beginnen, mit Stelle im Ausgangstext.
 - **naechstesMal:** `inhalt` (Inhalt und Aufbau) und `sprache` mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
-- Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
+- Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt. Links auf ein Merkblatt als `<a href=\"URL\" target=\"_blank\">Merkblatt Kommasetzung</a>`, z. B. als letzter Satz von `sprache` oder als Punkt in `naechstesMal`. Sonst kein HTML.
 
 ### Der korrigierte Text
 
@@ -162,6 +162,7 @@ Beispiel für eine Teilaufgabe:
   .l-nm { background: var(--akzent-hell); color: var(--akzent); margin: 6px 0 8px; }
   .l-aufbau { background: var(--akzent-hell); color: var(--akzent); }
   .sprache-text { margin: 0 0 14px; }
+  section.aufgabe main a, .sprache-text a, ol.schritte a, .sw a { color: var(--akzent); font-weight: 600; text-underline-offset: 2px; }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -428,3 +429,4 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Erklärung `⟨voc ①⟩` mit Liste „Erklärungen“ darunter. Absätze bleiben erhalten.
 - **2. Inhalt und Aufbau:** *Inhalt* und *Aufbau* je mit ✓ gelungen und ! zu verbessern, dann *Darauf achtest du beim nächsten Mal*
 - **3. Sprache** mit *Darauf achtest du beim nächsten Mal*
+- Merkblätter als Markdown-Link: `[Merkblatt Kommasetzung](URL)`

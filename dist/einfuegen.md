@@ -161,7 +161,7 @@ Regeln für das JSON:
 - **inhalt** und **aufbau:** je `gut` (gelungen) und `schlecht` (zu verbessern), höchstens zwei, drei Punkte pro Liste, je ein kurzer Satz. Ein Punkt in `schlecht` darf mit *Fehlt:*, *Falsch:* oder *Überflüssig:* beginnen, mit Stelle im Ausgangstext.
 - **naechstesMal:** `inhalt` (Inhalt und Aufbau) und `sprache` mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
-- Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
+- Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt. Links auf ein Merkblatt als `<a href=\"URL\" target=\"_blank\">Merkblatt Kommasetzung</a>`, z. B. als letzter Satz von `sprache` oder als Punkt in `naechstesMal`. Sonst kein HTML.
 
 ### Der korrigierte Text
 
@@ -273,6 +273,7 @@ Beispiel für eine Teilaufgabe:
   .l-nm { background: var(--akzent-hell); color: var(--akzent); margin: 6px 0 8px; }
   .l-aufbau { background: var(--akzent-hell); color: var(--akzent); }
   .sprache-text { margin: 0 0 14px; }
+  section.aufgabe main a, .sprache-text a, ol.schritte a, .sw a { color: var(--akzent); font-weight: 600; text-underline-offset: 2px; }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -539,6 +540,7 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Erklärung `⟨voc ①⟩` mit Liste „Erklärungen“ darunter. Absätze bleiben erhalten.
 - **2. Inhalt und Aufbau:** *Inhalt* und *Aufbau* je mit ✓ gelungen und ! zu verbessern, dann *Darauf achtest du beim nächsten Mal*
 - **3. Sprache** mit *Darauf achtest du beim nächsten Mal*
+- Merkblätter als Markdown-Link: `[Merkblatt Kommasetzung](URL)`
 
 
 ============================================================
@@ -692,7 +694,7 @@ Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und f
 - *the society*, *the nature* (meist ohne Artikel)
 - False friends: *become* (bekommen), *eventually* (eventuell), *actual* (aktuell), *sensible* (sensibel), *control* (kontrollieren im Sinne von überprüfen)
 - *make* / *do*, *say* / *tell*, *rise* / *raise*, *lie* / *lay*
-- Kommas nach deutscher Regel: vor *that*, vor *to*, um notwendige Relativsätze, vor *because* nach dem Hauptsatz; dafür fehlt das Komma nach Einleitungen (*However,* *In the article,*). Bei vielen Kommafehlern (p) auf das Merkblatt `merkblaetter/Commas_Merkblatt.pdf` im Repo hinweisen.
+- Kommas nach deutscher Regel: vor *that*, vor *to*, um notwendige Relativsätze, vor *because* nach dem Hauptsatz; dafür fehlt das Komma nach Einleitungen (*However,* *In the article,*). Häufen sich Kommafehler (p, etwa ab drei), verlinke unter „Sprache“ das Merkblatt Kommasetzung: https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Commas_Merkblatt.pdf
 - Wortstellung: Adverb zwischen Verb und Objekt (*He reads often books*)
 - Wörtliche Übersetzungen: *In the text it says …*, *The author describes about …*, *It gives many problems.*
 - Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *gonna*
@@ -900,7 +902,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 
 ## Merkblatt für Schülerinnen und Schüler
 
-Zum Operator gibt es ein Merkblatt mit Aufbau, Formulierungshilfen und Musteraufsatz (`merkblaetter/Discuss_Merkblatt.pdf` im Repository). Verweise im Feedback darauf, wenn der Aufbau grundlegend nicht stimmt.
+Zum Operator gibt es ein Merkblatt mit Aufbau, Formulierungshilfen und Musteraufsatz (https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Discuss_Merkblatt.pdf). Verlinke es unter „Inhalt und Aufbau“, wenn der Aufbau grundlegend nicht stimmt.
 
 
 ============================================================
@@ -982,4 +984,4 @@ Beide werden nach dieser Checkliste korrigiert, mit diesen Unterschieden:
 
 ## Merkblatt für Schülerinnen und Schüler
 
-Zu diesen Operatoren gibt es ein Merkblatt mit Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen und Musterlösung (`merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf` im Repository). Verweise im Feedback darauf, wenn das Vorgehen grundlegend nicht stimmt.
+Zu diesen Operatoren gibt es ein Merkblatt mit Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen und Musterlösung (https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf). Verlinke es unter „Inhalt und Aufbau“, wenn das Vorgehen grundlegend nicht stimmt.
