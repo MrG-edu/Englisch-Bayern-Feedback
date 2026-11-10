@@ -29,6 +29,8 @@ Füge immer **alle drei Teile** ein:
 2. den Ausgangstext (bei Bildern oder Statistiken eine kurze Beschreibung),
 3. deinen eigenen Text.
 
+Gib am besten auch deine **Jahrgangsstufe** und **gA oder eA** an (z. B. „Q13 eA“). Dann misst der Skill dein Profil und seine Vorschläge am Sprachniveau, das für dich gilt (B2 bis C1). Ohne Angabe nimmt er den Abiturmaßstab.
+
 Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
 ## Welche Operatoren schon fertig sind
@@ -84,7 +86,7 @@ skill/englisch-bayern-feedback/
 ├── SKILL.md                 Hauptanweisungen (unter 8000 Zeichen)
 └── references/
     ├── operators/           eine Datei pro Operator
-    ├── kriterien/           Kriterien für Inhalt und Sprache
+    ├── kriterien/           Kriterien für Inhalt, Sprache und Zielniveau (GER)
     └── bericht.md           Vorlage für den Bericht als HTML-Seite
 beispiele/                   erfundene Beispieltexte mit Musterfeedback
 dist/                        fertige Dateien zum Herunterladen
@@ -97,6 +99,9 @@ Nach Änderungen im Ordner `skill/` einmal `python3 build.py` ausführen.
 
 - IQB: *Gemeinsame Abituraufgabenpools der Länder – Englisch, Grundstock von Operatoren* (gilt ab Prüfungsjahr 2027)
 - ISB Bayern: Bewertungsraster Profil- und Leistungsstufe / Abiturprüfung, Moderne Fremdsprachen (Stand Juni 2024)
+- ISB Bayern: Bewertungsraster Schreiben Englisch, Jahrgangsstufe 11 (B1+/B2)
+- ISB Bayern: *Gemeinsamer Europäischer Referenzrahmen (GER): Niveaustufen*, Ergänzende Informationen zum LehrplanPLUS Gymnasium (Stand Juli 2026)
+- Europarat: *Gemeinsamer Europäischer Referenzrahmen für Sprachen*, Kannbeschreibungen Schreiben
 - StMUK: *Schriftliche Prüfungsformen im Unterricht der modernen Fremdsprachen in der Profil- und Leistungsstufe und der Abiturprüfung* (12.06.2023)
 
 Die Kriterien sind in eigenen Worten zusammengefasst. Maßgeblich sind die offiziellen Dokumente beim [ISB](https://www.isb.bayern.de) und im [LehrplanPLUS](https://www.lehrplanplus.bayern.de).

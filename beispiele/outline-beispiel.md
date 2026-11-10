@@ -32,6 +32,8 @@ Alle Texte sind frei erfunden und dienen nur zur Veranschaulichung.
 
 ## Korrektur, wie der Skill sie geben würde
 
+*Maßstab: Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)*
+
 **Gesamteindruck**
 Du hast den Text grundsätzlich verstanden, und die beiden Gründe, die du nennst, sind richtig. Die größte Schwäche: Ein Drittel deines Textes beantwortet nicht die Frage nach den Gründen, und ein wichtiger Grund fehlt. Sprachlich fallen vor allem die Zeitform, das fehlende 3rd-person -s und Stellen auf, die du aus dem Text abgeschrieben hast.
 

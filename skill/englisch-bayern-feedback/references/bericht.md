@@ -14,6 +14,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
 
 ```json
 {
+  "massstab": "Q13 · eA · Ziel C1",
   "aufgaben": [
     {
       "nummer": "B.1",
@@ -44,6 +45,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
 ```
 
 Regeln für das JSON:
+- **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
 - **Korrekturzeichen** wie in SKILL.md, klein geschrieben. Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
@@ -104,6 +106,7 @@ Beispiel für eine Teilaufgabe:
   .kicker { font-size: 13px; letter-spacing: .02em; color: var(--ink-3); margin: 0 0 6px; }
   h1 { font-size: 30px; line-height: 1.15; margin: 0 0 10px; letter-spacing: -.01em; }
   .hinweis { font-size: 14px; color: var(--ink-2); margin: 0; }
+  .massstab { display: inline-block; font-size: 13px; font-weight: 600; color: var(--ink-2); background: var(--blatt); border: 1px solid var(--linie); border-radius: 999px; padding: 3px 12px; margin: 0 0 10px; }
   nav.sprung { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
   nav.sprung a { font-size: 14px; text-decoration: none; color: var(--ink); background: var(--blatt); border: 1px solid var(--linie); border-radius: 999px; padding: 5px 12px; }
   section.aufgabe { background: var(--blatt); border: 1px solid var(--linie); border-radius: var(--radius); padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 2px rgba(40,30,10,.04); }
@@ -232,6 +235,7 @@ Beispiel für eine Teilaufgabe:
   <header class="kopf">
     <p class="kicker">Englisch · Oberstufe · Rückmeldung</p>
     <h1>Rückmeldung zu deinem Text</h1>
+    <p class="massstab" id="massstab" hidden></p>
     <p class="hinweis">Keine Note – die Bewertung macht deine Lehrkraft. KI-Feedback kann sich irren.</p>
     <nav class="sprung" id="sprung"></nav>
   </header>
@@ -286,6 +290,7 @@ Beispiel für eine Teilaufgabe:
   var daten;
   try { daten = JSON.parse(document.getElementById("daten").textContent); }
   catch (e) { main.appendChild(el("div", "fehler-daten", "Die Daten dieses Berichts konnten nicht gelesen werden. Bitte die Korrektur noch einmal anfordern.")); return; }
+  if (daten.massstab) { var ms = document.getElementById("massstab"); ms.textContent = "Maßstab: " + daten.massstab; ms.hidden = false; }
 
   (daten.aufgaben || []).forEach(function (a, i) {
     var idx = i + 1, sec = el("section", "aufgabe"); sec.id = "aufgabe-" + idx;
@@ -397,6 +402,7 @@ Beispiel für eine Teilaufgabe:
 ## Ohne HTML
 
 Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Markdown aus, in derselben Reihenfolge:
+- **Maßstab** als erste Zeile: *Maßstab: Q13 · eA · Ziel C1*
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
 - **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
 - **Stärken** mit ✓, **Schwächen** mit !

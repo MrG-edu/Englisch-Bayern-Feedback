@@ -20,6 +20,7 @@
   .kicker { font-size: 13px; letter-spacing: .02em; color: var(--ink-3); margin: 0 0 6px; }
   h1 { font-size: 30px; line-height: 1.15; margin: 0 0 10px; letter-spacing: -.01em; }
   .hinweis { font-size: 14px; color: var(--ink-2); margin: 0; }
+  .massstab { display: inline-block; font-size: 13px; font-weight: 600; color: var(--ink-2); background: var(--blatt); border: 1px solid var(--linie); border-radius: 999px; padding: 3px 12px; margin: 0 0 10px; }
   nav.sprung { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
   nav.sprung a { font-size: 14px; text-decoration: none; color: var(--ink); background: var(--blatt); border: 1px solid var(--linie); border-radius: 999px; padding: 5px 12px; }
   section.aufgabe { background: var(--blatt); border: 1px solid var(--linie); border-radius: var(--radius); padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 2px rgba(40,30,10,.04); }
@@ -148,6 +149,7 @@
   <header class="kopf">
     <p class="kicker">Englisch · Oberstufe · Rückmeldung</p>
     <h1>Rückmeldung zu deinem Text</h1>
+    <p class="massstab" id="massstab" hidden></p>
     <p class="hinweis">Keine Note – die Bewertung macht deine Lehrkraft. KI-Feedback kann sich irren.</p>
     <nav class="sprung" id="sprung"></nav>
   </header>
@@ -160,6 +162,7 @@
 <!-- DATEN: hier das JSON einsetzen -->
 <script type="application/json" id="daten">
 {
+ "massstab": "Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)",
  "aufgaben": [
   {
    "nummer": "B.1",
@@ -377,6 +380,7 @@
   var daten;
   try { daten = JSON.parse(document.getElementById("daten").textContent); }
   catch (e) { main.appendChild(el("div", "fehler-daten", "Die Daten dieses Berichts konnten nicht gelesen werden. Bitte die Korrektur noch einmal anfordern.")); return; }
+  if (daten.massstab) { var ms = document.getElementById("massstab"); ms.textContent = "Maßstab: " + daten.massstab; ms.hidden = false; }
 
   (daten.aufgaben || []).forEach(function (a, i) {
     var idx = i + 1, sec = el("section", "aufgabe"); sec.id = "aufgabe-" + idx;
