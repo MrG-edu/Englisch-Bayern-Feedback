@@ -1,6 +1,6 @@
 # Operator: analyze / examine
 
-Die beiden Operatoren verlangen dasselbe und werden gleich korrigiert.
+Die beiden Operatoren verlangen dasselbe und werden gleich korrigiert. *analyse* (britisch) und *analyze* (amerikanisch) sind beide richtig.
 
 ## Definition
 
@@ -8,7 +8,12 @@ Die beiden Operatoren verlangen dasselbe und werden gleich korrigiert.
 
 Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock von Operatoren, Kompetenzbereich Schreiben (gilt ab Prüfungsjahr 2027).
 
-**Einordnung:** Anforderungsbereich II (Textanalyse), meist Teilaufgabe **B.2**. Typische Aufgaben:
+**Einordnung:** Anforderungsbereich II (Textanalyse), meist Teilaufgabe **B.2**. Typische Aufgaben (Abitur 2026):
+- *Analyse the various reasons for the success of Silent Book Clubs. Focus on communicative strategies and use of language.* (gA)
+- *Analyse how Lara perceives the various facets of Tom Lake and its surroundings. Focus on use of language.* (gA)
+- *Analyse the interaction between Gabriel's parents and Beth, taking into account its effects on the young woman. Focus on narrative situation as well as use of language.* (eA)
+
+Weitere Muster:
 - *Examine how the author conveys her attitude towards … Focus on structure and use of language.*
 - *Analyze the way the protagonist is characterized. Focus on narrative techniques and use of language.*
 - *Analyze how the author's opinion on … is conveyed. Focus on use of language and communicative strategies as well as the function of the photo.*
@@ -23,7 +28,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 ### Inhalt
 1. **Fragestellung beantwortet.** Der Text erklärt, **wie** der in der Aufgabe genannte Aspekt (Haltung des Autors, Charakterisierung, Atmosphäre …) vermittelt wird. Er beantwortet nicht eine andere Frage und erzählt nicht den Inhalt nach.
 2. **Alle Schwerpunkte bearbeitet.** Jeder Bereich hinter *Focus on …* kommt vor, z. B. *structure*, *use of language*, *narrative techniques*, *communicative strategies*, *the function of the photo/cartoon*. Fehlt einer, ist die Aufgabe nur teilweise erfüllt.
-3. **Drei Schritte pro Beobachtung:** Mittel benennen → mit Zitat oder Zeilenangabe belegen → **Wirkung bzw. Funktion** erklären und auf die Fragestellung beziehen. Der häufigste Fehler ist das bloße Aufzählen von Stilmitteln ohne Wirkung.
+3. **Point – evidence – effect** (so heißt es auch im Merkblatt): Mittel benennen (*point*) → mit Zitat oder Zeilenangabe belegen (*evidence*) → **Wirkung bzw. Funktion** erklären und auf die Fragestellung beziehen (*effect*). Der häufigste Fehler ist das bloße Aufzählen von Stilmitteln ohne Wirkung.
 4. **Richtig erkannt und benannt.** Fachbegriffe passen zum Beleg (nicht jede Wiederholung ist eine Anapher, nicht jeder Vergleich eine Metapher).
 5. **Textbezug und Plausibilität.** Die Deutung ergibt sich aus dem Text, nicht aus Vermutungen oder Weltwissen. Keine Überinterpretation.
 6. **Auswahl und Tiefe.** Die wichtigsten Mittel genau erklärt ist besser als viele Mittel oberflächlich aufgezählt.
@@ -32,7 +37,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 
 ### Aufbau
 9. **Einleitung nicht nötig.** Fehlt sie, ist das kein Fehler. Steht eine da, prüfst du, ob sie zur Fragestellung passt und keine ausführliche Inhaltsangabe ist. Gut gelungen ist sie, wenn sie die Antwort kurz vorwegnimmt (*The author conveys her critical attitude mainly through ironic word choice and a contrastive structure.*).
-10. **Hauptteil nach Gesichtspunkten gegliedert**, z. B. nach den Schwerpunkten der Aufgabe oder nach Funktionen. Nicht Zeile für Zeile durch den Text. Jeder Absatz beginnt mit einem Satz, der sagt, worum es geht (*topic sentence*).
+10. **Hauptteil nach Gesichtspunkten gegliedert**, z. B. nach den Schwerpunkten der Aufgabe oder nach Funktionen. Nicht Zeile für Zeile durch den Text. Jeder Absatz beginnt mit einem Satz, der sagt, worum es geht (*point*), dann folgen Belege und Wirkung.
 11. **Schluss:** knappe Zusammenführung, die die Fragestellung beantwortet. Keine neuen Beobachtungen, keine eigene Meinung.
 
 ### Sprache
@@ -53,7 +58,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Schwerpunkt fehlt | Z. B. nichts zu *structure*, obwohl verlangt | Den fehlenden Schwerpunkt nennen und ein bis zwei Merkmale aus dem Text vorschlagen, die man dazu analysieren kann (mit Zeile). |
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
-| Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | In der Sprachtabelle eine eingebettete Formulierung vorschlagen. |
+| Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | Unter „Inhalt und Aufbau“ eine eingebettete Formulierung vorschlagen, z. B. *… describes each closure as tearing “another hole” (l. 8), which …* |
 | Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Zeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
@@ -82,3 +87,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 - *The reader is thus encouraged to … / The reader is likely to …*
 - *Furthermore, the structure of the text reinforces …*
 - *All in all, the author's use of … makes his/her criticism of … very clear.*
+
+## Merkblatt für Schülerinnen und Schüler
+
+Zu den Operatoren gibt es ein Merkblatt mit point – evidence – effect, Dos and don’ts, Schritt-für-Schritt-Anleitung, Formulierungshilfen, Fachbegriffen und Musterlösung (https://github.com/MrG-edu/Englisch-Bayern-Feedback/blob/main/merkblaetter/Analyse_Examine_Merkblatt.pdf). Verlinke es unter „Inhalt und Aufbau“, wenn Wirkungen fehlen, nacherzählt wird oder der Aufbau grundlegend nicht stimmt.

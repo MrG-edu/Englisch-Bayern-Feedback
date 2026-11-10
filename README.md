@@ -47,6 +47,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 | Thema | Merkblatt |
 |---|---|
 | outline · summarize · sum up (+ point out, describe) | [Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf](merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf): Dos and don’ts, Schritt für Schritt, Formulierungshilfen, Musterlösung |
+| analyse · examine | [Analyse_Examine_Merkblatt.pdf](merkblaetter/Analyse_Examine_Merkblatt.pdf): point – evidence – effect, Schritte, Formulierungshilfen, Fachbegriffe, Musterlösung |
 | discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
 | Kommasetzung | [Commas_Merkblatt.pdf](merkblaetter/Commas_Merkblatt.pdf): drei Regeln, Unterschiede zum Deutschen, Musterabsatz, Übung mit Lösung |
 
