@@ -709,10 +709,13 @@ DATEI: references/operators/discuss.md  (discuss.md)
 
 Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock von Operatoren, Kompetenzbereich Schreiben (gilt ab Prüfungsjahr 2027).
 
-**Einordnung:** Anforderungsbereich III (persönliche Stellungnahme), meist Teilaufgabe **B.3**. Für den Inhalt gilt das Raster „Persönliche Stellungnahme; Gestaltendes Schreiben“ (`references/kriterien/inhalt.md`, Teil B). Typische Aufgaben:
-- *Using Amy's plea as a starting point, discuss the idea of devoting one's life to a cause.*
-- *Taking the article as a starting point, discuss whether the influencer phenomenon is really a "game".*
-- *Discuss whether options such as community service or a gap year should be mandatory for young people.*
+**Einordnung:** Anforderungsbereich III (persönliche Stellungnahme), meist Teilaufgabe **B.3**. Für den Inhalt gilt das Raster „Persönliche Stellungnahme; Gestaltendes Schreiben“ (`references/kriterien/inhalt.md`, Teil B).
+
+**Ausgangspunkt ist der Normalfall.** In der bayerischen Abiturprüfung 2026 hatten alle *discuss*-Aufgaben einen Ausgangspunkt, meist ein Zitat aus dem Text, einmal einen Cartoon. Auch die IQB-Beispiele und die ISB-Beispielaufgaben arbeiten so. Verbindlich ist laut KMS vom 12.06.2023 nur, dass B.3 auf den Text oder dessen Thema zurückgreift. Typische Aufgaben:
+- *"I liked the lightness of my life …" (ll. 36-37) Taking this quotation as a starting point, discuss whether flexibility and independence are the key to a happy life.* (Abitur 2026, gA)
+- *"She doesn't know, for example, about his desire to write …" (ll. 79-82) Taking this quotation as a starting point, discuss the idea of living up to your parents' expectations as a path to a fulfilled life.* (Abitur 2026, eA)
+- *Taking the message of the cartoon as a starting point, write an article in which you discuss whether cities should prioritize functionality and productivity over green spaces.* (Abitur 2026, eA, mit Textsorte)
+- *Using Amy's plea as a starting point, discuss the idea of devoting one's life to a cause.* (IQB)
 
 **Kernidee:** Argumente **beider Seiten** abwägen, jedes Argument in einem eigenen Absatz mit thesis statement, development und example darstellen, und am Ende zu einem **eigenen, begründeten Urteil** kommen.
 
@@ -739,8 +742,12 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 3. **Genau zwei Argumente pro Seite,** also genau vier Argumente im Hauptteil. Mehr oder weniger ist ein Fehler. Jedes Argument steht **unbedingt in einem eigenen Absatz**; zwei Argumente in einem Absatz sind ein Fehler.
 4. **Gewichtung plausibel:** Das erste Gegenargument ist stärker als das zweite, das letzte Argument für die eigene Meinung ist das stärkste. Ist die Reihenfolge offensichtlich vertauscht, benennst du das und sagst, welche Argumente die Plätze tauschen sollten.
 5. **Meinung im Schluss passt zur Anordnung.** Die eigene Meinung ist die Seite, deren Argumente am Ende stehen. Widerspricht das Fazit der Anordnung, ist das ein Fehler.
-6. **Einleitung:** stellt das Thema knapp vor. Verlangt die Aufgabe einen Ausgangspunkt (*Taking the article/quotation as a starting point …*), greift die Einleitung diesen auf. Keine Argumente, keine eigene Meinung.
-7. **Schluss:** eigene Meinung klar und eindeutig, kurz begründet mit Rückgriff auf die Argumente. Keine neuen Argumente.
+6. **Einleitung mit Ausgangspunkt:** Nennt die Aufgabe einen Ausgangspunkt (Zitat, Aussage, Cartoon, Foto), **muss** die Einleitung ihn aufgreifen:
+   - kurz einordnen (wer sagt es, in welchem Zusammenhang; bei Zitaten aus dem Text mit Zeilenangabe),
+   - die Kernaussage in eigenen Worten wiedergeben,
+   - zur Leitfrage der Aufgabe überleiten.
+   Der Ausgangspunkt ist ein **Sprungbrett**, kein Analysegegenstand: keine Stilmittelanalyse des Zitats, keine lange Nacherzählung. Gibt es keinen Ausgangspunkt, stellt die Einleitung das Thema knapp vor. In jedem Fall: keine Argumente, keine eigene Meinung.
+7. **Schluss:** eigene Meinung klar und eindeutig, kurz begründet mit Rückgriff auf die Argumente. Keine neuen Argumente. Gelungen (aber nicht Pflicht): Der Schluss greift den Ausgangspunkt wieder auf (*Coming back to the quotation, …*).
 8. **Überleitungen:** Sätze mit Verknüpfungswörtern (*connectives*) verbinden und die Absätze miteinander verknüpfen, damit der Text fließt. Vor allem beim Wechsel von der Gegenseite zur eigenen Seite (*However, …*, *On the other hand, …*). Absätze beginnen eingerückt oder nach einer Leerzeile.
 
 ### Inhalt
@@ -777,7 +784,9 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Fehlendes thesis statement | Absatz beginnt direkt mit Details oder einem Beispiel | Einen einleitenden Satz vorschlagen, der den Gedanken des Absatzes nennt. |
 | Argumente doppelt | zwei Absätze sagen im Kern dasselbe | Die Überschneidung benennen und ein anderes Argument vorschlagen. |
 | Thema verfehlt | Argumente zu einer anderen Frage | Den Unterschied zur Aufgabenstellung erklären. |
-| Fehlender Textbezug | Aufgabe verlangt *as a starting point*, Text wird nicht erwähnt | Sagen, wo der Bezug hingehört (meist Einleitung), und wie er aussehen kann. |
+| Ausgangspunkt fehlt | Aufgabe nennt Zitat oder Cartoon, die Einleitung erwähnt ihn nicht | Als Aufgabenfehler benennen und eine Einleitung vorschlagen, die das Zitat einordnet und zur Leitfrage überleitet. |
+| Ausgangspunkt nur abgeschrieben | Zitat steht in der Einleitung, ohne Einordnung oder Überleitung | Sagen, was fehlt (wer, Kernaussage in eigenen Worten, Überleitung zur Frage). |
+| Zitat analysiert statt genutzt | Einleitung oder Hauptteil analysiert Sprache und Stilmittel des Zitats | Sagen, dass das Zitat nur der Ausgangspunkt ist; Analyse gehört in B.2. |
 | Doppelte Meinungsformel | *In my opinion I think …* | Zeichen exp, eine Formel streichen. |
 
 ## Nützliche Wendungen für Verbesserungen
