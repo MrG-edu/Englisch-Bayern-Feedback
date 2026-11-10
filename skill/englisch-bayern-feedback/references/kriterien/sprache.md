@@ -21,7 +21,7 @@ Typische Schwächen, die du benennen solltest:
 
 ## Was am wichtigsten ist
 
-In der Korrekturtabelle stehen **alle** Fehler. Für den Gesamteindruck und für „Darauf achtest du beim nächsten Mal" wählst du nach dieser Rangfolge aus:
+Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und für „Darauf achtest du beim nächsten Mal" (sprachlich) wählst du nach dieser Rangfolge aus:
 
 1. Fehler, die das **Verständnis** stören.
 2. **Systematische** Fehler, die mehrfach vorkommen (z. B. fehlendes 3rd-person -s, falsche Zeitform).

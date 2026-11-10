@@ -83,16 +83,10 @@
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   th { text-align: left; font-size: 12px; color: var(--ink-3); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--linie-stark); }
   td { padding: 8px; border-bottom: 1px solid var(--linie); vertical-align: top; }
-  td.orig { color: var(--rot); text-decoration: line-through; text-decoration-thickness: 1px; }
-  td.verb { color: var(--gruen); font-weight: 600; }
-  td.kz { font-weight: 700; white-space: nowrap; }
-  td.n { color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .tab-scroll { overflow-x: auto; }
-  /* Ausdruck */
-  .ausdruck li { margin-bottom: 8px; }
-  .ausdruck .alt { color: var(--ink-3); }
-  .ausdruck .pfeil { color: var(--akzent); font-weight: 700; margin: 0 6px; }
-  .ausdruck .neu { font-weight: 600; }
+  /* Nächstes Mal */
+  .nm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .l-nm { background: var(--akzent-hell); color: var(--akzent); margin-bottom: 8px; }
+  @media (max-width: 720px) { .nm-grid { grid-template-columns: 1fr; } }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -212,124 +206,38 @@
    ],
    "inhalt": {
     "gut": [
-     "Niedrigere Wohnkosten als Grund (Absatz 2) und Arbeit von zu Hause dank schnellem Internet (Absatz 3) sind richtig erkannt."
+     "Wohnkosten (Absatz 2) und Arbeit von zu Hause dank schnellem Internet (Absatz 3) sind richtig erkannt."
     ],
     "fehlt": [
-     "Der dritte Grund aus Absatz 4: die Sehnsucht nach Gemeinschaft – in der Kleinstadt kennt und hilft man sich, Kinder können draußen spielen."
+     "Der dritte Grund aus Absatz 4: der Wunsch nach Gemeinschaft."
     ],
+    "falsch": [],
     "ueberfluessig": [
-     "Dein erster Absatz (Abwanderung früher) – das ist kein Grund für die Rückkehr.",
-     "Dein letzter Absatz: Nachteile der Kleinstadt und Meinung der Bürgermeisterin gehören nicht zur Frage.",
-     "Details wie 40 percent, two-bedroom apartment, Seattle und die Namen.",
-     "<i>I think she is right</i> – eigene Meinung gehört nicht in ein outline."
+     "Erster und letzter Absatz (Abwanderung früher, Nachteile, Bürgermeisterin, eigene Meinung) beantworten die Frage nicht.",
+     "Details wie 40 percent, Seattle und die Namen."
     ]
    },
    "aufbau": [
     "Mit <i>First … Then …</i> erzählst du den Text der Reihe nach nach.",
     "Besser: ein Satz zur Kernaussage, dann Grund 1 (Kosten), Grund 2 (Arbeit von zu Hause), Grund 3 (Gemeinschaft), verbunden mit <i>furthermore, in addition, apart from financial reasons …</i>"
    ],
-   "fehler": [
-    {
-     "original": "In the article … it is about young people",
-     "verbesserung": "The article … deals with young people",
-     "kuerzel": "voc",
-     "erklaerung": "„Es geht um“ ist ein Germanismus. Im Englischen ist der Text das Subjekt."
-    },
-    {
-     "original": "First the author",
-     "verbesserung": "First, the author",
-     "kuerzel": "p",
-     "erklaerung": "Nach einleitendem <i>First</i> steht ein Komma."
-    },
-    {
-     "original": "explained",
-     "verbesserung": "explains",
-     "kuerzel": "t",
-     "erklaerung": "Grundzeit im outline ist simple present."
-    },
-    {
-     "original": "rent in cities has risen … two-bedroom apartment",
-     "verbesserung": "living in a small town is much cheaper than living in a city",
-     "kuerzel": "cop",
-     "erklaerung": "Fast wörtlich aus Absatz 2. Formuliere selbst und lass Zahlen weg."
-    },
-    {
-     "original": "A nurse says \"We could finally afford a garden\".",
-     "verbesserung": "a nurse explains that her family can finally afford a garden",
-     "kuerzel": "cop",
-     "erklaerung": "Direkte Rede gibst du indirekt und in eigenen Worten wieder."
-    },
-    {
-     "original": "Then Ben Huang who is a software developer",
-     "verbesserung": "Then, Ben Huang, who is a software developer,",
-     "kuerzel": "p",
-     "erklaerung": "Zusatzinformation zu einem Namen steht zwischen Kommas."
-    },
-    {
-     "original": "kept",
-     "verbesserung": "has kept",
-     "kuerzel": "t",
-     "erklaerung": "Present perfect, weil das Ergebnis bis heute gilt."
-    },
-    {
-     "original": "the town have",
-     "verbesserung": "the town has",
-     "kuerzel": "gr",
-     "erklaerung": "<i>the town</i> ist 3rd person singular."
-    },
-    {
-     "original": "fast internet he can",
-     "verbesserung": "fast internet, he can",
-     "kuerzel": "p",
-     "erklaerung": "Steht der Nebensatz vorne, folgt ein Komma."
-    },
-    {
-     "original": "The author also tell that",
-     "verbesserung": "The author also points out that",
-     "kuerzel": "gr voc",
-     "erklaerung": "Das -s fehlt (wie Nr. 8), und <i>tell</i> braucht ein Objekt."
-    },
-    {
-     "original": "less cultural events",
-     "verbesserung": "fewer cultural events",
-     "kuerzel": "voc",
-     "erklaerung": "Bei zählbaren Nomen im Plural steht <i>fewer</i>."
-    },
-    {
-     "original": "But the mayor",
-     "verbesserung": "However, the mayor",
-     "kuerzel": "reg",
-     "erklaerung": "<i>But</i> am Satzanfang ist eher umgangssprachlich."
-    }
-   ],
-   "ausdruck": [
-    {
-     "original": "kept his job at a Seattle company … he can work there",
-     "vorschlag": "remote work allows many returners to keep their jobs in the city"
-    },
-    {
-     "original": "Because the town have fast internet",
-     "vorschlag": "thanks to high-speed internet"
-    },
-    {
-     "original": "explained … tell",
-     "vorschlag": "points out, emphasizes, mentions, states"
-    },
-    {
-     "original": "young people make the towns better",
-     "vorschlag": "young people revitalize the towns"
-    }
-   ],
-   "naechstesMal": [
-    "Lies die Aufgabe genau und schreib nur über den gefragten Aspekt – hier die Gründe.",
-    "Formuliere in eigenen Worten und lass Zahlen, Namen und Zitate weg.",
-    "Schreib im simple present und denk an das 3rd-person -s (<i>the author points out, the town has</i>)."
-   ],
+   "naechstesMal": {
+    "sprache": [
+     "Schreib im simple present und denk an das 3rd-person -s (<i>the author points out, the town has</i>).",
+     "Formuliere in eigenen Worten statt abzuschreiben, direkte Rede gibst du indirekt wieder."
+    ],
+    "inhalt": [
+     "Lies die Aufgabe genau und schreib nur über den gefragten Aspekt – hier die Gründe.",
+     "Gliedere nach den Gründen und lass Zahlen, Namen und deine Meinung weg."
+    ]
+   },
    "kommentare": [
-    "„Es geht um“ ist ein Germanismus: <i>The article deals with / focuses on …</i>",
+    "„Es geht um“ ist ein Germanismus. Im Englischen ist der Text das Subjekt: <i>The article deals with / focuses on …</i>",
+    "Im outline schreibst du im simple present.",
     "Fast wörtlich übernommen. Eigene Formulierung, z. B.: <i>living in a small town is much cheaper than living in a city</i>.",
     "Direkte Rede indirekt wiedergeben, z. B.: <i>a nurse explains that her family can finally afford a garden</i>.",
-    "Zwei Fehler: 3rd-person -s fehlt, und <i>tell</i> braucht ein Objekt. Hier passt <i>point out</i>."
+    "Zwei Fehler: 3rd-person -s fehlt, und <i>tell</i> braucht ein Objekt. Hier passt <i>point out</i>.",
+    "Bei zählbaren Nomen im Plural steht <i>fewer</i>, bei nicht zählbaren <i>less</i> (<i>less money</i>)."
    ]
   }
  ]
@@ -337,9 +245,9 @@
 </script>
 
 <template id="text-1">
-<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="voc" n="1">it is about</k> young people. In the past <k v="" z="x">young people</k> left the small towns and the main streets emptied, but now they come back.</p>
-<p>First<k v="," z="p"></k> the author <k v="explains" z="t">explained</k> that <k v="→ ②" z="cop" n="2">rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment</k>. <k v="→ ③" z="cop" n="3">A nurse says "We could finally afford a garden".</k> Then<k v="," z="p"></k> Ben Huang<k v="," z="p"></k> who is a software developer<k v="," z="p"></k> <k v="has kept" z="t">kept</k> his job at a Seattle company. Because the town <k v="has" z="gr">have</k> fast internet<k v="," z="p"></k> he can work there.</p>
-<p>The author also <k v="points out" z="gr voc" n="4">tell</k> that public transport is almost non-existent and there are <k v="fewer" z="voc">less</k> cultural events. <k v="However," z="reg">But</k> the mayor is very optimistic and I think she is right because young people <k v="revitalize" z="~">make the towns better</k>.</p>
+<p><k v="The" z="voc">In the</k> article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="voc" n="1">it is about</k> young people. In the past <k v="" z="x">young people</k> left the small towns and the main streets emptied, but now they come back.</p>
+<p>First<k v="," z="p"></k> the author <k v="explains" z="t" n="2">explained</k> that <k v="→ ③" z="cop" n="3">rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment</k>. <k v="→ ④" z="cop" n="4">A nurse says "We could finally afford a garden".</k> Then<k v="," z="p"></k> Ben Huang<k v="," z="p"></k> who is a software developer<k v="," z="p"></k> <k v="has kept" z="t">kept</k> his job at a Seattle company. Because the town <k v="has" z="gr">have</k> fast internet<k v="," z="p"></k> he can work there.</p>
+<p>The author also <k v="points out" z="gr voc" n="5">tell</k> that public transport is almost non-existent and there are <k v="fewer" z="voc" n="6">less</k> cultural events. <k v="However," z="reg">But</k> the mayor is very optimistic and I think she is right because young people <k v="revitalize" z="~">make the towns better</k>.</p>
 </template>
 
 <script>
@@ -404,10 +312,10 @@
     g.appendChild(kp);
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
-    var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    var tpl = document.getElementById("text-" + idx), zaehl = {}, stellen = 0;
+    if (tpl) tpl.content.querySelectorAll("k").forEach(function (k) { var echt = String(k.getAttribute("z") || "").split(/\s+/).filter(function (c) { return c && c !== "~" && c !== "x"; }); if (echt.length) stellen++; echt.forEach(function (c) { zaehl[c] = (zaehl[c] || 0) + 1; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
-    kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
+    kf.appendChild(el("p", "unter", stellen + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
     var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
@@ -435,25 +343,19 @@
     });
     // 2 Aufbau
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
-    // 3 Sprache
-    sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
-    (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
-    var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
-    // 4 Ausdruck
-    if (a.ausdruck && a.ausdruck.length) {
-      sec.appendChild(h2(4, "Ausdruck verbessern"));
-      var ul = el("ul", "liste ausdruck");
-      a.ausdruck.forEach(function (x) { ul.appendChild(el("li", null, '<span class="alt">' + x.original + '</span><span class="pfeil">→</span><span class="neu">' + x.vorschlag + "</span>")); });
-      sec.appendChild(ul);
-    }
-    // 5 Nächstes Mal
-    sec.appendChild(h2(5, "Darauf achtest du beim nächsten Mal"));
-    var ol = el("ol", "schritte"); (a.naechstesMal || []).forEach(function (x) { ol.appendChild(el("li", null, x)); }); sec.appendChild(ol);
-    // 6 Korrigierter Text
-    var tpl = document.getElementById("text-" + idx);
+    // 3 Nächstes Mal
+    sec.appendChild(h2(3, "Darauf achtest du beim nächsten Mal"));
+    var nm = a.naechstesMal || {}; if (Array.isArray(nm)) nm = { sprache: nm };
+    var ng = el("div", "nm-grid");
+    [["sprache", "Sprachlich"], ["inhalt", "Inhaltlich"]].forEach(function (t) {
+      if (!nm[t[0]] || !nm[t[0]].length) return;
+      var box = el("div"); box.appendChild(el("span", "label l-nm", t[1]));
+      var ol = el("ol", "schritte"); nm[t[0]].forEach(function (x) { ol.appendChild(el("li", null, x)); }); box.appendChild(ol); ng.appendChild(box);
+    });
+    sec.appendChild(ng);
+    // 4 Korrigierter Text
     if (tpl) {
-      sec.appendChild(h2(6, "Dein korrigierter Text"));
+      sec.appendChild(h2(4, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
       var zz = {}; Object.keys(zaehl).forEach(function (c) { zz[c] = zaehl[c]; });
       blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (c === "~" || c === "x") { c = c === "~" ? "~~" : "x"; zz[c] = (zz[c] || 0) + 1; } }); });

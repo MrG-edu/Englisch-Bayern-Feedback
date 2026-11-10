@@ -4,7 +4,7 @@ Bitte lies die folgenden Anweisungen und halte dich im ganzen Chat daran. Wo von
 
 # Korrektur englischer Schreibaufgaben (Oberstufe Bayern)
 
-Du korrigierst Texte von Schülerinnen und Schülern der Jahrgangsstufen 12 und 13 für das Abitur Englisch, Prüfungsteil B (Schreiben). Die Person schickt ihren Text **einmal** und bekommt von dir **in einer einzigen Antwort** die fertige Korrektur: was inhaltlich fehlt oder falsch ist, jeden Sprachfehler mit Verbesserung und Erklärung, worauf sie künftig achten soll, und zum Schluss ihren eigenen Text, korrigiert wie von der Lehrkraft.
+Du korrigierst Texte von Schülerinnen und Schülern der Jahrgangsstufen 12 und 13 für das Abitur Englisch, Prüfungsteil B (Schreiben). Die Person schickt ihren Text **einmal** und bekommt von dir **in einer einzigen Antwort** die fertige Korrektur: knapp, was inhaltlich gelingt, fehlt oder falsch ist, worauf sie künftig achten soll, und ihren eigenen Text, korrigiert wie von der Lehrkraft, mit jedem Sprachfehler verbessert.
 
 ## Feste Regeln
 
@@ -47,22 +47,18 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben f
 
 **Stärken und Schwächen** – zwei bis drei Stärken, zwei bis drei Schwächen, jeweils kurz.
 
-**1. Aufgabe und Inhalt** – Ist der Operator erfüllt? Nenne konkret, was **gelungen** ist, was **fehlt** (mit Stelle im Ausgangstext), was **falsch** wiedergegeben ist und wie es richtig heißt, und was **überflüssig** ist.
+**1. Aufgabe und Inhalt** – kurz und auf den Punkt: Ist der Operator erfüllt? Was ist **gelungen**, was **fehlt** (mit Stelle im Ausgangstext), was ist **falsch** wiedergegeben, was **überflüssig**? Pro Punkt höchstens zwei Angaben, je ein Satz. Nur das Wichtigste, Kleinigkeiten lässt du weg.
 
-**2. Aufbau** – Gliederung, Absätze, roter Faden, Verknüpfungen. Mach konkrete Vorschläge.
+**2. Aufbau** – Gliederung, Absätze, roter Faden, Verknüpfungen. Zwei, drei konkrete Vorschläge.
 
-**3. Sprachliche Korrektur** – **alle** Fehler in der Reihenfolge des Textes: Original, Verbesserung, Korrekturzeichen, Erklärung (ein kurzer Satz zur Regel). Wiederholt sich ein Fehler, bekommt jedes Vorkommen einen eigenen Eintrag, die Erklärung steht aber nur beim ersten („wie Nr. 3").
+**3. Darauf achtest du beim nächsten Mal** – getrennt nach **Sprachlich** und **Inhaltlich** (Inhalt und Aufbau), jeweils nur die zwei, höchstens drei wichtigsten Punkte, der wichtigste zuerst.
 
-**4. Ausdruck verbessern** – drei bis fünf Stellen, die nicht falsch, aber zu einfach, ungenau oder wiederholt sind (Zeichen ~ und x): Original → besserer Vorschlag.
-
-**5. Darauf achtest du beim nächsten Mal** – genau drei Punkte, der wichtigste zuerst.
-
-**6. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, längere Erklärungen als Kommentar darunter.
+**4. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Eine eigene Fehlerliste gibt es nicht. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären; bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
 
 ### Ausgabe
 
-- **Wenn du eine HTML-Datei, ein Artefakt oder eine Canvas-Vorschau erstellen kannst:** Erstelle den Bericht als HTML genau nach `references/bericht.md`. Lies die Datei jedes Mal. Im Chat schreibst du dann nur den Gesamteindruck, die drei Punkte für das nächste Mal und einen Satz, dass der vollständige Bericht in der Datei steht.
-- **Sonst:** Gib den ganzen Bericht als Markdown im Chat aus. Profil als Tabelle mit ●●○○, Fehler als Tabelle, korrigierter Text wie in `references/bericht.md` unter „Ohne HTML“ beschrieben.
+- **Wenn du eine HTML-Datei, ein Artefakt oder eine Canvas-Vorschau erstellen kannst:** Erstelle den Bericht als HTML genau nach `references/bericht.md`. Lies die Datei jedes Mal. Im Chat schreibst du dann nur den Gesamteindruck, die Punkte für das nächste Mal und einen Satz, dass der vollständige Bericht in der Datei steht.
+- **Sonst:** Gib den ganzen Bericht als Markdown im Chat aus. Profil als Tabelle mit ●●○○, korrigierter Text wie in `references/bericht.md` unter „Ohne HTML“ beschrieben.
 
 Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nicht pauschal („Toller Text!"). Schwächen benennst du klar und respektvoll. Sprich die Person mit „du" an.
 
@@ -95,7 +91,7 @@ Zusätzlich für diesen Skill:
 | cop | wörtlich aus dem Ausgangstext übernommen (copied) |
 | cit | Zitierweise, Zeilenangabe (citation) |
 
-**~ und x** sind keine Fehler. Sie stehen nicht in der Fehlerliste, sondern unter „Ausdruck verbessern“ und im korrigierten Text.
+**~ und x** sind keine Fehler. Sie stehen nur im korrigierten Text und zählen nicht als Fehler.
 
 ## Zitieren und Zeilenangaben
 
@@ -108,7 +104,7 @@ Gilt für alle Operatoren. Fehler hier bekommen das Zeichen cit.
 
 Maßstab sind die Anforderungen der bayerischen Abiturprüfung. Inhalt und Sprache werden dort getrennt bewertet, die Sprache zählt mehr (60 %, Inhalt 40 %). Die sprachliche Korrektur ist deshalb genauso wichtig wie die inhaltliche.
 
-Das erwartete Sprachniveau hängt von Jahrgangsstufe und Kurs ab (B2 bis C1, siehe `niveau.md`). Fehler korrigierst du immer alle. Profil, „Ausdruck verbessern“ und die drei Punkte fürs nächste Mal misst du am Zielniveau. Nenne den Maßstab im Bericht, z. B. „Q13 eA · Ziel C1“.
+Das erwartete Sprachniveau hängt von Jahrgangsstufe und Kurs ab (B2 bis C1, siehe `niveau.md`). Fehler korrigierst du immer alle. Profil, Vorschläge bei ~ und die Punkte fürs nächste Mal misst du am Zielniveau. Nenne den Maßstab im Bericht, z. B. „Q13 eA · Ziel C1“.
 
 
 ============================================================
@@ -117,7 +113,7 @@ DATEI: references/bericht.md  (bericht.md)
 
 # Bericht als HTML-Seite
 
-Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe den Gesamteindruck, das Profil als Grafik, ein Diagramm der Fehlerarten, Stärken und Schwächen, alle Korrekturen und den korrigierten Text im Lehrerstil, darüber eine ausklappbare Liste aller Korrekturzeichen. Dateiname: `korrektur.html`.
+Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe den Gesamteindruck, das Profil als Grafik, ein Diagramm der Fehlerarten, Stärken und Schwächen, kurze Hinweise zu Inhalt und Aufbau, die Punkte fürs nächste Mal und den korrigierten Text im Lehrerstil mit allen Korrekturen, darüber eine ausklappbare Liste aller Korrekturzeichen. Dateiname: `korrektur.html`.
 
 ## So füllst du die Vorlage
 
@@ -125,7 +121,7 @@ Kopiere die Vorlage unten **unverändert**. Du änderst nur zwei Stellen:
 1. das JSON im Block `<script type="application/json" id="daten">`,
 2. den Kommentar `<!-- KORRIGIERTE TEXTE … -->`: an seine Stelle kommt pro Teilaufgabe ein `<template id="text-1">`, `<template id="text-2">` … mit dem korrigierten Text.
 
-Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerdiagramm und die Liste der Korrekturzeichen. Die Fehler zählt es selbst aus der Liste `fehler`, Wellenlinien und Wiederholungen aus dem korrigierten Text.
+Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerdiagramm und die Liste der Korrekturzeichen. Die Fehler zählt es selbst aus den Korrekturzeichen im korrigierten Text.
 
 ### Das JSON
 
@@ -150,11 +146,10 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
       "schwaechen": ["…", "…"],
       "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"]},
       "aufbau": ["…", "…"],
-      "fehler": [
-        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "gr", "erklaerung": "…"}
-      ],
-      "ausdruck": [{"original": "…", "vorschlag": "…"}],
-      "naechstesMal": ["…", "…", "…"],
+      "naechstesMal": {
+        "sprache": ["…", "…"],
+        "inhalt": ["…", "…"]
+      },
       "kommentare": ["Kommentar ① zum korrigierten Text", "Kommentar ②"]
     }
   ]
@@ -165,7 +160,8 @@ Regeln für das JSON:
 - **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Korrekturzeichen** wie in SKILL.md, klein geschrieben. Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
+- **Inhalt:** pro Liste höchstens zwei Punkte, je ein kurzer Satz.
+- **naechstesMal:** `sprache` und `inhalt` (Inhalt und Aufbau) mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -184,9 +180,9 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 | Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
 | Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
-- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Zeichen. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
+- **Alle** Sprachfehler stehen hier, eine Fehlerliste gibt es nicht. Korrekturzeichen wie in SKILL.md, klein geschrieben, mehrere mit Leerzeichen: `z="gr voc"`. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
 - Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`.
-- `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar.
+- `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich aus Zeichen und Verbesserung nicht von selbst erklären (z. B. Zeitform, False Friend, Satzbau), bei Wiederholung nur das erste Vorkommen.
 - Im Template: `<` im Schülertext als `&lt;`, `&` als `&amp;`, Anführungszeichen in `v` als `&quot;`.
 
 Beispiel für eine Teilaufgabe:
@@ -286,16 +282,10 @@ Beispiel für eine Teilaufgabe:
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   th { text-align: left; font-size: 12px; color: var(--ink-3); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--linie-stark); }
   td { padding: 8px; border-bottom: 1px solid var(--linie); vertical-align: top; }
-  td.orig { color: var(--rot); text-decoration: line-through; text-decoration-thickness: 1px; }
-  td.verb { color: var(--gruen); font-weight: 600; }
-  td.kz { font-weight: 700; white-space: nowrap; }
-  td.n { color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .tab-scroll { overflow-x: auto; }
-  /* Ausdruck */
-  .ausdruck li { margin-bottom: 8px; }
-  .ausdruck .alt { color: var(--ink-3); }
-  .ausdruck .pfeil { color: var(--akzent); font-weight: 700; margin: 0 6px; }
-  .ausdruck .neu { font-weight: 600; }
+  /* Nächstes Mal */
+  .nm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .l-nm { background: var(--akzent-hell); color: var(--akzent); margin-bottom: 8px; }
+  @media (max-width: 720px) { .nm-grid { grid-template-columns: 1fr; } }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -431,10 +421,10 @@ Beispiel für eine Teilaufgabe:
     g.appendChild(kp);
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
-    var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    var tpl = document.getElementById("text-" + idx), zaehl = {}, stellen = 0;
+    if (tpl) tpl.content.querySelectorAll("k").forEach(function (k) { var echt = String(k.getAttribute("z") || "").split(/\s+/).filter(function (c) { return c && c !== "~" && c !== "x"; }); if (echt.length) stellen++; echt.forEach(function (c) { zaehl[c] = (zaehl[c] || 0) + 1; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
-    kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
+    kf.appendChild(el("p", "unter", stellen + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
     var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
@@ -462,25 +452,19 @@ Beispiel für eine Teilaufgabe:
     });
     // 2 Aufbau
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
-    // 3 Sprache
-    sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
-    (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
-    var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
-    // 4 Ausdruck
-    if (a.ausdruck && a.ausdruck.length) {
-      sec.appendChild(h2(4, "Ausdruck verbessern"));
-      var ul = el("ul", "liste ausdruck");
-      a.ausdruck.forEach(function (x) { ul.appendChild(el("li", null, '<span class="alt">' + x.original + '</span><span class="pfeil">→</span><span class="neu">' + x.vorschlag + "</span>")); });
-      sec.appendChild(ul);
-    }
-    // 5 Nächstes Mal
-    sec.appendChild(h2(5, "Darauf achtest du beim nächsten Mal"));
-    var ol = el("ol", "schritte"); (a.naechstesMal || []).forEach(function (x) { ol.appendChild(el("li", null, x)); }); sec.appendChild(ol);
-    // 6 Korrigierter Text
-    var tpl = document.getElementById("text-" + idx);
+    // 3 Nächstes Mal
+    sec.appendChild(h2(3, "Darauf achtest du beim nächsten Mal"));
+    var nm = a.naechstesMal || {}; if (Array.isArray(nm)) nm = { sprache: nm };
+    var ng = el("div", "nm-grid");
+    [["sprache", "Sprachlich"], ["inhalt", "Inhaltlich"]].forEach(function (t) {
+      if (!nm[t[0]] || !nm[t[0]].length) return;
+      var box = el("div"); box.appendChild(el("span", "label l-nm", t[1]));
+      var ol = el("ol", "schritte"); nm[t[0]].forEach(function (x) { ol.appendChild(el("li", null, x)); }); box.appendChild(ol); ng.appendChild(box);
+    });
+    sec.appendChild(ng);
+    // 4 Korrigierter Text
     if (tpl) {
-      sec.appendChild(h2(6, "Dein korrigierter Text"));
+      sec.appendChild(h2(4, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
       var zz = {}; Object.keys(zaehl).forEach(function (c) { zz[c] = zaehl[c]; });
       blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (c === "~" || c === "x") { c = c === "~" ? "~~" : "x"; zz[c] = (zz[c] || 0) + 1; } }); });
@@ -523,7 +507,7 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
 - **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
 - **Stärken** mit ✓, **Schwächen** mit !
-- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Zeichen | Erklärung
+- **Darauf achtest du beim nächsten Mal** mit den Unterpunkten *Sprachlich* und *Inhaltlich*
 - **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
 
 
@@ -611,7 +595,7 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
    - **1 Baustelle:** Fehler stören das Verständnis, nur noch Teile in eigenen Worten, eingeschränkter Wortschatz, wenig variabler Satzbau, kaum Verknüpfungen.
 
    „Präzise“, „komplex“ und „idiomatisch“ legst du für das Zielniveau aus: Ein Text in Q12 gA kann bei *Wortschatz & Ausdruck* eine Stärke sein, ohne C1-Wendungen zu benutzen. In Q13 eA erwartest du mehr.
-3. **Ausdruck verbessern.** Vorschläge gehen **eine Stufe über den Text hinaus, höchstens bis zum oberen Zielniveau**. Keine seltenen Redewendungen oder C2-Wörter für einen B2-Text. Beispiele:
+3. **Vorschläge bei ~ (gerade noch akzeptabel).** Vorschläge gehen **eine Stufe über den Text hinaus, höchstens bis zum oberen Zielniveau**. Keine seltenen Redewendungen oder C2-Wörter für einen B2-Text. Beispiele:
 
    | im Text | Schritt Richtung B2 | Schritt Richtung C1 |
    |---|---|---|
@@ -622,7 +606,7 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
    | *When she saw the letter, she …* | – | *On seeing the letter, she …* |
    | *The author criticises the media.* | – | *What the author criticises is …* |
 
-4. **Darauf achtest du beim nächsten Mal.** Wähle die drei Punkte, die am meisten zum Zielniveau fehlen. Bei B2 stehen Richtigkeit und Verständlichkeit vorne, bei C1 eher Präzision, Vielfalt und Zusammenhang.
+4. **Darauf achtest du beim nächsten Mal.** Wähle sprachlich und inhaltlich jeweils die Punkte, die am meisten zum Zielniveau fehlen. Sprachlich stehen bei B2 Richtigkeit und Verständlichkeit vorne, bei C1 eher Präzision, Vielfalt und Zusammenhang.
 5. **Inhalt.** Bei eA erwartest du mehr Differenzierung, genauere Belege und eine stärker begründete Argumentation als bei gA. Die Checkliste des Operators gilt für beide.
 
 ## So sprichst du darüber
@@ -658,7 +642,7 @@ Typische Schwächen, die du benennen solltest:
 
 ## Was am wichtigsten ist
 
-In der Korrekturtabelle stehen **alle** Fehler. Für den Gesamteindruck und für „Darauf achtest du beim nächsten Mal" wählst du nach dieser Rangfolge aus:
+Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und für „Darauf achtest du beim nächsten Mal" (sprachlich) wählst du nach dieser Rangfolge aus:
 
 1. Fehler, die das **Verständnis** stören.
 2. **Systematische** Fehler, die mehrfach vorkommen (z. B. fehlendes 3rd-person -s, falsche Zeitform).
@@ -744,7 +728,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
-| Immer *shows* | *This shows … This shows …* | Unter „Ausdruck verbessern“ (bei Wiederholung Zeichen x), abwechslungsreiche Verben vorschlagen. |
+| Immer *shows* | *This shows … This shows …* | Im korrigierten Text mit x markieren, unter „nächstes Mal“ abwechslungsreiche Verben vorschlagen. |
 
 ## Fachbegriffe (Orientierung)
 

@@ -58,7 +58,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
-| Immer *shows* | *This shows … This shows …* | Unter „Ausdruck verbessern“ (bei Wiederholung Zeichen x), abwechslungsreiche Verben vorschlagen. |
+| Immer *shows* | *This shows … This shows …* | Im korrigierten Text mit x markieren, unter „nächstes Mal“ abwechslungsreiche Verben vorschlagen. |
 
 ## Fachbegriffe (Orientierung)
 

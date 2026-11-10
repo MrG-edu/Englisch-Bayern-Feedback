@@ -11,9 +11,8 @@ Du schickst deinen Text **einmal** und bekommst einen fertigen **Bericht**, für
 ✅ dein **Profil** als Grafik: wo deine Stärken und Baustellen liegen (Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz, Satzbau),
 ✅ ein **Diagramm deiner Fehlerarten**, damit du siehst, was du am meisten üben solltest,
 ✅ was inhaltlich gelungen ist, was fehlt, falsch oder überflüssig ist, und Hinweise zum Aufbau,
-✅ **jeden Sprachfehler mit Verbesserung**, Korrekturzeichen und kurzer Erklärung,
-✅ Vorschläge für einen besseren Ausdruck und drei Punkte für das nächste Mal,
-✅ zum Schluss **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Korrigiert wird dabei nur die Sprache, dein Inhalt bleibt.
+✅ worauf du beim nächsten Mal achten solltest, sprachlich und inhaltlich, nur das Wichtigste,
+✅ zum Schluss **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Hier steht **jeder Sprachfehler** mit Verbesserung. Korrigiert wird dabei nur die Sprache, dein Inhalt bleibt.
 
 So sieht ein Bericht aus: [Beispiel öffnen](beispiele/outline-beispiel-bericht.html) (herunterladen und im Browser öffnen).
 

@@ -38,7 +38,7 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
    - **1 Baustelle:** Fehler stören das Verständnis, nur noch Teile in eigenen Worten, eingeschränkter Wortschatz, wenig variabler Satzbau, kaum Verknüpfungen.
 
    „Präzise“, „komplex“ und „idiomatisch“ legst du für das Zielniveau aus: Ein Text in Q12 gA kann bei *Wortschatz & Ausdruck* eine Stärke sein, ohne C1-Wendungen zu benutzen. In Q13 eA erwartest du mehr.
-3. **Ausdruck verbessern.** Vorschläge gehen **eine Stufe über den Text hinaus, höchstens bis zum oberen Zielniveau**. Keine seltenen Redewendungen oder C2-Wörter für einen B2-Text. Beispiele:
+3. **Vorschläge bei ~ (gerade noch akzeptabel).** Vorschläge gehen **eine Stufe über den Text hinaus, höchstens bis zum oberen Zielniveau**. Keine seltenen Redewendungen oder C2-Wörter für einen B2-Text. Beispiele:
 
    | im Text | Schritt Richtung B2 | Schritt Richtung C1 |
    |---|---|---|
@@ -49,7 +49,7 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
    | *When she saw the letter, she …* | – | *On seeing the letter, she …* |
    | *The author criticises the media.* | – | *What the author criticises is …* |
 
-4. **Darauf achtest du beim nächsten Mal.** Wähle die drei Punkte, die am meisten zum Zielniveau fehlen. Bei B2 stehen Richtigkeit und Verständlichkeit vorne, bei C1 eher Präzision, Vielfalt und Zusammenhang.
+4. **Darauf achtest du beim nächsten Mal.** Wähle sprachlich und inhaltlich jeweils die Punkte, die am meisten zum Zielniveau fehlen. Sprachlich stehen bei B2 Richtigkeit und Verständlichkeit vorne, bei C1 eher Präzision, Vielfalt und Zusammenhang.
 5. **Inhalt.** Bei eA erwartest du mehr Differenzierung, genauere Belege und eine stärker begründete Argumentation als bei gA. Die Checkliste des Operators gilt für beide.
 
 ## So sprichst du darüber

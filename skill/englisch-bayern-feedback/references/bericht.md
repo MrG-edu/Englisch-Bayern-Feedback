@@ -1,6 +1,6 @@
 # Bericht als HTML-Seite
 
-Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe den Gesamteindruck, das Profil als Grafik, ein Diagramm der Fehlerarten, Stärken und Schwächen, alle Korrekturen und den korrigierten Text im Lehrerstil, darüber eine ausklappbare Liste aller Korrekturzeichen. Dateiname: `korrektur.html`.
+Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe den Gesamteindruck, das Profil als Grafik, ein Diagramm der Fehlerarten, Stärken und Schwächen, kurze Hinweise zu Inhalt und Aufbau, die Punkte fürs nächste Mal und den korrigierten Text im Lehrerstil mit allen Korrekturen, darüber eine ausklappbare Liste aller Korrekturzeichen. Dateiname: `korrektur.html`.
 
 ## So füllst du die Vorlage
 
@@ -8,7 +8,7 @@ Kopiere die Vorlage unten **unverändert**. Du änderst nur zwei Stellen:
 1. das JSON im Block `<script type="application/json" id="daten">`,
 2. den Kommentar `<!-- KORRIGIERTE TEXTE … -->`: an seine Stelle kommt pro Teilaufgabe ein `<template id="text-1">`, `<template id="text-2">` … mit dem korrigierten Text.
 
-Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerdiagramm und die Liste der Korrekturzeichen. Die Fehler zählt es selbst aus der Liste `fehler`, Wellenlinien und Wiederholungen aus dem korrigierten Text.
+Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerdiagramm und die Liste der Korrekturzeichen. Die Fehler zählt es selbst aus den Korrekturzeichen im korrigierten Text.
 
 ### Das JSON
 
@@ -33,11 +33,10 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
       "schwaechen": ["…", "…"],
       "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"]},
       "aufbau": ["…", "…"],
-      "fehler": [
-        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "gr", "erklaerung": "…"}
-      ],
-      "ausdruck": [{"original": "…", "vorschlag": "…"}],
-      "naechstesMal": ["…", "…", "…"],
+      "naechstesMal": {
+        "sprache": ["…", "…"],
+        "inhalt": ["…", "…"]
+      },
       "kommentare": ["Kommentar ① zum korrigierten Text", "Kommentar ②"]
     }
   ]
@@ -48,7 +47,8 @@ Regeln für das JSON:
 - **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Korrekturzeichen** wie in SKILL.md, klein geschrieben. Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
+- **Inhalt:** pro Liste höchstens zwei Punkte, je ein kurzer Satz.
+- **naechstesMal:** `sprache` und `inhalt` (Inhalt und Aufbau) mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -67,9 +67,9 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 | Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
 | Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
-- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Zeichen. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
+- **Alle** Sprachfehler stehen hier, eine Fehlerliste gibt es nicht. Korrekturzeichen wie in SKILL.md, klein geschrieben, mehrere mit Leerzeichen: `z="gr voc"`. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
 - Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`.
-- `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar.
+- `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich aus Zeichen und Verbesserung nicht von selbst erklären (z. B. Zeitform, False Friend, Satzbau), bei Wiederholung nur das erste Vorkommen.
 - Im Template: `<` im Schülertext als `&lt;`, `&` als `&amp;`, Anführungszeichen in `v` als `&quot;`.
 
 Beispiel für eine Teilaufgabe:
@@ -169,16 +169,10 @@ Beispiel für eine Teilaufgabe:
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   th { text-align: left; font-size: 12px; color: var(--ink-3); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--linie-stark); }
   td { padding: 8px; border-bottom: 1px solid var(--linie); vertical-align: top; }
-  td.orig { color: var(--rot); text-decoration: line-through; text-decoration-thickness: 1px; }
-  td.verb { color: var(--gruen); font-weight: 600; }
-  td.kz { font-weight: 700; white-space: nowrap; }
-  td.n { color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .tab-scroll { overflow-x: auto; }
-  /* Ausdruck */
-  .ausdruck li { margin-bottom: 8px; }
-  .ausdruck .alt { color: var(--ink-3); }
-  .ausdruck .pfeil { color: var(--akzent); font-weight: 700; margin: 0 6px; }
-  .ausdruck .neu { font-weight: 600; }
+  /* Nächstes Mal */
+  .nm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .l-nm { background: var(--akzent-hell); color: var(--akzent); margin-bottom: 8px; }
+  @media (max-width: 720px) { .nm-grid { grid-template-columns: 1fr; } }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -314,10 +308,10 @@ Beispiel für eine Teilaufgabe:
     g.appendChild(kp);
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
-    var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    var tpl = document.getElementById("text-" + idx), zaehl = {}, stellen = 0;
+    if (tpl) tpl.content.querySelectorAll("k").forEach(function (k) { var echt = String(k.getAttribute("z") || "").split(/\s+/).filter(function (c) { return c && c !== "~" && c !== "x"; }); if (echt.length) stellen++; echt.forEach(function (c) { zaehl[c] = (zaehl[c] || 0) + 1; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
-    kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
+    kf.appendChild(el("p", "unter", stellen + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
     var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
@@ -345,25 +339,19 @@ Beispiel für eine Teilaufgabe:
     });
     // 2 Aufbau
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
-    // 3 Sprache
-    sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
-    (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
-    var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
-    // 4 Ausdruck
-    if (a.ausdruck && a.ausdruck.length) {
-      sec.appendChild(h2(4, "Ausdruck verbessern"));
-      var ul = el("ul", "liste ausdruck");
-      a.ausdruck.forEach(function (x) { ul.appendChild(el("li", null, '<span class="alt">' + x.original + '</span><span class="pfeil">→</span><span class="neu">' + x.vorschlag + "</span>")); });
-      sec.appendChild(ul);
-    }
-    // 5 Nächstes Mal
-    sec.appendChild(h2(5, "Darauf achtest du beim nächsten Mal"));
-    var ol = el("ol", "schritte"); (a.naechstesMal || []).forEach(function (x) { ol.appendChild(el("li", null, x)); }); sec.appendChild(ol);
-    // 6 Korrigierter Text
-    var tpl = document.getElementById("text-" + idx);
+    // 3 Nächstes Mal
+    sec.appendChild(h2(3, "Darauf achtest du beim nächsten Mal"));
+    var nm = a.naechstesMal || {}; if (Array.isArray(nm)) nm = { sprache: nm };
+    var ng = el("div", "nm-grid");
+    [["sprache", "Sprachlich"], ["inhalt", "Inhaltlich"]].forEach(function (t) {
+      if (!nm[t[0]] || !nm[t[0]].length) return;
+      var box = el("div"); box.appendChild(el("span", "label l-nm", t[1]));
+      var ol = el("ol", "schritte"); nm[t[0]].forEach(function (x) { ol.appendChild(el("li", null, x)); }); box.appendChild(ol); ng.appendChild(box);
+    });
+    sec.appendChild(ng);
+    // 4 Korrigierter Text
     if (tpl) {
-      sec.appendChild(h2(6, "Dein korrigierter Text"));
+      sec.appendChild(h2(4, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
       var zz = {}; Object.keys(zaehl).forEach(function (c) { zz[c] = zaehl[c]; });
       blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (c === "~" || c === "x") { c = c === "~" ? "~~" : "x"; zz[c] = (zz[c] || 0) + 1; } }); });
@@ -406,5 +394,5 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
 - **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
 - **Stärken** mit ✓, **Schwächen** mit !
-- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Zeichen | Erklärung
+- **Darauf achtest du beim nächsten Mal** mit den Unterpunkten *Sprachlich* und *Inhaltlich*
 - **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
