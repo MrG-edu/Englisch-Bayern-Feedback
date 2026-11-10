@@ -36,7 +36,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Zeichen cop). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
 12. **Berichtende Verben, abwechslungsreich:** *state, claim, point out, explain, argue, emphasize, criticize, describe, report, suggest*. Statt *says … says … says*.
 13. **Wiedergabe statt direkter Rede.** Indirekte Rede bzw. eigene Umschreibung. Bei Erzähltexten den Erzähler (*the narrator*) nicht mit der Autorin oder dem Autor gleichsetzen.
-14. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I*.
+14. **Sachlicher Stil.** Keine Umgangssprache, kein *I*. Kurzformen (*it's, they're*) sind erlaubt.
 
 **Länge:** Es gibt keine feste Wortzahl. Maßstab ist, ob alle Hauptpunkte drin sind und nichts Überflüssiges.
 

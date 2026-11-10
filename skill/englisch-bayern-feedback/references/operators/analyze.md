@@ -40,7 +40,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 13. **Belege korrekt einbauen:** kurze Zitate, in den eigenen Satz eingebaut, Zitierweise nach den Regeln in SKILL.md (Abschnitt „Zitieren und Zeilenangaben“): *"…" (l. 12)*, *(ll. 12-14)*, *(ll. 12, 20)*, Verweise mit *(cf. l. 12)*. Auslassungen mit *[…]*. Zitate ersetzen keine Erklärung.
 14. **Analysewortschatz:** *convey, illustrate, emphasize, highlight, underline, suggest, imply, evoke, create, reinforce, contrast with*. Statt immer *shows*.
 15. **Eigene Formulierungen** außerhalb der Zitate. Zitate sind hier erlaubt und erwünscht, aber nur als Belege.
-16. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I think*.
+16. **Sachlicher Stil.** Keine Umgangssprache, kein *I think*. Kurzformen (*it's, they're*) sind erlaubt.
 
 **Länge:** keine feste Wortzahl. Maßstab ist, ob die Fragestellung vollständig und mit genügend Tiefe beantwortet ist.
 

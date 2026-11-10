@@ -40,4 +40,6 @@ Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und f
 - Komma vor *that* bei Objektsätzen (*He says, that …*)
 - Wortstellung: Adverb zwischen Verb und Objekt (*He reads often books*)
 - Wörtliche Übersetzungen: *In the text it says …*, *The author describes about …*, *It gives many problems.*
-- Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *don't*, *gonna*
+- Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *gonna*
+
+**Kurzformen sind erlaubt.** *she's, they're, don't, it's* usw. werden nicht verbessert, nicht markiert und nicht negativ gewertet.

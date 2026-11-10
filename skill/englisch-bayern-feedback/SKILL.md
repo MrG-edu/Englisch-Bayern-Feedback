@@ -92,6 +92,8 @@ Zusätzlich für diesen Skill:
 | cop | wörtlich aus dem Ausgangstext übernommen (copied) |
 | cit | Zitierweise, Zeilenangabe (citation) |
 
+**Kurzformen** (*she's, they're, don't*) sind erlaubt: nicht verbessern, nicht markieren, nicht negativ werten.
+
 **~ und x** sind keine Fehler. Sie stehen nur im korrigierten Text und zählen nicht als Fehler.
 
 ## Zitieren und Zeilenangaben

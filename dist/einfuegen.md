@@ -91,6 +91,8 @@ Zusätzlich für diesen Skill:
 | cop | wörtlich aus dem Ausgangstext übernommen (copied) |
 | cit | Zitierweise, Zeilenangabe (citation) |
 
+**Kurzformen** (*she's, they're, don't*) sind erlaubt: nicht verbessern, nicht markieren, nicht negativ werten.
+
 **~ und x** sind keine Fehler. Sie stehen nur im korrigierten Text und zählen nicht als Fehler.
 
 ## Zitieren und Zeilenangaben
@@ -661,7 +663,9 @@ Im korrigierten Text markierst du **alle** Fehler. Für den Gesamteindruck und f
 - Komma vor *that* bei Objektsätzen (*He says, that …*)
 - Wortstellung: Adverb zwischen Verb und Objekt (*He reads often books*)
 - Wörtliche Übersetzungen: *In the text it says …*, *The author describes about …*, *It gives many problems.*
-- Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *don't*, *gonna*
+- Umgangssprache in Analysetexten: *a lot of*, *kind of*, *stuff*, *gonna*
+
+**Kurzformen sind erlaubt.** *she's, they're, don't, it's* usw. werden nicht verbessert, nicht markiert und nicht negativ gewertet.
 
 
 ============================================================
@@ -710,7 +714,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 13. **Belege korrekt einbauen:** kurze Zitate, in den eigenen Satz eingebaut, Zitierweise nach den Regeln in SKILL.md (Abschnitt „Zitieren und Zeilenangaben“): *"…" (l. 12)*, *(ll. 12-14)*, *(ll. 12, 20)*, Verweise mit *(cf. l. 12)*. Auslassungen mit *[…]*. Zitate ersetzen keine Erklärung.
 14. **Analysewortschatz:** *convey, illustrate, emphasize, highlight, underline, suggest, imply, evoke, create, reinforce, contrast with*. Statt immer *shows*.
 15. **Eigene Formulierungen** außerhalb der Zitate. Zitate sind hier erlaubt und erwünscht, aber nur als Belege.
-16. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I think*.
+16. **Sachlicher Stil.** Keine Umgangssprache, kein *I think*. Kurzformen (*it's, they're*) sind erlaubt.
 
 **Länge:** keine feste Wortzahl. Maßstab ist, ob die Fragestellung vollständig und mit genügend Tiefe beantwortet ist.
 
@@ -818,7 +822,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 ### Sprache
 15. **Argumentative Verknüpfungen,** abwechslungsreich: *firstly, furthermore, moreover, in addition, admittedly, on the other hand, however, nevertheless, consequently, therefore, above all*.
 16. **Meinungsäußerung nur im Schluss** mit passenden Wendungen. *I* ist **nur im Schluss** erlaubt. Einleitung und Hauptteil sind sachlich formuliert, ohne *I*.
-17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache (coll) und erst recht kein Slang (slang), keine Übertreibungen wie *everybody knows*.
+17. **Sachlicher Stil.** Keine Umgangssprache (coll) und erst recht kein Slang (slang), keine Übertreibungen wie *everybody knows*.
 18. **Zeitform:** meist simple present. Andere Zeiten, wo der Inhalt sie verlangt (z. B. bei Beispielen aus der Vergangenheit).
 
 **Länge:** keine feste Wortzahl. Maßstab ist, ob genau vier vollständige Argumente und ein begründetes Fazit drin sind.
@@ -909,7 +913,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Zeichen cop). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
 12. **Berichtende Verben, abwechslungsreich:** *state, claim, point out, explain, argue, emphasize, criticize, describe, report, suggest*. Statt *says … says … says*.
 13. **Wiedergabe statt direkter Rede.** Indirekte Rede bzw. eigene Umschreibung. Bei Erzähltexten den Erzähler (*the narrator*) nicht mit der Autorin oder dem Autor gleichsetzen.
-14. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I*.
+14. **Sachlicher Stil.** Keine Umgangssprache, kein *I*. Kurzformen (*it's, they're*) sind erlaubt.
 
 **Länge:** Es gibt keine feste Wortzahl. Maßstab ist, ob alle Hauptpunkte drin sind und nichts Überflüssiges.
 
