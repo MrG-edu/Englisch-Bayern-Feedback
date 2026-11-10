@@ -48,7 +48,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 |---|---|
 | outline · summarize · sum up (+ point out, describe) | [Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf](merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf): Dos and don’ts, Schritt für Schritt, Formulierungshilfen, Musterlösung |
 | discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
-| Kommasetzung | [Commas_Merkblatt.pdf](merkblaetter/Commas_Merkblatt.pdf): Unterschiede zum Deutschen, Regeln mit Beispielen, Signalwörter, Übung mit Lösung |
+| Kommasetzung | [Commas_Merkblatt.pdf](merkblaetter/Commas_Merkblatt.pdf): drei Regeln, Unterschiede zum Deutschen, Musterabsatz, Übung mit Lösung |
 
 ## So benutzt du den Skill
 
