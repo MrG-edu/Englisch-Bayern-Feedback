@@ -45,7 +45,7 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
 | Operator | Merkblatt |
 |---|---|
-| outline · summarize · sum up (+ point out, describe) | [Outline_Merkblatt.pdf](merkblaetter/Outline_Merkblatt.pdf): Dos and don’ts, Schritt für Schritt, Formulierungshilfen, Musterlösung |
+| outline · summarize · sum up (+ point out, describe) | [Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf](merkblaetter/Outline_Summarize_SumUp_PointOut_Describe_Merkblatt.pdf): Dos and don’ts, Schritt für Schritt, Formulierungshilfen, Musterlösung |
 | discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
 
 ## So benutzt du den Skill
