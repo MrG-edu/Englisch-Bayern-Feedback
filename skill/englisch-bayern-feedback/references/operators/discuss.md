@@ -65,6 +65,24 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 
 **Kombiniert mit write + Textsorte** (z. B. *Write a letter to the editor, discussing …*): Der Pflichtaufbau gilt trotzdem. Prüfe zusätzlich die Merkmale der Textsorte und den Adressatenbezug.
 
+## Aufbau im korrigierten Text farbig zeigen
+
+Im korrigierten Text bekommt **jeder Absatz** seine Rolle (Schreibweise in `bericht.md`). So sieht die Person auf einen Blick, wie ihr Text aufgebaut ist und wo der Aufbau nicht stimmt.
+
+| `t` | `l` (Beschriftung) |
+|---|---|
+| `einleitung` | Einleitung |
+| `gegen` | Gegenargument 1 · stärkstes / Gegenargument 2 |
+| `dafuer` | Argument dafür 1 / Argument dafür 2 · stärkstes |
+| `schluss` | Schluss |
+| `gemischt` | was der Absatz tatsächlich enthält, z. B. „Gegenargument + Argument dafür“ |
+
+- Beschrifte, was der Absatz **tatsächlich** ist, nicht welcher Platz im Pflichtaufbau vorgesehen wäre. Steht ein drittes Gegenargument da, heißt es „Gegenargument 3“.
+- Gegen und dafür beziehen sich auf die **Meinung im Schluss**. Ist keine Meinung erkennbar, nimm die Seite, die der Text am Ende vertritt, und weise unter „Inhalt und Aufbau“ darauf hin.
+- `gemischt` nur, wenn ein Absatz beide Seiten oder zwei Argumente vermischt oder seine Rolle unklar ist.
+- `h` nur bei einem Aufbauproblem, höchstens sechs Wörter, z. B.: *zwei Argumente in einem Absatz* · *kein eigenes Beispiel* · *stärkeres Argument gehört nach vorn* · *Meinung schon in der Einleitung* · *neues Argument im Schluss* · *Ausgangspunkt fehlt*.
+- Die Hinweise ersetzen nicht die Rückmeldung unter „Inhalt und Aufbau“, sie zeigen nur, wo im Text das Problem liegt.
+
 ## Typische Fehler und wie du sie korrigierst
 
 | Fehler | Woran du es merkst | In der Korrektur |

@@ -9,7 +9,7 @@ Der Skill funktioniert mit **Claude** und **ChatGPT**.
 Du schickst deinen Text **einmal** und bekommst einen fertigen **Bericht**, für jede Teilaufgabe:
 
 ✅ dein **Profil** als Grafik mit fünf Feldern pro Bereich: wo deine Stärken und Baustellen liegen (Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz, Satzbau), dazu was du schon kannst und wo sich Üben lohnt,
-✅ **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Erklärungen zum Antippen. Hier steht **jeder Sprachfehler** mit Verbesserung. Korrigiert wird nur die Sprache, dein Inhalt bleibt,
+✅ **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Erklärungen zum Antippen. Hier steht **jeder Sprachfehler** mit Verbesserung. Bei *discuss* zeigen Farben, welcher Absatz Einleitung, Gegenargument, Argument dafür oder Schluss ist. Korrigiert wird nur die Sprache, dein Inhalt bleibt,
 ✅ eine kurze Rückmeldung zu **Inhalt und Aufbau**: was gelungen ist und was du verbessern kannst,
 ✅ eine kurze Rückmeldung zur **Sprache**,
 ✅ zu beidem, worauf du beim nächsten Mal achten solltest, nur das Wichtigste.

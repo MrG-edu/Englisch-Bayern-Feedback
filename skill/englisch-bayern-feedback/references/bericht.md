@@ -64,6 +64,8 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 | Streichen | `<k v="" z="Zeichen">Original</k>` | `He <k v="" z="gr">did</k> went home` |
 | Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Zeichen"></k>` | `First<k v="," z="p"></k> the author` |
 | Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="voc" n="1">it is about</k>` |
+
+**Aufbau farbig (nur bei discuss):** Jeder Absatz bekommt seine Rolle als Attribute am `<p>`: `t` (Farbe: `einleitung`, `gegen`, `dafuer`, `schluss`, `gemischt`), `l` (Beschriftung, z. B. `Gegenargument 1 · stärkstes`) und nur bei einem Aufbauproblem `h` (kurzer Hinweis, z. B. `zwei Argumente in einem Absatz`). Beispiel: `<p t="gegen" l="Gegenargument 2" h="kein eigenes Beispiel">…</p>`. Regeln in `operators/discuss.md`. Das Skript färbt die Absätze und zeigt eine Legende.
 | Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
 | Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
@@ -171,6 +173,17 @@ Beispiel für eine Teilaufgabe:
   .blatt { position: relative; padding: 18px 124px 8px 22px; background: #fff; border: 1px solid var(--linie); border-radius: 12px; font-family: Georgia, "Times New Roman", serif; }
   .blatt::after { content: ""; position: absolute; top: 0; bottom: 0; right: 108px; border-right: 1.5px solid var(--rot); opacity: .7; }
   .blatt p { font-size: 17px; line-height: 3; margin: 0 0 14px; }
+  /* Aufbau farbig (discuss): <p t="…" l="…" h="…"> */
+  .blatt p.teil { border-left: 5px solid var(--teil-rand); background: var(--teil-bg); border-radius: 0 10px 10px 0; padding: 6px 10px 2px 14px; margin-left: -8px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .teil-einleitung, .teil-schluss { --teil-rand: #9aa3ad; --teil-bg: #f3f4f6; }
+  .teil-gegen { --teil-rand: #d08a16; --teil-bg: #fdf5e6; }
+  .teil-dafuer { --teil-rand: #2e8b57; --teil-bg: #ecf7f0; }
+  .teil-gemischt { --teil-rand: var(--rot); --teil-bg: var(--rot-hell); }
+  .teil-kopf { display: block; font: 600 12.5px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 2px 0 0; color: var(--ink-2); }
+  .teil-kopf .tl { display: inline-block; color: #fff; background: var(--teil-rand); border-radius: 999px; padding: 2px 10px; margin-right: 6px; }
+  .teil-kopf .th { color: var(--rot); }
+  .aufbau-legende { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--ink-2); margin: 0 0 10px; }
+  .aufbau-legende span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; background: var(--teil-bg); border-left: 4px solid var(--teil-rand); }
   .korr del { color: var(--rot); text-decoration-color: var(--rot); text-decoration-thickness: 1.5px; }
   .korr rt { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; white-space: nowrap; }
   .korr ruby { ruby-align: center; }
@@ -331,6 +344,13 @@ Beispiel für eine Teilaufgabe:
     if (tpl) {
       sec.appendChild(h2(1, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
+      var teile = blatt.querySelectorAll("p[t]");
+      teile.forEach(function (q) {
+        var t = q.getAttribute("t"); q.classList.add("teil", "teil-" + t);
+        var kopf = el("span", "teil-kopf"); kopf.appendChild(el("span", "tl", q.getAttribute("l") || t));
+        if (q.getAttribute("h")) kopf.appendChild(el("span", "th", "⚠ " + q.getAttribute("h")));
+        q.insertBefore(kopf, q.firstChild);
+      });
       var zz = {};
       blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (!c) return; if (c === "~") c = "~~"; zz[c] = (zz[c] || 0) + 1; }); });
       sec.appendChild(legende(zz));
@@ -353,6 +373,7 @@ Beispiel für eine Teilaufgabe:
         var r = el("span", "rand"); r.innerHTML = z + (nr ? ' <span class="rn nur-druck">' + nr + "</span>" : ""); s.appendChild(r);
         k.replaceWith(s);
       });
+      if (teile.length) { var lg = el("p", "aufbau-legende"); lg.appendChild(el("b", null, "Dein Aufbau:")); [["einleitung", "Einleitung / Schluss"], ["gegen", "gegen deine Meinung"], ["dafuer", "für deine Meinung"], ["gemischt", "unklar / gemischt"]].forEach(function (x) { lg.appendChild(el("span", "teil-" + x[0], x[1])); }); sec.appendChild(lg); }
       if (blatt.querySelector(".info")) { var hw = el("p", "info-hinweis"); hw.innerHTML = 'Hinter manchen Korrekturen steht ein blaues <span class="info" aria-hidden="true">i</span>. Fahr mit der Maus darüber oder tipp darauf, dann erscheint eine Erklärung.'; sec.appendChild(hw); }
       sec.appendChild(blatt);
       if (a.kommentare && a.kommentare.length) { var dk = el("div", "nur-druck"); dk.appendChild(el("h3", null, "Erklärungen")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); dk.appendChild(ok); sec.appendChild(dk); }
@@ -429,4 +450,5 @@ Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Mark
 - **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Erklärung `⟨voc ①⟩` mit Liste „Erklärungen“ darunter. Absätze bleiben erhalten.
 - **2. Inhalt und Aufbau:** *Inhalt* und *Aufbau* je mit ✓ gelungen und ! zu verbessern, dann *Darauf achtest du beim nächsten Mal*
 - **3. Sprache** mit *Darauf achtest du beim nächsten Mal*
+- Bei discuss steht vor jedem Absatz des korrigierten Texts seine Rolle: `**[Gegenargument 2]** ⚠ kein eigenes Beispiel`
 - Merkblätter als Markdown-Link: `[Merkblatt Kommasetzung](URL)`
