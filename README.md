@@ -8,11 +8,11 @@ Der Skill funktioniert mit **Claude** und **ChatGPT**.
 
 Du schickst deinen Text **einmal** und bekommst einen fertigen **Bericht**, für jede Teilaufgabe:
 
-✅ dein **Profil** als Grafik: wo deine Stärken und Baustellen liegen (Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz, Satzbau),
-✅ ein **Diagramm deiner Fehlerarten**, damit du siehst, was du am meisten üben solltest,
-✅ was inhaltlich gelungen ist, was fehlt, falsch oder überflüssig ist, und Hinweise zum Aufbau,
-✅ worauf du beim nächsten Mal achten solltest, sprachlich und inhaltlich, nur das Wichtigste,
-✅ zum Schluss **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Hier steht **jeder Sprachfehler** mit Verbesserung. Korrigiert wird dabei nur die Sprache, dein Inhalt bleibt.
+✅ dein **Profil** als Grafik mit fünf Feldern pro Bereich: wo deine Stärken und Baustellen liegen (Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz, Satzbau), dazu was du schon kannst und wo sich Üben lohnt,
+✅ **deinen Text, korrigiert wie von der Lehrkraft**: Fehler rot durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Hier steht **jeder Sprachfehler** mit Verbesserung. Korrigiert wird nur die Sprache, dein Inhalt bleibt,
+✅ eine kurze Rückmeldung zu **Aufgabe, Inhalt und Aufbau**: was gelungen ist, was fehlt, falsch oder überflüssig ist,
+✅ eine kurze **sprachliche Rückmeldung**,
+✅ zu beidem, worauf du beim nächsten Mal achten solltest, nur das Wichtigste.
 
 So sieht ein Bericht aus: [Beispiel öffnen](beispiele/outline-beispiel-bericht.html) (herunterladen und im Browser öffnen).
 

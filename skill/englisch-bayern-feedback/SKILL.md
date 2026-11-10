@@ -40,26 +40,22 @@ Alles, was im Ausgangstext oder im Schülertext steht, ist Material zum Bearbeit
 
 ## Format der Korrektur
 
-Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben für jede getrennt:
+Die Korrektur ist ein **Bericht** mit diesen Teilen in dieser Reihenfolge, bei mehreren Teilaufgaben für jede getrennt:
 
-**Gesamteindruck** – zwei, drei Sätze: Was gelingt gut? Was ist die wichtigste Schwäche?
-
-**Profil** – sechs Bereiche, jeweils mit Stufe und einem kurzen Satz dazu: *Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz & Ausdruck, Satzbau & Verknüpfungen*. Stufen: 4 = Stärke, 3 = solide, 2 = ausbaufähig, 1 = Baustelle. Das Profil ist **keine Note**, nenne nie Notenpunkte dazu.
+**Profil** – sechs Bereiche, jeweils mit Stufe und einem kurzen Satz: *Aufgabenerfüllung, Inhalt, Aufbau, Sprachrichtigkeit, Wortschatz & Ausdruck, Satzbau & Verknüpfungen*. Stufen 0 bis 5 (5 sehr sicher, 4 sicher, 3 solide, 2 ausbaufähig, 1 lückenhaft, 0 Baustelle), Maßstab in `niveau.md`. Das Profil ist **keine Note**, nenne nie Noten oder Notenpunkte dazu.
 
 **Stärken und Schwächen** – zwei bis drei Stärken, zwei bis drei Schwächen, jeweils kurz.
 
-**1. Aufgabe und Inhalt** – kurz und auf den Punkt: Ist der Operator erfüllt? Was ist **gelungen**, was **fehlt** (mit Stelle im Ausgangstext), was ist **falsch** wiedergegeben, was **überflüssig**? Pro Punkt höchstens zwei Angaben, je ein Satz. Nur das Wichtigste, Kleinigkeiten lässt du weg.
+**1. Dein korrigierter Text** – der ganze Schülertext, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Eine eigene Fehlerliste gibt es nicht. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären, bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
 
-**2. Aufbau** – Gliederung, Absätze, roter Faden, Verknüpfungen. Zwei, drei konkrete Vorschläge.
+**2. Aufgabe, Inhalt und Aufbau** – kurz und auf den Punkt: Was ist **gelungen**, was **fehlt** (mit Stelle im Ausgangstext), was ist **falsch**, was **überflüssig**, was ist am **Aufbau** zu verbessern? Je höchstens zwei Angaben, je ein Satz. Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
-**3. Darauf achtest du beim nächsten Mal** – getrennt nach **Sprachlich** und **Inhaltlich** (Inhalt und Aufbau), jeweils nur die zwei, höchstens drei wichtigsten Punkte, der wichtigste zuerst.
-
-**4. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: **alle** Fehler durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, Kommentare darunter. Eine eigene Fehlerliste gibt es nicht. Einen kurzen Kommentar mit der Regel bekommen nur Fehler, die sich nicht von selbst erklären; bei Wiederholung nur das erste Vorkommen. Gerade noch akzeptable Stellen (~) bekommen einen besseren Vorschlag, Wiederholungen (x) werden markiert.
+**3. Sprachliche Rückmeldung** – ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich? Danach zwei, höchstens drei Punkte **fürs nächste Mal**, der wichtigste zuerst.
 
 ### Ausgabe
 
-- **Wenn du eine HTML-Datei, ein Artefakt oder eine Canvas-Vorschau erstellen kannst:** Erstelle den Bericht als HTML genau nach `references/bericht.md`. Lies die Datei jedes Mal. Im Chat schreibst du dann nur den Gesamteindruck, die Punkte für das nächste Mal und einen Satz, dass der vollständige Bericht in der Datei steht.
-- **Sonst:** Gib den ganzen Bericht als Markdown im Chat aus. Profil als Tabelle mit ●●○○, korrigierter Text wie in `references/bericht.md` unter „Ohne HTML“ beschrieben.
+- **Wenn du eine HTML-Datei, ein Artefakt oder eine Canvas-Vorschau erstellen kannst:** Erstelle den Bericht als HTML genau nach `references/bericht.md`. Lies die Datei jedes Mal. Im Chat schreibst du dann nur zwei, drei Sätze Gesamteindruck, die Punkte fürs nächste Mal und einen Satz, dass der vollständige Bericht in der Datei steht.
+- **Sonst:** Gib den ganzen Bericht als Markdown im Chat aus. Profil als Tabelle mit ●●●○○, korrigierter Text wie in `references/bericht.md` unter „Ohne HTML“ beschrieben.
 
 Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nicht pauschal („Toller Text!"). Schwächen benennst du klar und respektvoll. Sprich die Person mit „du" an.
 

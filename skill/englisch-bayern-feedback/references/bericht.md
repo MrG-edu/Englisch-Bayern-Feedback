@@ -1,6 +1,6 @@
 # Bericht als HTML-Seite
 
-Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe den Gesamteindruck, das Profil als Grafik, ein Diagramm der Fehlerarten, Stärken und Schwächen, kurze Hinweise zu Inhalt und Aufbau, die Punkte fürs nächste Mal und den korrigierten Text im Lehrerstil mit allen Korrekturen, darüber eine ausklappbare Liste aller Korrekturzeichen. Dateiname: `korrektur.html`.
+Der Bericht ist **eine** HTML-Seite für alle Teilaufgaben. Sie zeigt pro Teilaufgabe in dieser Reihenfolge: das Profil als Grafik, Stärken und Schwächen, den korrigierten Text im Lehrerstil mit allen Korrekturen (darüber eine ausklappbare Liste der Korrekturzeichen), die Rückmeldung zu Aufgabe, Inhalt und Aufbau und die sprachliche Rückmeldung, jeweils mit den Punkten fürs nächste Mal. Dateiname: `korrektur.html`.
 
 ## So füllst du die Vorlage
 
@@ -8,7 +8,7 @@ Kopiere die Vorlage unten **unverändert**. Du änderst nur zwei Stellen:
 1. das JSON im Block `<script type="application/json" id="daten">`,
 2. den Kommentar `<!-- KORRIGIERTE TEXTE … -->`: an seine Stelle kommt pro Teilaufgabe ein `<template id="text-1">`, `<template id="text-2">` … mit dem korrigierten Text.
 
-Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerdiagramm und die Liste der Korrekturzeichen. Die Fehler zählt es selbst aus den Korrekturzeichen im korrigierten Text.
+Das Skript in der Vorlage baut daraus die ganze Seite, die Grafik und die Liste der Korrekturzeichen.
 
 ### Das JSON
 
@@ -20,22 +20,21 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
       "nummer": "B.1",
       "operator": "outline",
       "aufgabe": "Aufgabenstellung wörtlich",
-      "gesamteindruck": "Zwei, drei Sätze.",
       "profil": [
         {"bereich": "Aufgabenerfüllung", "stufe": 2, "kommentar": "Ein kurzer Satz."},
         {"bereich": "Inhalt", "stufe": 3, "kommentar": "…"},
         {"bereich": "Aufbau", "stufe": 2, "kommentar": "…"},
-        {"bereich": "Sprachrichtigkeit", "stufe": 2, "kommentar": "…"},
+        {"bereich": "Sprachrichtigkeit", "stufe": 3, "kommentar": "…"},
         {"bereich": "Wortschatz & Ausdruck", "stufe": 2, "kommentar": "…"},
-        {"bereich": "Satzbau & Verknüpfungen", "stufe": 3, "kommentar": "…"}
+        {"bereich": "Satzbau & Verknüpfungen", "stufe": 4, "kommentar": "…"}
       ],
       "staerken": ["…", "…"],
       "schwaechen": ["…", "…"],
-      "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"]},
-      "aufbau": ["…", "…"],
+      "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"], "aufbau": ["…"]},
+      "sprache": "Ein, zwei Sätze: Was gelingt sprachlich, welche Fehler häufen sich?",
       "naechstesMal": {
-        "sprache": ["…", "…"],
-        "inhalt": ["…", "…"]
+        "inhalt": ["…", "…"],
+        "sprache": ["…", "…"]
       },
       "kommentare": ["Kommentar ① zum korrigierten Text", "Kommentar ②"]
     }
@@ -46,9 +45,9 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken, das Fehlerd
 Regeln für das JSON:
 - **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
-- **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Inhalt:** pro Liste höchstens zwei Punkte, je ein kurzer Satz.
-- **naechstesMal:** `sprache` und `inhalt` (Inhalt und Aufbau) mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
+- **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 0 bis 5 (5 sehr sicher, 4 sicher, 3 solide, 2 ausbaufähig, 1 lückenhaft, 0 Baustelle), Maßstab in `kriterien/niveau.md`.
+- **inhalt:** pro Liste höchstens zwei Punkte, je ein kurzer Satz. `aufbau` gehört mit hinein.
+- **naechstesMal:** `inhalt` (Inhalt und Aufbau) und `sprache` mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -114,36 +113,25 @@ Beispiel für eine Teilaufgabe:
   .nr { font-weight: 700; font-size: 22px; }
   .chip { font-size: 13px; font-weight: 600; color: var(--akzent); background: var(--akzent-hell); border-radius: 999px; padding: 3px 10px; }
   .aufg-text { font-style: italic; color: var(--ink-2); margin: 0 0 18px; }
-  .eindruck { font-size: 18px; line-height: 1.5; margin: 0 0 24px; padding-left: 14px; border-left: 3px solid var(--akzent); }
   h2 { font-size: 17px; margin: 30px 0 12px; display: flex; align-items: center; gap: 8px; }
   h2 .zahl { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 13px; }
-  .grid2 { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; }
   .karte { border: 1px solid var(--linie); border-radius: 12px; padding: 18px; background: #fff; }
   .karte h3 { margin: 0 0 4px; font-size: 15px; }
   .karte .unter { margin: 0 0 14px; font-size: 13px; color: var(--ink-3); }
   /* Profil */
-  .profil-zeile { display: grid; grid-template-columns: 150px 1fr; gap: 4px 12px; align-items: center; padding: 8px 0; border-top: 1px solid var(--linie); position: relative; }
+  .karte.profil { margin-top: 8px; }
+  .profil-zeile { display: grid; grid-template-columns: 190px 250px 1fr; gap: 4px 16px; align-items: center; padding: 9px 0; border-top: 1px solid var(--linie); position: relative; }
   .profil-zeile:first-of-type { border-top: 0; }
   .bereich { font-size: 14px; font-weight: 600; }
   .meter { display: flex; align-items: center; gap: 10px; }
   .pips { display: flex; gap: 2px; }
-  .pip { width: 30px; height: 10px; background: var(--leer); }
+  .pip { width: 28px; height: 10px; background: var(--leer); }
   .pip:first-child { border-radius: 4px 0 0 4px; } .pip:last-child { border-radius: 0 4px 4px 0; }
   .pip.an { background: var(--akzent); }
   .stufe { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
-  .pkomm { grid-column: 2; font-size: 13px; color: var(--ink-2); line-height: 1.4; }
+  .pkomm { font-size: 13px; color: var(--ink-2); line-height: 1.4; }
   /* Fehlerdiagramm */
-  .balken-zeile { display: grid; grid-template-columns: 190px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
   .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 66px; }
-  .spur { height: 14px; position: relative; }
-  .balken { height: 14px; background: var(--akzent); border-radius: 0 4px 4px 0; min-width: 4px; }
-  .wert { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
-  .balken-zeile:hover .balken { filter: brightness(.9); }
-  .tip { position: absolute; left: 200px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
-  .balken-zeile:hover .tip, .balken-zeile:focus .tip { opacity: 1; }
-  .leer-hinweis { font-size: 14px; color: var(--ink-2); }
-  details.tabelle { margin-top: 10px; font-size: 13px; color: var(--ink-2); }
-  details.tabelle table { margin-top: 6px; }
   /* Stärken / Schwächen */
   .sw { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
   .sw .karte { padding: 16px 18px; }
@@ -170,9 +158,9 @@ Beispiel für eine Teilaufgabe:
   th { text-align: left; font-size: 12px; color: var(--ink-3); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--linie-stark); }
   td { padding: 8px; border-bottom: 1px solid var(--linie); vertical-align: top; }
   /* Nächstes Mal */
-  .nm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .l-nm { background: var(--akzent-hell); color: var(--akzent); margin-bottom: 8px; }
-  @media (max-width: 720px) { .nm-grid { grid-template-columns: 1fr; } }
+  .l-nm { background: var(--akzent-hell); color: var(--akzent); margin: 6px 0 8px; }
+  .l-aufbau { background: var(--akzent-hell); color: var(--akzent); }
+  .sprache-text { margin: 0 0 14px; }
   /* Nächstes Mal */
   ol.schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
   ol.schritte li { counter-increment: s; background: var(--akzent-hell); border-radius: 10px; padding: 12px 14px 12px 48px; position: relative; }
@@ -212,9 +200,9 @@ Beispiel für eine Teilaufgabe:
   .fehler-daten { background: var(--rot-hell); color: var(--rot); padding: 16px; border-radius: 12px; }
   @media (max-width: 720px) {
     .wrap { padding: 20px 12px 48px; } section.aufgabe { padding: 18px; }
-    .grid2, .sw { grid-template-columns: 1fr; }
-    .profil-zeile { grid-template-columns: 1fr; } .pkomm { grid-column: 1; }
-    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 170px 1fr 24px; } .tip { left: 178px; } .rand { width: 48px; right: 4px; font-size: 12px; }
+    .sw { grid-template-columns: 1fr; }
+    .profil-zeile { grid-template-columns: 1fr; }
+    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .rand { width: 48px; right: 4px; font-size: 12px; }
     h1 { font-size: 24px; }
   }
   @media print {
@@ -249,7 +237,7 @@ Beispiel für eine Teilaufgabe:
 <script>
 (function () {
   var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "Umgangssprache", slang: "Slang / vulgär", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
-  var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
+  var STUFEN = { 0: "Baustelle", 1: "lückenhaft", 2: "ausbaufähig", 3: "solide", 4: "sicher", 5: "sehr sicher" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var LEGENDE = [
     ["Grammatik und Form", [["gr", "Grammatikfehler", "He work on a farm."], ["t", "falsche Zeitform", "Yesterday I haven't done my homework."], ["wo", "falsche Wortstellung", "I have been never there before."], ["prep", "falsche Präposition", "I was looking on him."], ["sp", "Rechtschreibfehler", "intresting"], ["p", "Fehler in der Zeichensetzung", "The man, who I saw, must be …"]]],
@@ -292,69 +280,39 @@ Beispiel für eine Teilaufgabe:
     if ((daten.aufgaben || []).length > 1) { var l = el("a", null, titel); l.href = "#" + sec.id; nav.appendChild(l); }
     var kopf = el("div", "aufg-kopf"); kopf.appendChild(el("span", "nr", titel)); if (a.operator) kopf.appendChild(el("span", "chip", a.operator)); sec.appendChild(kopf);
     if (a.aufgabe) sec.appendChild(el("p", "aufg-text", a.aufgabe));
-    if (a.gesamteindruck) sec.appendChild(el("p", "eindruck", a.gesamteindruck));
 
-    // Profil + Fehlerdiagramm
-    var g = el("div", "grid2");
-    var kp = el("div", "karte"); kp.appendChild(el("h3", null, "Dein Profil")); kp.appendChild(el("p", "unter", "Wo deine Stärken und Baustellen liegen – keine Note"));
+    // Profil
+    var kp = el("div", "karte profil"); kp.appendChild(el("h3", null, "Dein Profil")); kp.appendChild(el("p", "unter", "Wo deine Stärken und Baustellen liegen – keine Note"));
     (a.profil || []).forEach(function (p) {
+      var st = Math.max(0, Math.min(5, +p.stufe || 0));
       var z = el("div", "profil-zeile"); z.appendChild(el("div", "bereich", p.bereich));
-      var m = el("div", "meter"), pips = el("div", "pips"); pips.setAttribute("role", "img"); pips.setAttribute("aria-label", p.bereich + ": " + (STUFEN[p.stufe] || ""));
-      for (var s = 1; s <= 4; s++) pips.appendChild(el("span", "pip" + (s <= p.stufe ? " an" : "")));
-      m.appendChild(pips); m.appendChild(el("span", "stufe", STUFEN[p.stufe] || "")); z.appendChild(m);
+      var m = el("div", "meter"), pips = el("div", "pips"); pips.setAttribute("role", "img"); pips.setAttribute("aria-label", p.bereich + ": " + st + " von 5, " + STUFEN[st]);
+      for (var s = 1; s <= 5; s++) pips.appendChild(el("span", "pip" + (s <= st ? " an" : "")));
+      m.appendChild(pips); m.appendChild(el("span", "stufe", STUFEN[st])); z.appendChild(m);
       if (p.kommentar) z.appendChild(el("div", "pkomm", p.kommentar));
       kp.appendChild(z);
     });
-    g.appendChild(kp);
-
-    var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
-    var tpl = document.getElementById("text-" + idx), zaehl = {}, stellen = 0;
-    if (tpl) tpl.content.querySelectorAll("k").forEach(function (k) { var echt = String(k.getAttribute("z") || "").split(/\s+/).filter(function (c) { return c && c !== "~" && c !== "x"; }); if (echt.length) stellen++; echt.forEach(function (c) { zaehl[c] = (zaehl[c] || 0) + 1; }); });
-    var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
-    kf.appendChild(el("p", "unter", stellen + " markierte Stellen · häufigste Fehlerart zuerst"));
-    if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
-    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
-    arten.forEach(function (k) {
-      var z = el("div", "balken-zeile"); z.tabIndex = 0;
-      z.appendChild(el("span", "bk", "<b>" + k + "</b> " + (KZ[k] || "")));
-      var sp = el("div", "spur"), b = el("div", "balken"); b.style.width = (zaehl[k] / max * 100) + "%"; sp.appendChild(b); z.appendChild(sp);
-      z.appendChild(el("span", "wert", String(zaehl[k])));
-      z.appendChild(el("span", "tip", (KZ[k] || k) + ": " + zaehl[k] + "×"));
-      kf.appendChild(z);
-      tab += "<tr><td>" + k + "</td><td>" + (KZ[k] || k) + "</td><td>" + zaehl[k] + "</td></tr>";
-    });
-    if (arten.length) { var d = el("details", "tabelle"); d.innerHTML = "<summary>Als Tabelle</summary>" + tab + "</table>"; kf.appendChild(d); }
-    g.appendChild(kf); sec.appendChild(g);
+    sec.appendChild(kp);
 
     var sw = el("div", "sw");
     var ks = el("div", "karte staerken"); ks.appendChild(el("h3", null, "Das kannst du schon")); ks.appendChild(liste(a.staerken)); sw.appendChild(ks);
     var kw = el("div", "karte schwaechen"); kw.appendChild(el("h3", null, "Hier lohnt sich Üben")); kw.appendChild(liste(a.schwaechen)); sw.appendChild(kw);
     sec.appendChild(sw);
 
-    // 1 Inhalt
-    sec.appendChild(h2(1, "Aufgabe und Inhalt"));
-    var inh = a.inhalt || {};
-    [["gut", "l-gut", "Gelungen"], ["fehlt", "l-fehlt", "Fehlt"], ["falsch", "l-falsch", "Falsch wiedergegeben"], ["ueberfluessig", "l-ueber", "Überflüssig"]].forEach(function (t) {
-      if (inh[t[0]] && inh[t[0]].length) { var gr = el("div", "gruppe"); gr.appendChild(el("span", "label " + t[1], t[2])); gr.appendChild(liste(inh[t[0]])); sec.appendChild(gr); }
-    });
-    // 2 Aufbau
-    sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
-    // 3 Nächstes Mal
-    sec.appendChild(h2(3, "Darauf achtest du beim nächsten Mal"));
+    function naechstes(arr) {
+      if (!arr || !arr.length) return;
+      sec.appendChild(el("span", "label l-nm", "Darauf achtest du beim nächsten Mal"));
+      var ol = el("ol", "schritte"); arr.forEach(function (x) { ol.appendChild(el("li", null, x)); }); sec.appendChild(ol);
+    }
     var nm = a.naechstesMal || {}; if (Array.isArray(nm)) nm = { sprache: nm };
-    var ng = el("div", "nm-grid");
-    [["sprache", "Sprachlich"], ["inhalt", "Inhaltlich"]].forEach(function (t) {
-      if (!nm[t[0]] || !nm[t[0]].length) return;
-      var box = el("div"); box.appendChild(el("span", "label l-nm", t[1]));
-      var ol = el("ol", "schritte"); nm[t[0]].forEach(function (x) { ol.appendChild(el("li", null, x)); }); box.appendChild(ol); ng.appendChild(box);
-    });
-    sec.appendChild(ng);
-    // 4 Korrigierter Text
+
+    // 1 Korrigierter Text
+    var tpl = document.getElementById("text-" + idx);
     if (tpl) {
-      sec.appendChild(h2(4, "Dein korrigierter Text"));
+      sec.appendChild(h2(1, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
-      var zz = {}; Object.keys(zaehl).forEach(function (c) { zz[c] = zaehl[c]; });
-      blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (c === "~" || c === "x") { c = c === "~" ? "~~" : "x"; zz[c] = (zz[c] || 0) + 1; } }); });
+      var zz = {};
+      blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (!c) return; if (c === "~") c = "~~"; zz[c] = (zz[c] || 0) + 1; }); });
       sec.appendChild(legende(zz));
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
@@ -370,6 +328,21 @@ Beispiel für eine Teilaufgabe:
       sec.appendChild(blatt);
       if (a.kommentare && a.kommentare.length) { sec.appendChild(el("h3", null, "Kommentare")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); sec.appendChild(ok); }
     }
+
+    // 2 Aufgabe, Inhalt und Aufbau
+    sec.appendChild(h2(2, "Aufgabe, Inhalt und Aufbau"));
+    var inh = a.inhalt || {};
+    if (a.aufbau && a.aufbau.length && !inh.aufbau) inh.aufbau = a.aufbau;
+    [["gut", "l-gut", "Gelungen"], ["fehlt", "l-fehlt", "Fehlt"], ["falsch", "l-falsch", "Falsch wiedergegeben"], ["ueberfluessig", "l-ueber", "Überflüssig"], ["aufbau", "l-aufbau", "Aufbau"]].forEach(function (t) {
+      if (inh[t[0]] && inh[t[0]].length) { var gr = el("div", "gruppe"); gr.appendChild(el("span", "label " + t[1], t[2])); gr.appendChild(liste(inh[t[0]])); sec.appendChild(gr); }
+    });
+    naechstes(nm.inhalt);
+
+    // 3 Sprachliche Rückmeldung
+    sec.appendChild(h2(3, "Sprachliche Rückmeldung"));
+    if (a.sprache) sec.appendChild(el("p", "sprache-text", a.sprache));
+    naechstes(nm.sprache);
+
     main.appendChild(sec);
   });
 
@@ -391,8 +364,8 @@ Beispiel für eine Teilaufgabe:
 
 Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Markdown aus, in derselben Reihenfolge:
 - **Maßstab** als erste Zeile: *Maßstab: Q13 · eA · Ziel C1*
-- **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
-- **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
+- **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als fünf Punkte: ●●●●● sehr sicher, ●●●●○ sicher, ●●●○○ solide, ●●○○○ ausbaufähig, ●○○○○ lückenhaft, ○○○○○ Baustelle.
 - **Stärken** mit ✓, **Schwächen** mit !
-- **Darauf achtest du beim nächsten Mal** mit den Unterpunkten *Sprachlich* und *Inhaltlich*
-- **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
+- **1. Dein korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit Liste darunter. Absätze bleiben erhalten.
+- **2. Aufgabe, Inhalt und Aufbau** mit *Darauf achtest du beim nächsten Mal*
+- **3. Sprachliche Rückmeldung** mit *Darauf achtest du beim nächsten Mal*

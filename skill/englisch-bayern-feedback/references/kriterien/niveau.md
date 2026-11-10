@@ -31,13 +31,17 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
 ## So stimmst du die Korrektur ab
 
 1. **Fehler korrigierst du immer alle**, egal auf welcher Stufe. Ein Fehler bleibt ein Fehler.
-2. **Profil.** Die Stufen beziehen sich auf die Beschreibungen in den Bewertungsrastern, ausgelegt für das Zielniveau:
-   - **4 Stärke:** in hohem Maß korrekt, durchgehend eigene Formulierungen, präziser und differenzierter Wortschatz, durchgängig variabler Satzbau, sichere und vielfältige Verknüpfungen.
-   - **3 solide:** überwiegend korrekt, Verständnis nie gestört, meist eigene Formulierungen, meist präzise Wortwahl und variabler Satzbau.
-   - **2 ausbaufähig:** im Wesentlichen korrekt, Verständnis stellenweise leicht gestört, teilweise eigene Formulierungen, treffende, aber wenig differenzierte Wortwahl, Verknüpfungen sicher, aber wenig abwechslungsreich.
-   - **1 Baustelle:** Fehler stören das Verständnis, nur noch Teile in eigenen Worten, eingeschränkter Wortschatz, wenig variabler Satzbau, kaum Verknüpfungen.
+2. **Profil.** Die sechs Stufen (0–5) folgen den sechs Beschreibungsstufen der Bewertungsraster, ausgelegt für das Zielniveau. Für die Sprachbereiche:
+   - **5 sehr sicher:** in hohem Maß korrekt, durchgehend eigene Formulierungen, besonders präzise und idiomatische Wortwahl, durchgängig variabler Satzbau mit komplexen Strukturen, breites Spektrum an Verknüpfungen.
+   - **4 sicher:** überwiegend korrekt, Verständnis nie gestört, meist eigene Formulierungen, präzise Wortwahl, meist variabler Satzbau, meist sichere und abwechslungsreiche Verknüpfungen.
+   - **3 solide:** im Wesentlichen korrekt, Verständnis höchstens geringfügig gestört, teilweise eigene Formulierungen, treffende Wortwahl, teilweise variabler Satzbau, Verknüpfungen sicher, aber wenig abwechslungsreich.
+   - **2 ausbaufähig:** deutliche Verstöße, Verständnis stellenweise gestört, noch eigene Anteile, eingeschränkter Wortschatz, wenig variabler Satzbau, komplexe Strukturen selten oder fehlerhaft.
+   - **1 lückenhaft:** Fehler häufen sich, Verständnis stark gestört, kaum eigene Formulierungen, sehr einfacher Satzbau, kaum Verknüpfungen.
+   - **0 Baustelle:** elementare Fehler, Text kaum noch verständlich.
 
-   „Präzise“, „komplex“ und „idiomatisch“ legst du für das Zielniveau aus: Ein Text in Q12 gA kann bei *Wortschatz & Ausdruck* eine Stärke sein, ohne C1-Wendungen zu benutzen. In Q13 eA erwartest du mehr.
+   Aufgabenerfüllung, Inhalt und Aufbau stufst du entsprechend nach `inhalt.md` ein (5 = umfassend, vollständig, klar gegliedert … 0 = Aufgabe verfehlt).
+
+   „Präzise“, „komplex“ und „idiomatisch“ legst du für das Zielniveau aus: Ein Text in Q12 gA kann bei *Wortschatz & Ausdruck* die 5 erreichen, ohne C1-Wendungen zu benutzen. In Q13 eA erwartest du mehr.
 3. **Vorschläge bei ~ (gerade noch akzeptabel).** Vorschläge gehen **eine Stufe über den Text hinaus, höchstens bis zum oberen Zielniveau**. Keine seltenen Redewendungen oder C2-Wörter für einen B2-Text. Beispiele:
 
    | im Text | Schritt Richtung B2 | Schritt Richtung C1 |
