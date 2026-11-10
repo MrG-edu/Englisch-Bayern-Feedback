@@ -108,6 +108,21 @@
   .korr .wdh { border-bottom: 1.5px solid var(--rot); }
   .korr .wdh-x { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; vertical-align: sub; margin-left: 1px; }
   .rand { position: absolute; right: 10px; width: 92px; color: var(--rot); font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; line-height: 1.3; padding-top: 14px; }
+  details.legende { margin: 0 0 14px; border: 1px solid var(--linie); border-radius: 12px; background: #fff; }
+  details.legende summary { cursor: pointer; padding: 10px 14px; font-weight: 600; font-size: 14px; list-style: none; display: flex; align-items: center; gap: 8px; }
+  details.legende summary::-webkit-details-marker { display: none; }
+  details.legende summary::before { content: "▸"; color: var(--rot); transition: transform .15s; }
+  details.legende[open] summary::before { transform: rotate(90deg); }
+  details.legende summary .hint { font-weight: 400; color: var(--ink-3); font-size: 13px; }
+  .leg-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 24px; padding: 4px 14px 14px; }
+  .leg-gruppe h4 { margin: 10px 0 4px; font-size: 12px; color: var(--ink-3); font-weight: 600; letter-spacing: .02em; }
+  .leg-zeile { display: grid; grid-template-columns: 64px 1fr auto; gap: 8px; align-items: baseline; padding: 4px 0; border-top: 1px solid var(--linie); font-size: 13px; }
+  .leg-zeile .lz { color: var(--rot); font-weight: 700; font-family: system-ui, sans-serif; }
+  .leg-zeile .lb { color: var(--ink); }
+  .leg-zeile .lb i { color: var(--ink-3); }
+  .leg-zeile .ln { font-size: 12px; font-weight: 700; color: #fff; background: var(--rot); border-radius: 999px; padding: 0 7px; }
+  .leg-zeile.aus { opacity: .55; }
+  @media (max-width: 720px) { .leg-grid { grid-template-columns: 1fr; } }
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
   ol.kommentare li::marker { color: var(--rot); font-weight: 700; }
@@ -138,7 +153,7 @@
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll zu lässig · slang vulgär · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
+    <p>Erstellt mit dem Skill „Englisch Bayern Feedback“ · Keine Note – die Bewertung macht deine Lehrkraft.</p>
   </footer>
 </div>
 
@@ -329,6 +344,31 @@
   var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "Umgangssprache", slang: "Slang / vulgär", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
+  var LEGENDE = [
+    ["Grammatik und Form", [["gr", "Grammatikfehler", "He work on a farm."], ["t", "falsche Zeitform", "Yesterday I haven't done my homework."], ["wo", "falsche Wortstellung", "I have been never there before."], ["prep", "falsche Präposition", "I was looking on him."], ["sp", "Rechtschreibfehler", "intresting"], ["p", "Fehler in der Zeichensetzung", "The man, who I saw, must be …"]]],
+    ["Wortwahl und Stil", [["voc", "falsches Wort für diesen Zusammenhang", "He put on the radio. (switch on)"], ["reg", "unpassende Sprachebene / Register", "The dude came at me."], ["coll", "zu lässige Umgangssprache", "The guy was kinda mad."], ["slang", "heftiger Slang / Vulgärsprache", ""], ["exp", "Bedeutung nicht mehr erkennbar", ""]]],
+    ["Bezug und Inhalt", [["ref", "Textbezug ist nicht klar", ""], ["meaning", "nicht nachvollziehbar, Sinnfehler", ""], ["cop", "wörtlich aus dem Ausgangstext übernommen", ""], ["cit", "Zitierweise / Zeilenangabe falsch", "line 12 → (l. 12)"]]],
+    ["Hinweise, keine Fehler", [["~~", "Wellenlinie: gerade noch akzeptabel", ""], ["x", "Wortwiederholung", ""]]]
+  ];
+  function legende(zaehl) {
+    var d = el("details", "legende");
+    var genutzt = Object.keys(zaehl).length;
+    d.innerHTML = "<summary>Korrekturzeichen <span class=\"hint\">– " + (genutzt ? genutzt + " davon kommen in deinem Text vor" : "alle Zeichen") + "</span></summary>";
+    var g = el("div", "leg-grid");
+    LEGENDE.forEach(function (gr) {
+      var box = el("div", "leg-gruppe"); box.appendChild(el("h4", null, gr[0]));
+      gr[1].forEach(function (z) {
+        var n = zaehl[z[0]] || 0, zl = el("div", "leg-zeile" + (n ? "" : " aus"));
+        zl.appendChild(el("span", "lz", z[0]));
+        var lb = el("span", "lb"); lb.textContent = z[1]; if (z[2]) { var i = document.createElement("i"); i.textContent = " – " + z[2]; lb.appendChild(i); } zl.appendChild(lb);
+        zl.appendChild(n ? el("span", "ln", n + "×") : el("span"));
+        box.appendChild(zl);
+      });
+      g.appendChild(box);
+    });
+    d.appendChild(g); return d;
+  }
+
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function liste(arr, cls) { var ul = el("ul", cls); (arr || []).forEach(function (t) { ul.appendChild(el("li", null, t)); }); return ul; }
@@ -411,6 +451,9 @@
     if (tpl) {
       sec.appendChild(h2(6, "Dein korrigierter Text"));
       var blatt = el("div", "blatt"); blatt.appendChild(tpl.content.cloneNode(true));
+      var zz = {}; Object.keys(zaehl).forEach(function (c) { zz[c] = zaehl[c]; });
+      blatt.querySelectorAll("k").forEach(function (k) { String(k.getAttribute("z") || "").split(/\s+/).forEach(function (c) { if (c === "~" || c === "x") { c = c === "~" ? "~~" : "x"; zz[c] = (zz[c] || 0) + 1; } }); });
+      sec.appendChild(legende(zz));
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
         var s = el("span", "korr");
