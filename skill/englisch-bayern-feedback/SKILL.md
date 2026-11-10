@@ -51,13 +51,13 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben f
 
 **2. Aufbau** – Gliederung, Absätze, roter Faden, Verknüpfungen. Mach konkrete Vorschläge.
 
-**3. Sprachliche Korrektur** – **alle** Fehler in der Reihenfolge des Textes: Original, Verbesserung, Kürzel, Erklärung (ein kurzer Satz zur Regel). Wiederholt sich ein Fehler, bekommt jedes Vorkommen einen eigenen Eintrag, die Erklärung steht aber nur beim ersten („wie Nr. 3").
+**3. Sprachliche Korrektur** – **alle** Fehler in der Reihenfolge des Textes: Original, Verbesserung, Korrekturzeichen, Erklärung (ein kurzer Satz zur Regel). Wiederholt sich ein Fehler, bekommt jedes Vorkommen einen eigenen Eintrag, die Erklärung steht aber nur beim ersten („wie Nr. 3").
 
-**4. Ausdruck verbessern** – drei bis fünf Stellen, die nicht falsch, aber zu einfach, ungenau oder zu nah am Ausgangstext sind: Original → besserer Vorschlag.
+**4. Ausdruck verbessern** – drei bis fünf Stellen, die nicht falsch, aber zu einfach, ungenau oder wiederholt sind (Zeichen ~ und x): Original → besserer Vorschlag.
 
 **5. Darauf achtest du beim nächsten Mal** – genau drei Punkte, der wichtigste zuerst.
 
-**6. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: durchgestrichen, Verbesserung darüber, Kürzel am Rand, längere Erklärungen als Kommentar darunter.
+**6. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, längere Erklärungen als Kommentar darunter.
 
 ### Ausgabe
 
@@ -66,25 +66,39 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben f
 
 Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nicht pauschal („Toller Text!"). Schwächen benennst du klar und respektvoll. Sprich die Person mit „du" an.
 
-## Fehlerkürzel
+## Korrekturzeichen
 
-| Kürzel | Bedeutung |
+Verwende genau diese Zeichen (Liste der Lehrkraft). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen.
+
+| Zeichen | Bedeutung | Beispiel |
+|---|---|---|
+| ref | Textbezug ist nicht klar | |
+| sp | Rechtschreibfehler | *intresting |
+| voc | falsches Wort für diesen Zusammenhang, auch Germanismen | He *put on the radio. (switch on) |
+| wo | falsche Wortstellung | I have been *never there before. |
+| prep | falsche Präposition | I was looking *on him. |
+| t | falsche Zeitform | Yesterday I haven't done my homework. |
+| gr | Grammatikfehler | He work on a farm. |
+| p | Fehler in der Zeichensetzung | The man, who I saw, must be the murderer. |
+| reg | unpassende Sprachebene / Register | The dude came at me and hit me. |
+| coll | Slang, Vulgärsprache, Umgangssprache | |
+| exp | Bedeutung des Ausdrucks, Satzteils oder Satzes nicht mehr erkennbar | |
+| meaning | nicht nachvollziehbar, logischer Fehler, Sinnfehler | |
+| ~ | Wellenlinie: Konstruktion oder Wort gerade noch akzeptabel, **kein Fehler** | |
+| x | Wortwiederholung (X unter den gleichen Wörtern), **kein Fehler** | |
+
+Zusätzlich für diesen Skill:
+
+| Zeichen | Bedeutung |
 |---|---|
-| G | Grammatik (z. B. Kongruenz, Artikel, Pronomen, Plural) |
-| T | Zeitform (tense) |
-| W | Wort falsch oder ungenau |
-| Id | Germanismus / nicht idiomatisch |
-| Sb | Satzbau, Wortstellung |
-| R | Rechtschreibung |
-| Z | Zeichensetzung |
-| St | Stil, Register (z. B. Umgangssprache, Kurzformen wie *don't*) |
-| A | Ausdruck holprig oder unklar |
-| Ü | wörtlich aus dem Ausgangstext übernommen |
-| Zi | Zitierweise, Zeilenangabe |
+| cop | wörtlich aus dem Ausgangstext übernommen (copied) |
+| cit | Zitierweise, Zeilenangabe (citation) |
+
+**~ und x** sind keine Fehler. Sie stehen nicht in der Fehlerliste, sondern unter „Ausdruck verbessern“ und im korrigierten Text.
 
 ## Zitieren und Zeilenangaben
 
-Gilt für alle Operatoren. Fehler hier bekommen das Kürzel Zi.
+Gilt für alle Operatoren. Fehler hier bekommen das Zeichen cit.
 - **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
 - **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
 - **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*

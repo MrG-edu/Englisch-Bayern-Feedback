@@ -54,11 +54,11 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | In der Sprachtabelle eine eingebettete Formulierung vorschlagen. |
-| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Kürzel Zi, richtige Form angeben. |
+| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Zeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
-| Immer *shows* | *This shows … This shows …* | Kürzel W oder A, abwechslungsreiche Verben vorschlagen. |
+| Immer *shows* | *This shows … This shows …* | Unter „Ausdruck verbessern“ (bei Wiederholung Zeichen x), abwechslungsreiche Verben vorschlagen. |
 
 ## Fachbegriffe (Orientierung)
 

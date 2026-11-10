@@ -33,7 +33,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 
 ### Sprache
 10. **Simple present** als Grundzeit. Vorzeitiges mit present perfect oder simple past. Das gilt auch für die Handlung fiktionaler Texte.
-11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Kürzel Ü). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
+11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Zeichen cop). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
 12. **Berichtende Verben, abwechslungsreich:** *state, claim, point out, explain, argue, emphasize, criticize, describe, report, suggest*. Statt *says … says … says*.
 13. **Wiedergabe statt direkter Rede.** Indirekte Rede bzw. eigene Umschreibung. Bei Erzähltexten den Erzähler (*the narrator*) nicht mit der Autorin oder dem Autor gleichsetzen.
 14. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I*.
@@ -49,10 +49,10 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Falsch wiedergegeben | Aussage passt nicht zum Ausgangstext | Sagen, was im Ausgangstext tatsächlich steht, mit Stelle. |
 | Nacherzählung | *First … then … after that …*, folgt Absatz für Absatz dem Original | Eine Gliederung nach Gesichtspunkten vorschlagen, z. B. Grund 1 – Grund 2 – Grund 3. |
 | Zu viele Details | Beispiele, Zahlen, Namen, Zitate | Die Details nennen, die wegkönnen. |
-| Abgeschrieben | Wendungen 1:1 aus dem Ausgangstext | In der Sprachtabelle mit Kürzel Ü und einer eigenen Umformulierung. |
+| Abgeschrieben | Wendungen 1:1 aus dem Ausgangstext | In der Sprachtabelle mit Zeichen cop und einer eigenen Umformulierung. |
 | Analyse oder Meinung | Stilmittel, *the author cleverly …*, *I think* | Sagen, dass das in ein outline nicht hineingehört, und die Stelle zum Streichen nennen. |
-| Zeitform | *The author explained …* | Kürzel T, Verbesserung ins simple present. |
-| Germanismen beim Berichten | *In the text it says …*, *The author tells that …*, *describes about* | Kürzel Id, idiomatische Verbesserung. |
+| Zeitform | *The author explained …* | Zeichen t, Verbesserung ins simple present. |
+| Germanismen beim Berichten | *In the text it says …*, *The author tells that …*, *describes about* | Zeichen voc, idiomatische Verbesserung. |
 
 ## Nützliche Wendungen für Verbesserungen
 

@@ -33,7 +33,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
       "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"]},
       "aufbau": ["…", "…"],
       "fehler": [
-        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "G", "erklaerung": "…"}
+        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "gr", "erklaerung": "…"}
       ],
       "ausdruck": [{"original": "…", "vorschlag": "…"}],
       "naechstesMal": ["…", "…", "…"],
@@ -46,7 +46,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
 Regeln für das JSON:
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Kürzel** wie in SKILL.md. Mehrere Kürzel für eine Stelle mit Leerzeichen trennen: `"G Id"`.
+- **Korrekturzeichen** wie in SKILL.md, klein geschrieben (`coll` für coll / slang). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -58,12 +58,14 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 
 | Fall | Schreibweise | Beispiel |
 |---|---|---|
-| Ersetzen | `<k v="Verbesserung" z="Kürzel">Original</k>` | `the town <k v="has" z="G">have</k> fast internet` |
-| Streichen | `<k v="" z="Kürzel">Original</k>` | `He <k v="" z="G">did</k> went home` |
-| Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Kürzel"></k>` | `First<k v="," z="Z"></k> the author` |
-| Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="Id" n="1">it is about</k>` |
+| Ersetzen | `<k v="Verbesserung" z="Zeichen">Original</k>` | `the town <k v="has" z="gr">have</k> fast internet` |
+| Streichen | `<k v="" z="Zeichen">Original</k>` | `He <k v="" z="gr">did</k> went home` |
+| Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Zeichen"></k>` | `First<k v="," z="p"></k> the author` |
+| Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="voc" n="1">it is about</k>` |
+| Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
+| Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
-- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Kürzel.
+- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Zeichen. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
 - Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`.
 - `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar.
 - Im Template: `<` im Schülertext als `&lt;`, `&` als `&amp;`, Anführungszeichen in `v` als `&quot;`.
@@ -72,8 +74,8 @@ Beispiel für eine Teilaufgabe:
 
 ```html
 <template id="text-1">
-<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="Id" n="1">it is about</k> young people.</p>
-<p>First<k v="," z="Z"></k> the author <k v="explains" z="T">explained</k> that …</p>
+<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="voc" n="1">it is about</k> young people.</p>
+<p>First<k v="," z="p"></k> the author <k v="explains" z="t">explained</k> that …</p>
 </template>
 ```
 
@@ -128,13 +130,13 @@ Beispiel für eine Teilaufgabe:
   .stufe { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
   .pkomm { grid-column: 2; font-size: 13px; color: var(--ink-2); line-height: 1.4; }
   /* Fehlerdiagramm */
-  .balken-zeile { display: grid; grid-template-columns: 150px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
-  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 26px; }
+  .balken-zeile { display: grid; grid-template-columns: 190px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
+  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 66px; }
   .spur { height: 14px; position: relative; }
   .balken { height: 14px; background: var(--akzent); border-radius: 0 4px 4px 0; min-width: 4px; }
   .wert { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
   .balken-zeile:hover .balken { filter: brightness(.9); }
-  .tip { position: absolute; left: 160px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
+  .tip { position: absolute; left: 200px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
   .balken-zeile:hover .tip, .balken-zeile:focus .tip { opacity: 1; }
   .leer-hinweis { font-size: 14px; color: var(--ink-2); }
   details.tabelle { margin-top: 10px; font-size: 13px; color: var(--ink-2); }
@@ -186,6 +188,9 @@ Beispiel für eine Teilaufgabe:
   .korr rt { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; white-space: nowrap; }
   .korr ruby { ruby-align: center; }
   .korr .einf { color: var(--rot); font-weight: bold; }
+  .korr .wellig { text-decoration: underline wavy var(--rot); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+  .korr .wdh { border-bottom: 1.5px solid var(--rot); }
+  .korr .wdh-x { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; vertical-align: sub; margin-left: 1px; }
   .rand { position: absolute; right: 10px; width: 92px; color: var(--rot); font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; line-height: 1.3; padding-top: 14px; }
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
@@ -197,7 +202,7 @@ Beispiel für eine Teilaufgabe:
     .wrap { padding: 20px 12px 48px; } section.aufgabe { padding: 18px; }
     .grid2, .sw { grid-template-columns: 1fr; }
     .profil-zeile { grid-template-columns: 1fr; } .pkomm { grid-column: 1; }
-    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 140px 1fr 24px; } .tip { left: 148px; } .rand { width: 48px; right: 4px; font-size: 12px; }
+    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 170px 1fr 24px; } .tip { left: 178px; } .rand { width: 48px; right: 4px; font-size: 12px; }
     h1 { font-size: 24px; }
   }
   @media print {
@@ -217,7 +222,7 @@ Beispiel für eine Teilaufgabe:
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen · Zi Zitierweise</p>
+    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll / slang · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
   </footer>
 </div>
 
@@ -230,7 +235,7 @@ Beispiel für eine Teilaufgabe:
 
 <script>
 (function () {
-  var KZ = { G: "Grammatik", T: "Zeitform", W: "Wort", Id: "Germanismus", Sb: "Satzbau", R: "Rechtschreibung", Z: "Zeichensetzung", St: "Stil", A: "Ausdruck", "Ü": "übernommen", Zi: "Zitierweise" };
+  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "coll / slang", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");
@@ -265,11 +270,11 @@ Beispiel für eine Teilaufgabe:
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
     var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(Boolean).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
     kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
-    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Kürzel</th><th>Fehlerart</th><th>Anzahl</th></tr>";
+    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
       var z = el("div", "balken-zeile"); z.tabIndex = 0;
       z.appendChild(el("span", "bk", "<b>" + k + "</b> " + (KZ[k] || "")));
@@ -297,7 +302,7 @@ Beispiel für eine Teilaufgabe:
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
     // 3 Sprache
     sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Kürzel</th><th>Erklärung</th></tr>";
+    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
     (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
     var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
     // 4 Ausdruck
@@ -318,8 +323,10 @@ Beispiel für eine Teilaufgabe:
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
         var s = el("span", "korr");
-        s.innerHTML = orig.trim() === "" ? '<ruby><span class="einf">‸</span><rt></rt></ruby>' : "<ruby><del></del><rt></rt></ruby>";
-        if (orig.trim() !== "") s.querySelector("del").innerHTML = orig;
+        if (z === "~") { s.innerHTML = '<ruby><span class="wellig"></span><rt></rt></ruby>'; s.querySelector(".wellig").innerHTML = orig; z = "~~"; }
+        else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
+        else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
+        else { s.innerHTML = "<ruby><del></del><rt></rt></ruby>"; s.querySelector("del").innerHTML = orig; }
         s.querySelector("rt").textContent = v;
         var r = el("span", "rand"); r.textContent = z + (n ? " " + (KREIS[+n - 1] || "(" + n + ")") : ""); s.appendChild(r);
         k.replaceWith(s);
@@ -348,7 +355,7 @@ Beispiel für eine Teilaufgabe:
 
 Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Markdown aus, in derselben Reihenfolge:
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
-- **Fehler nach Art** als Zeile: *Z 3 · Id 2 · T 2 · …*
+- **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
 - **Stärken** mit ✓, **Schwächen** mit !
-- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Kürzel | Erklärung
-- **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨G⟩`, Streichen `~~did~~ ⟨G⟩`, Einfügen `First **,** ⟨Z⟩ the author`, Kommentar `⟨Id ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
+- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Zeichen | Erklärung
+- **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.

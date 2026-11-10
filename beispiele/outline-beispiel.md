@@ -46,7 +46,7 @@ Du hast den Text grundsätzlich verstanden, und die beiden Gründe, die du nenns
 | Wortschatz & Ausdruck | ●●○○ ausbaufähig | Teilweise abgeschrieben, wenig Abwechslung bei den Verben. |
 | Satzbau & Verknüpfungen | ●●●○ solide | Verständlich, aber einfach gebaut. |
 
-**Fehler nach Art:** Z 3 · Id 2 · T 2 · Ü 2 · G 2 · W 1 · St 1
+**Fehler nach Art:** voc 3 · p 3 · t 2 · cop 2 · gr 2 · reg 1
 
 **Das kannst du schon**
 - ✓ Die zwei genannten Gründe hast du richtig verstanden.
@@ -69,17 +69,17 @@ Mit *First … Then …* erzählst du den Text der Reihe nach nach. Besser ist e
 
 **3. Sprachliche Korrektur**
 
-| Nr. | Original | Verbesserung | Kürzel | Erklärung |
+| Nr. | Original | Verbesserung | Zeichen | Erklärung |
 |---|---|---|---|---|
-| 1 | *In the article "…" by Laura Bennett it is about young people.* | *The article "…" by Laura Bennett deals with young people.* | Id | „Es geht um" ist ein Germanismus. Im Englischen ist der Text das Subjekt: *The article deals with / focuses on …* |
-| 2 | *First the author explained* | *First, the author explains* | T, Z | Grundzeit im outline ist simple present. Nach einleitendem *First* steht ein Komma. |
-| 3 | *rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment* | *living in a small town is much cheaper than living in a city* | Ü | Fast wörtlich aus Absatz 2 übernommen. Im outline formulierst du selbst und lässt Zahlen weg. |
-| 4 | *A nurse says "We could finally afford a garden".* | *a nurse explains that her family can finally afford a garden* | Ü | Direkte Rede gibst du im outline indirekt und in eigenen Worten wieder. |
-| 5 | *Then Ben Huang who is a software developer kept his job* | *Then, Ben Huang, a software developer, has kept his job* | Z, T | Eine Zusatzinformation zu einem Namen steht zwischen Kommas. Zeitform: present perfect, weil das Ergebnis bis heute gilt. |
-| 6 | *Because the town have fast internet he can work there.* | *Because the town has fast internet, he can work there.* | G, Z | *the town* ist 3rd person singular, also *has*. Steht der Nebensatz vorne, folgt ein Komma. |
-| 7 | *The author also tell that* | *The author also points out that* | G, Id | Das 3rd-person -s fehlt (wie Nr. 6). Außerdem braucht *tell* ein Objekt (*tell sb. sth.*). Für Wiedergabe passen *point out, mention, state*. |
-| 8 | *less cultural events* | *fewer cultural events* | W | Bei zählbaren Nomen im Plural steht *fewer*, bei nicht zählbaren *less* (*less money*). |
-| 9 | *But the mayor is very optimistic* | *However, the mayor is optimistic* | St | *But* am Satzanfang ist eher umgangssprachlich. In sachlichen Texten besser *However,* |
+| 1 | *In the article "…" by Laura Bennett it is about young people.* | *The article "…" by Laura Bennett deals with young people.* | voc | „Es geht um" ist ein Germanismus. Im Englischen ist der Text das Subjekt: *The article deals with / focuses on …* |
+| 2 | *First the author explained* | *First, the author explains* | t, p | Grundzeit im outline ist simple present. Nach einleitendem *First* steht ein Komma. |
+| 3 | *rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment* | *living in a small town is much cheaper than living in a city* | cop | Fast wörtlich aus Absatz 2 übernommen. Im outline formulierst du selbst und lässt Zahlen weg. |
+| 4 | *A nurse says "We could finally afford a garden".* | *a nurse explains that her family can finally afford a garden* | cop | Direkte Rede gibst du im outline indirekt und in eigenen Worten wieder. |
+| 5 | *Then Ben Huang who is a software developer kept his job* | *Then, Ben Huang, a software developer, has kept his job* | p, t | Eine Zusatzinformation zu einem Namen steht zwischen Kommas. Zeitform: present perfect, weil das Ergebnis bis heute gilt. |
+| 6 | *Because the town have fast internet he can work there.* | *Because the town has fast internet, he can work there.* | gr, p | *the town* ist 3rd person singular, also *has*. Steht der Nebensatz vorne, folgt ein Komma. |
+| 7 | *The author also tell that* | *The author also points out that* | gr, voc | Das 3rd-person -s fehlt (wie Nr. 6). Außerdem braucht *tell* ein Objekt (*tell sb. sth.*). Für Wiedergabe passen *point out, mention, state*. |
+| 8 | *less cultural events* | *fewer cultural events* | voc | Bei zählbaren Nomen im Plural steht *fewer*, bei nicht zählbaren *less* (*less money*). |
+| 9 | *But the mayor is very optimistic* | *However, the mayor is optimistic* | reg | *But* am Satzanfang ist eher umgangssprachlich. In sachlichen Texten besser *However,* |
 
 **4. Ausdruck verbessern**
 - *kept his job at a Seattle company … he can work there* → *remote work allows many returners to keep their jobs in the city*

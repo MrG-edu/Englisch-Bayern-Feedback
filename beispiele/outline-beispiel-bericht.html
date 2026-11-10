@@ -46,13 +46,13 @@
   .stufe { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
   .pkomm { grid-column: 2; font-size: 13px; color: var(--ink-2); line-height: 1.4; }
   /* Fehlerdiagramm */
-  .balken-zeile { display: grid; grid-template-columns: 150px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
-  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 26px; }
+  .balken-zeile { display: grid; grid-template-columns: 190px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
+  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 66px; }
   .spur { height: 14px; position: relative; }
   .balken { height: 14px; background: var(--akzent); border-radius: 0 4px 4px 0; min-width: 4px; }
   .wert { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
   .balken-zeile:hover .balken { filter: brightness(.9); }
-  .tip { position: absolute; left: 160px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
+  .tip { position: absolute; left: 200px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
   .balken-zeile:hover .tip, .balken-zeile:focus .tip { opacity: 1; }
   .leer-hinweis { font-size: 14px; color: var(--ink-2); }
   details.tabelle { margin-top: 10px; font-size: 13px; color: var(--ink-2); }
@@ -104,6 +104,9 @@
   .korr rt { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; white-space: nowrap; }
   .korr ruby { ruby-align: center; }
   .korr .einf { color: var(--rot); font-weight: bold; }
+  .korr .wellig { text-decoration: underline wavy var(--rot); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+  .korr .wdh { border-bottom: 1.5px solid var(--rot); }
+  .korr .wdh-x { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; vertical-align: sub; margin-left: 1px; }
   .rand { position: absolute; right: 10px; width: 92px; color: var(--rot); font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; line-height: 1.3; padding-top: 14px; }
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
@@ -115,7 +118,7 @@
     .wrap { padding: 20px 12px 48px; } section.aufgabe { padding: 18px; }
     .grid2, .sw { grid-template-columns: 1fr; }
     .profil-zeile { grid-template-columns: 1fr; } .pkomm { grid-column: 1; }
-    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 140px 1fr 24px; } .tip { left: 148px; } .rand { width: 48px; right: 4px; font-size: 12px; }
+    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 170px 1fr 24px; } .tip { left: 178px; } .rand { width: 48px; right: 4px; font-size: 12px; }
     h1 { font-size: 24px; }
   }
   @media print {
@@ -135,7 +138,7 @@
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen · Zi Zitierweise</p>
+    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll / slang · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
   </footer>
 </div>
 
@@ -211,73 +214,73 @@
     {
      "original": "In the article … it is about young people",
      "verbesserung": "The article … deals with young people",
-     "kuerzel": "Id",
+     "kuerzel": "voc",
      "erklaerung": "„Es geht um“ ist ein Germanismus. Im Englischen ist der Text das Subjekt."
     },
     {
      "original": "First the author",
      "verbesserung": "First, the author",
-     "kuerzel": "Z",
+     "kuerzel": "p",
      "erklaerung": "Nach einleitendem <i>First</i> steht ein Komma."
     },
     {
      "original": "explained",
      "verbesserung": "explains",
-     "kuerzel": "T",
+     "kuerzel": "t",
      "erklaerung": "Grundzeit im outline ist simple present."
     },
     {
      "original": "rent in cities has risen … two-bedroom apartment",
      "verbesserung": "living in a small town is much cheaper than living in a city",
-     "kuerzel": "Ü",
+     "kuerzel": "cop",
      "erklaerung": "Fast wörtlich aus Absatz 2. Formuliere selbst und lass Zahlen weg."
     },
     {
      "original": "A nurse says \"We could finally afford a garden\".",
      "verbesserung": "a nurse explains that her family can finally afford a garden",
-     "kuerzel": "Ü",
+     "kuerzel": "cop",
      "erklaerung": "Direkte Rede gibst du indirekt und in eigenen Worten wieder."
     },
     {
      "original": "Then Ben Huang who is a software developer",
      "verbesserung": "Then, Ben Huang, who is a software developer,",
-     "kuerzel": "Z",
+     "kuerzel": "p",
      "erklaerung": "Zusatzinformation zu einem Namen steht zwischen Kommas."
     },
     {
      "original": "kept",
      "verbesserung": "has kept",
-     "kuerzel": "T",
+     "kuerzel": "t",
      "erklaerung": "Present perfect, weil das Ergebnis bis heute gilt."
     },
     {
      "original": "the town have",
      "verbesserung": "the town has",
-     "kuerzel": "G",
+     "kuerzel": "gr",
      "erklaerung": "<i>the town</i> ist 3rd person singular."
     },
     {
      "original": "fast internet he can",
      "verbesserung": "fast internet, he can",
-     "kuerzel": "Z",
+     "kuerzel": "p",
      "erklaerung": "Steht der Nebensatz vorne, folgt ein Komma."
     },
     {
      "original": "The author also tell that",
      "verbesserung": "The author also points out that",
-     "kuerzel": "G Id",
+     "kuerzel": "gr voc",
      "erklaerung": "Das -s fehlt (wie Nr. 8), und <i>tell</i> braucht ein Objekt."
     },
     {
      "original": "less cultural events",
      "verbesserung": "fewer cultural events",
-     "kuerzel": "W",
+     "kuerzel": "voc",
      "erklaerung": "Bei zählbaren Nomen im Plural steht <i>fewer</i>."
     },
     {
      "original": "But the mayor",
      "verbesserung": "However, the mayor",
-     "kuerzel": "St",
+     "kuerzel": "reg",
      "erklaerung": "<i>But</i> am Satzanfang ist eher umgangssprachlich."
     }
    ],
@@ -316,14 +319,14 @@
 </script>
 
 <template id="text-1">
-<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="Id" n="1">it is about</k> young people. In the past young people left the small towns and the main streets emptied, but now they come back.</p>
-<p>First<k v="," z="Z"></k> the author <k v="explains" z="T">explained</k> that <k v="→ ②" z="Ü" n="2">rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment</k>. <k v="→ ③" z="Ü" n="3">A nurse says "We could finally afford a garden".</k> Then<k v="," z="Z"></k> Ben Huang<k v="," z="Z"></k> who is a software developer<k v="," z="Z"></k> <k v="has kept" z="T">kept</k> his job at a Seattle company. Because the town <k v="has" z="G">have</k> fast internet<k v="," z="Z"></k> he can work there.</p>
-<p>The author also <k v="points out" z="G Id" n="4">tell</k> that public transport is almost non-existent and there are <k v="fewer" z="W">less</k> cultural events. <k v="However," z="St">But</k> the mayor is very optimistic and I think she is right because young people make the towns better.</p>
+<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="voc" n="1">it is about</k> young people. In the past <k v="" z="x">young people</k> left the small towns and the main streets emptied, but now they come back.</p>
+<p>First<k v="," z="p"></k> the author <k v="explains" z="t">explained</k> that <k v="→ ②" z="cop" n="2">rent in cities has risen by more than 40 percent since 2020, while a family home in Millbrook still costs less than a two-bedroom apartment</k>. <k v="→ ③" z="cop" n="3">A nurse says "We could finally afford a garden".</k> Then<k v="," z="p"></k> Ben Huang<k v="," z="p"></k> who is a software developer<k v="," z="p"></k> <k v="has kept" z="t">kept</k> his job at a Seattle company. Because the town <k v="has" z="gr">have</k> fast internet<k v="," z="p"></k> he can work there.</p>
+<p>The author also <k v="points out" z="gr voc" n="4">tell</k> that public transport is almost non-existent and there are <k v="fewer" z="voc">less</k> cultural events. <k v="However," z="reg">But</k> the mayor is very optimistic and I think she is right because young people <k v="revitalize" z="~">make the towns better</k>.</p>
 </template>
 
 <script>
 (function () {
-  var KZ = { G: "Grammatik", T: "Zeitform", W: "Wort", Id: "Germanismus", Sb: "Satzbau", R: "Rechtschreibung", Z: "Zeichensetzung", St: "Stil", A: "Ausdruck", "Ü": "übernommen", Zi: "Zitierweise" };
+  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "coll / slang", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");
@@ -358,11 +361,11 @@
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
     var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(Boolean).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
     kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
-    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Kürzel</th><th>Fehlerart</th><th>Anzahl</th></tr>";
+    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
       var z = el("div", "balken-zeile"); z.tabIndex = 0;
       z.appendChild(el("span", "bk", "<b>" + k + "</b> " + (KZ[k] || "")));
@@ -390,7 +393,7 @@
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
     // 3 Sprache
     sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Kürzel</th><th>Erklärung</th></tr>";
+    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
     (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
     var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
     // 4 Ausdruck
@@ -411,8 +414,10 @@
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
         var s = el("span", "korr");
-        s.innerHTML = orig.trim() === "" ? '<ruby><span class="einf">‸</span><rt></rt></ruby>' : "<ruby><del></del><rt></rt></ruby>";
-        if (orig.trim() !== "") s.querySelector("del").innerHTML = orig;
+        if (z === "~") { s.innerHTML = '<ruby><span class="wellig"></span><rt></rt></ruby>'; s.querySelector(".wellig").innerHTML = orig; z = "~~"; }
+        else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
+        else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
+        else { s.innerHTML = "<ruby><del></del><rt></rt></ruby>"; s.querySelector("del").innerHTML = orig; }
         s.querySelector("rt").textContent = v;
         var r = el("span", "rand"); r.textContent = z + (n ? " " + (KREIS[+n - 1] || "(" + n + ")") : ""); s.appendChild(r);
         k.replaceWith(s);

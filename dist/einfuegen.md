@@ -50,13 +50,13 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben f
 
 **2. Aufbau** – Gliederung, Absätze, roter Faden, Verknüpfungen. Mach konkrete Vorschläge.
 
-**3. Sprachliche Korrektur** – **alle** Fehler in der Reihenfolge des Textes: Original, Verbesserung, Kürzel, Erklärung (ein kurzer Satz zur Regel). Wiederholt sich ein Fehler, bekommt jedes Vorkommen einen eigenen Eintrag, die Erklärung steht aber nur beim ersten („wie Nr. 3").
+**3. Sprachliche Korrektur** – **alle** Fehler in der Reihenfolge des Textes: Original, Verbesserung, Korrekturzeichen, Erklärung (ein kurzer Satz zur Regel). Wiederholt sich ein Fehler, bekommt jedes Vorkommen einen eigenen Eintrag, die Erklärung steht aber nur beim ersten („wie Nr. 3").
 
-**4. Ausdruck verbessern** – drei bis fünf Stellen, die nicht falsch, aber zu einfach, ungenau oder zu nah am Ausgangstext sind: Original → besserer Vorschlag.
+**4. Ausdruck verbessern** – drei bis fünf Stellen, die nicht falsch, aber zu einfach, ungenau oder wiederholt sind (Zeichen ~ und x): Original → besserer Vorschlag.
 
 **5. Darauf achtest du beim nächsten Mal** – genau drei Punkte, der wichtigste zuerst.
 
-**6. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: durchgestrichen, Verbesserung darüber, Kürzel am Rand, längere Erklärungen als Kommentar darunter.
+**6. Dein korrigierter Text** – der ganze Schülertext noch einmal, nur sprachlich korrigiert im Lehrerstil: durchgestrichen, Verbesserung darüber, Korrekturzeichen am Rand, längere Erklärungen als Kommentar darunter.
 
 ### Ausgabe
 
@@ -65,25 +65,39 @@ Die Korrektur ist ein **Bericht** mit diesen Teilen, bei mehreren Teilaufgaben f
 
 Lob ist konkret und verdient („Du nennst alle drei Gründe aus dem Text"), nicht pauschal („Toller Text!"). Schwächen benennst du klar und respektvoll. Sprich die Person mit „du" an.
 
-## Fehlerkürzel
+## Korrekturzeichen
 
-| Kürzel | Bedeutung |
+Verwende genau diese Zeichen (Liste der Lehrkraft). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen.
+
+| Zeichen | Bedeutung | Beispiel |
+|---|---|---|
+| ref | Textbezug ist nicht klar | |
+| sp | Rechtschreibfehler | *intresting |
+| voc | falsches Wort für diesen Zusammenhang, auch Germanismen | He *put on the radio. (switch on) |
+| wo | falsche Wortstellung | I have been *never there before. |
+| prep | falsche Präposition | I was looking *on him. |
+| t | falsche Zeitform | Yesterday I haven't done my homework. |
+| gr | Grammatikfehler | He work on a farm. |
+| p | Fehler in der Zeichensetzung | The man, who I saw, must be the murderer. |
+| reg | unpassende Sprachebene / Register | The dude came at me and hit me. |
+| coll | Slang, Vulgärsprache, Umgangssprache | |
+| exp | Bedeutung des Ausdrucks, Satzteils oder Satzes nicht mehr erkennbar | |
+| meaning | nicht nachvollziehbar, logischer Fehler, Sinnfehler | |
+| ~ | Wellenlinie: Konstruktion oder Wort gerade noch akzeptabel, **kein Fehler** | |
+| x | Wortwiederholung (X unter den gleichen Wörtern), **kein Fehler** | |
+
+Zusätzlich für diesen Skill:
+
+| Zeichen | Bedeutung |
 |---|---|
-| G | Grammatik (z. B. Kongruenz, Artikel, Pronomen, Plural) |
-| T | Zeitform (tense) |
-| W | Wort falsch oder ungenau |
-| Id | Germanismus / nicht idiomatisch |
-| Sb | Satzbau, Wortstellung |
-| R | Rechtschreibung |
-| Z | Zeichensetzung |
-| St | Stil, Register (z. B. Umgangssprache, Kurzformen wie *don't*) |
-| A | Ausdruck holprig oder unklar |
-| Ü | wörtlich aus dem Ausgangstext übernommen |
-| Zi | Zitierweise, Zeilenangabe |
+| cop | wörtlich aus dem Ausgangstext übernommen (copied) |
+| cit | Zitierweise, Zeilenangabe (citation) |
+
+**~ und x** sind keine Fehler. Sie stehen nicht in der Fehlerliste, sondern unter „Ausdruck verbessern“ und im korrigierten Text.
 
 ## Zitieren und Zeilenangaben
 
-Gilt für alle Operatoren. Fehler hier bekommen das Kürzel Zi.
+Gilt für alle Operatoren. Fehler hier bekommen das Zeichen cit.
 - **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
 - **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
 - **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*
@@ -132,7 +146,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
       "inhalt": {"gut": ["…"], "fehlt": ["…"], "falsch": ["…"], "ueberfluessig": ["…"]},
       "aufbau": ["…", "…"],
       "fehler": [
-        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "G", "erklaerung": "…"}
+        {"original": "the town have", "verbesserung": "the town has", "kuerzel": "gr", "erklaerung": "…"}
       ],
       "ausdruck": [{"original": "…", "vorschlag": "…"}],
       "naechstesMal": ["…", "…", "…"],
@@ -145,7 +159,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
 Regeln für das JSON:
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Kürzel** wie in SKILL.md. Mehrere Kürzel für eine Stelle mit Leerzeichen trennen: `"G Id"`.
+- **Korrekturzeichen** wie in SKILL.md, klein geschrieben (`coll` für coll / slang). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -157,12 +171,14 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 
 | Fall | Schreibweise | Beispiel |
 |---|---|---|
-| Ersetzen | `<k v="Verbesserung" z="Kürzel">Original</k>` | `the town <k v="has" z="G">have</k> fast internet` |
-| Streichen | `<k v="" z="Kürzel">Original</k>` | `He <k v="" z="G">did</k> went home` |
-| Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Kürzel"></k>` | `First<k v="," z="Z"></k> the author` |
-| Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="Id" n="1">it is about</k>` |
+| Ersetzen | `<k v="Verbesserung" z="Zeichen">Original</k>` | `the town <k v="has" z="gr">have</k> fast internet` |
+| Streichen | `<k v="" z="Zeichen">Original</k>` | `He <k v="" z="gr">did</k> went home` |
+| Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Zeichen"></k>` | `First<k v="," z="p"></k> the author` |
+| Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="voc" n="1">it is about</k>` |
+| Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
+| Wortwiederholung | `<k v="" z="x">Wort</k>` | `In the past <k v="" z="x">young people</k> left` |
 
-- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Kürzel.
+- Jede Korrektur aus `fehler` taucht im Text auf, mit demselben Zeichen. Wellenlinie und Wiederholung streichen nichts durch, sie markieren nur.
 - Eine Verbesserung über dem Text hat **höchstens vier Wörter**. Ist sie länger, schreibst du in `v` nur `→ ②` (Kommentarnummer als Kreiszahl ①–⑳), setzt `n="2"` und bringst die Verbesserung in `kommentare`.
 - `n` ist die Position in der Liste `kommentare`. Nummeriere in der Reihenfolge des Textes. Einfache Fehler brauchen keinen Kommentar.
 - Im Template: `<` im Schülertext als `&lt;`, `&` als `&amp;`, Anführungszeichen in `v` als `&quot;`.
@@ -171,8 +187,8 @@ Beispiel für eine Teilaufgabe:
 
 ```html
 <template id="text-1">
-<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="Id" n="1">it is about</k> young people.</p>
-<p>First<k v="," z="Z"></k> the author <k v="explains" z="T">explained</k> that …</p>
+<p>In the article "Small Towns, Big Comeback" by Laura Bennett <k v="deals with" z="voc" n="1">it is about</k> young people.</p>
+<p>First<k v="," z="p"></k> the author <k v="explains" z="t">explained</k> that …</p>
 </template>
 ```
 
@@ -227,13 +243,13 @@ Beispiel für eine Teilaufgabe:
   .stufe { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
   .pkomm { grid-column: 2; font-size: 13px; color: var(--ink-2); line-height: 1.4; }
   /* Fehlerdiagramm */
-  .balken-zeile { display: grid; grid-template-columns: 150px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
-  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 26px; }
+  .balken-zeile { display: grid; grid-template-columns: 190px 1fr 28px; gap: 10px; align-items: center; height: 30px; position: relative; cursor: default; }
+  .bk { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .bk b { display: inline-block; min-width: 66px; }
   .spur { height: 14px; position: relative; }
   .balken { height: 14px; background: var(--akzent); border-radius: 0 4px 4px 0; min-width: 4px; }
   .wert { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
   .balken-zeile:hover .balken { filter: brightness(.9); }
-  .tip { position: absolute; left: 160px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
+  .tip { position: absolute; left: 200px; top: -30px; background: var(--ink); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 2; }
   .balken-zeile:hover .tip, .balken-zeile:focus .tip { opacity: 1; }
   .leer-hinweis { font-size: 14px; color: var(--ink-2); }
   details.tabelle { margin-top: 10px; font-size: 13px; color: var(--ink-2); }
@@ -285,6 +301,9 @@ Beispiel für eine Teilaufgabe:
   .korr rt { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; white-space: nowrap; }
   .korr ruby { ruby-align: center; }
   .korr .einf { color: var(--rot); font-weight: bold; }
+  .korr .wellig { text-decoration: underline wavy var(--rot); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+  .korr .wdh { border-bottom: 1.5px solid var(--rot); }
+  .korr .wdh-x { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; vertical-align: sub; margin-left: 1px; }
   .rand { position: absolute; right: 10px; width: 92px; color: var(--rot); font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; line-height: 1.3; padding-top: 14px; }
   ol.kommentare { padding-left: 22px; }
   ol.kommentare li { margin-bottom: 6px; }
@@ -296,7 +315,7 @@ Beispiel für eine Teilaufgabe:
     .wrap { padding: 20px 12px 48px; } section.aufgabe { padding: 18px; }
     .grid2, .sw { grid-template-columns: 1fr; }
     .profil-zeile { grid-template-columns: 1fr; } .pkomm { grid-column: 1; }
-    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 140px 1fr 24px; } .tip { left: 148px; } .rand { width: 48px; right: 4px; font-size: 12px; }
+    .blatt { padding-right: 66px; } .blatt::after { right: 56px; } .balken-zeile { grid-template-columns: 170px 1fr 24px; } .tip { left: 178px; } .rand { width: 48px; right: 4px; font-size: 12px; }
     h1 { font-size: 24px; }
   }
   @media print {
@@ -316,7 +335,7 @@ Beispiel für eine Teilaufgabe:
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>G Grammatik · T Zeitform · W Wort · Id Germanismus · Sb Satzbau · R Rechtschreibung · Z Zeichensetzung · St Stil · A Ausdruck · Ü übernommen · Zi Zitierweise</p>
+    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll / slang · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
   </footer>
 </div>
 
@@ -329,7 +348,7 @@ Beispiel für eine Teilaufgabe:
 
 <script>
 (function () {
-  var KZ = { G: "Grammatik", T: "Zeitform", W: "Wort", Id: "Germanismus", Sb: "Satzbau", R: "Rechtschreibung", Z: "Zeichensetzung", St: "Stil", A: "Ausdruck", "Ü": "übernommen", Zi: "Zitierweise" };
+  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "coll / slang", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");
@@ -364,11 +383,11 @@ Beispiel für eine Teilaufgabe:
 
     var kf = el("div", "karte"); kf.appendChild(el("h3", null, "Fehler nach Art"));
     var zaehl = {}, gesamt = 0;
-    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(Boolean).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
+    (a.fehler || []).forEach(function (f) { String(f.kuerzel || "").split(/[\s,]+/).filter(function (k) { return k && k !== "~" && k !== "x"; }).forEach(function (k) { zaehl[k] = (zaehl[k] || 0) + 1; gesamt++; }); });
     var arten = Object.keys(zaehl).sort(function (x, y) { return zaehl[y] - zaehl[x]; });
     kf.appendChild(el("p", "unter", (a.fehler || []).length + " markierte Stellen · häufigste Fehlerart zuerst"));
     if (!arten.length) kf.appendChild(el("p", "leer-hinweis", "Keine Sprachfehler markiert."));
-    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Kürzel</th><th>Fehlerart</th><th>Anzahl</th></tr>";
+    var max = arten.length ? zaehl[arten[0]] : 1, tab = "<table><tr><th>Zeichen</th><th>Fehlerart</th><th>Anzahl</th></tr>";
     arten.forEach(function (k) {
       var z = el("div", "balken-zeile"); z.tabIndex = 0;
       z.appendChild(el("span", "bk", "<b>" + k + "</b> " + (KZ[k] || "")));
@@ -396,7 +415,7 @@ Beispiel für eine Teilaufgabe:
     sec.appendChild(h2(2, "Aufbau")); sec.appendChild(liste(a.aufbau, "liste"));
     // 3 Sprache
     sec.appendChild(h2(3, "Sprachliche Korrektur"));
-    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Kürzel</th><th>Erklärung</th></tr>";
+    var t = "<table><tr><th>Nr.</th><th>Original</th><th>Verbesserung</th><th>Zeichen</th><th>Erklärung</th></tr>";
     (a.fehler || []).forEach(function (f, j) { t += '<tr><td class="n">' + (j + 1) + '</td><td class="orig">' + (f.original || "") + '</td><td class="verb">' + (f.verbesserung || "–") + '</td><td class="kz">' + (f.kuerzel || "") + "</td><td>" + (f.erklaerung || "") + "</td></tr>"; });
     var ts = el("div", "tab-scroll", t + "</table>"); sec.appendChild(ts);
     // 4 Ausdruck
@@ -417,8 +436,10 @@ Beispiel für eine Teilaufgabe:
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
         var s = el("span", "korr");
-        s.innerHTML = orig.trim() === "" ? '<ruby><span class="einf">‸</span><rt></rt></ruby>' : "<ruby><del></del><rt></rt></ruby>";
-        if (orig.trim() !== "") s.querySelector("del").innerHTML = orig;
+        if (z === "~") { s.innerHTML = '<ruby><span class="wellig"></span><rt></rt></ruby>'; s.querySelector(".wellig").innerHTML = orig; z = "~~"; }
+        else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
+        else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
+        else { s.innerHTML = "<ruby><del></del><rt></rt></ruby>"; s.querySelector("del").innerHTML = orig; }
         s.querySelector("rt").textContent = v;
         var r = el("span", "rand"); r.textContent = z + (n ? " " + (KREIS[+n - 1] || "(" + n + ")") : ""); s.appendChild(r);
         k.replaceWith(s);
@@ -447,10 +468,10 @@ Beispiel für eine Teilaufgabe:
 
 Kannst du keine HTML-Datei und keine Vorschau anzeigen, gib den Bericht als Markdown aus, in derselben Reihenfolge:
 - **Profil** als Tabelle: Bereich | Stufe | Kommentar, Stufe als Punkte: ●●●● Stärke, ●●●○ solide, ●●○○ ausbaufähig, ●○○○ Baustelle.
-- **Fehler nach Art** als Zeile: *Z 3 · Id 2 · T 2 · …*
+- **Fehler nach Art** als Zeile: *voc 3 · p 3 · t 2 · …*
 - **Stärken** mit ✓, **Schwächen** mit !
-- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Kürzel | Erklärung
-- **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨G⟩`, Streichen `~~did~~ ⟨G⟩`, Einfügen `First **,** ⟨Z⟩ the author`, Kommentar `⟨Id ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
+- **Sprachliche Korrektur** als Tabelle: Nr. | Original | Verbesserung | Zeichen | Erklärung
+- **Korrigierter Text:** Ersetzen `~~have~~ **has** ⟨gr⟩`, Streichen `~~did~~ ⟨gr⟩`, Einfügen `First **,** ⟨p⟩ the author`, Wellenlinie `_make better_ (revitalize) ⟨~⟩`, Wiederholung `young people ⟨x⟩`, Kommentar `⟨voc ①⟩` mit nummerierter Liste darunter. Absätze bleiben erhalten.
 
 
 ============================================================
@@ -602,11 +623,11 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | In der Sprachtabelle eine eingebettete Formulierung vorschlagen. |
-| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Kürzel Zi, richtige Form angeben. |
+| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Zeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
-| Immer *shows* | *This shows … This shows …* | Kürzel W oder A, abwechslungsreiche Verben vorschlagen. |
+| Immer *shows* | *This shows … This shows …* | Unter „Ausdruck verbessern“ (bei Wiederholung Zeichen x), abwechslungsreiche Verben vorschlagen. |
 
 ## Fachbegriffe (Orientierung)
 
@@ -703,7 +724,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Falsche Reihenfolge | pro und contra abwechselnd, oder eigene Seite zuerst | Den Pflichtaufbau nennen und für jeden Absatz sagen, an welche Stelle er gehört. |
 | Falsche Anzahl | weniger oder mehr als zwei Argumente pro Seite | Sagen, welche Seite ein Argument zu wenig oder zu viel hat. Bei zu wenig ein passendes Argument vorschlagen, bei zu viel sagen, welches wegfallen kann. |
 | Zwei Argumente in einem Absatz | ein Absatz enthält zwei Gedanken | Sagen, wo der Absatz geteilt werden muss. |
-| *I* im Hauptteil | *I think …*, *I believe …* vor dem Schluss | Kürzel St, sachliche Formulierung vorschlagen. |
+| *I* im Hauptteil | *I think …*, *I believe …* vor dem Schluss | Zeichen reg, sachliche Formulierung vorschlagen. |
 | Gewichtung vertauscht | das schwächste eigene Argument steht am Ende | Sagen, welche Absätze tauschen sollen, und kurz begründen, warum das andere Argument stärker ist. |
 | Meinung passt nicht zur Anordnung | Fazit vertritt die Seite, die im Hauptteil zuerst kam | Den Widerspruch benennen: entweder die Blöcke tauschen oder das Fazit anpassen. |
 | Meinung schon in der Einleitung | *In my opinion …* im ersten Absatz | Sagen, dass die Meinung erst in den Schluss gehört. |
@@ -712,7 +733,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 | Argumente doppelt | zwei Absätze sagen im Kern dasselbe | Die Überschneidung benennen und ein anderes Argument vorschlagen. |
 | Thema verfehlt | Argumente zu einer anderen Frage | Den Unterschied zur Aufgabenstellung erklären. |
 | Fehlender Textbezug | Aufgabe verlangt *as a starting point*, Text wird nicht erwähnt | Sagen, wo der Bezug hingehört (meist Einleitung), und wie er aussehen kann. |
-| Doppelte Meinungsformel | *In my opinion I think …* | Kürzel A, eine Formel streichen. |
+| Doppelte Meinungsformel | *In my opinion I think …* | Zeichen exp, eine Formel streichen. |
 
 ## Nützliche Wendungen für Verbesserungen
 
@@ -768,7 +789,7 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 
 ### Sprache
 10. **Simple present** als Grundzeit. Vorzeitiges mit present perfect oder simple past. Das gilt auch für die Handlung fiktionaler Texte.
-11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Kürzel Ü). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
+11. **Eigene Worte.** Keine Sätze oder Satzteile aus dem Ausgangstext übernehmen (Zeichen cop). Keine Zitate. Höchstens ein zentraler Schlüsselbegriff in Anführungszeichen. Verweise auf Textstellen sind nicht nötig. Stehen welche da, prüfst du die Form *(cf. l. 17)*.
 12. **Berichtende Verben, abwechslungsreich:** *state, claim, point out, explain, argue, emphasize, criticize, describe, report, suggest*. Statt *says … says … says*.
 13. **Wiedergabe statt direkter Rede.** Indirekte Rede bzw. eigene Umschreibung. Bei Erzähltexten den Erzähler (*the narrator*) nicht mit der Autorin oder dem Autor gleichsetzen.
 14. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, kein *I*.
@@ -784,10 +805,10 @@ Quelle: IQB, Gemeinsame Abituraufgabenpools der Länder, Englisch – Grundstock
 | Falsch wiedergegeben | Aussage passt nicht zum Ausgangstext | Sagen, was im Ausgangstext tatsächlich steht, mit Stelle. |
 | Nacherzählung | *First … then … after that …*, folgt Absatz für Absatz dem Original | Eine Gliederung nach Gesichtspunkten vorschlagen, z. B. Grund 1 – Grund 2 – Grund 3. |
 | Zu viele Details | Beispiele, Zahlen, Namen, Zitate | Die Details nennen, die wegkönnen. |
-| Abgeschrieben | Wendungen 1:1 aus dem Ausgangstext | In der Sprachtabelle mit Kürzel Ü und einer eigenen Umformulierung. |
+| Abgeschrieben | Wendungen 1:1 aus dem Ausgangstext | In der Sprachtabelle mit Zeichen cop und einer eigenen Umformulierung. |
 | Analyse oder Meinung | Stilmittel, *the author cleverly …*, *I think* | Sagen, dass das in ein outline nicht hineingehört, und die Stelle zum Streichen nennen. |
-| Zeitform | *The author explained …* | Kürzel T, Verbesserung ins simple present. |
-| Germanismen beim Berichten | *In the text it says …*, *The author tells that …*, *describes about* | Kürzel Id, idiomatische Verbesserung. |
+| Zeitform | *The author explained …* | Zeichen t, Verbesserung ins simple present. |
+| Germanismen beim Berichten | *In the text it says …*, *The author tells that …*, *describes about* | Zeichen voc, idiomatische Verbesserung. |
 
 ## Nützliche Wendungen für Verbesserungen
 
