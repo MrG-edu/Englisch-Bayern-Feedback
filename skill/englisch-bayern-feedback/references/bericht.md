@@ -46,7 +46,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
 Regeln für das JSON:
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Korrekturzeichen** wie in SKILL.md, klein geschrieben (`coll` für coll / slang). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
+- **Korrekturzeichen** wie in SKILL.md, klein geschrieben. Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -222,7 +222,7 @@ Beispiel für eine Teilaufgabe:
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll / slang · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
+    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll zu lässig · slang vulgär · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
   </footer>
 </div>
 
@@ -235,7 +235,7 @@ Beispiel für eine Teilaufgabe:
 
 <script>
 (function () {
-  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "coll / slang", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
+  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "Umgangssprache", slang: "Slang / vulgär", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");

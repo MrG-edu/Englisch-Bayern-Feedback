@@ -51,7 +51,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 ### Sprache
 15. **Argumentative Verknüpfungen,** abwechslungsreich: *firstly, furthermore, moreover, in addition, admittedly, on the other hand, however, nevertheless, consequently, therefore, above all*.
 16. **Meinungsäußerung nur im Schluss** mit passenden Wendungen. *I* ist **nur im Schluss** erlaubt. Einleitung und Hauptteil sind sachlich formuliert, ohne *I*.
-17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, keine Übertreibungen wie *everybody knows*.
+17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache (coll) und erst recht kein Slang (slang), keine Übertreibungen wie *everybody knows*.
 18. **Zeitform:** meist simple present. Andere Zeiten, wo der Inhalt sie verlangt (z. B. bei Beispielen aus der Vergangenheit).
 
 **Länge:** keine feste Wortzahl. Maßstab ist, ob genau vier vollständige Argumente und ein begründetes Fazit drin sind.

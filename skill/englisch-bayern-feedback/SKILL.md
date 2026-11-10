@@ -81,7 +81,8 @@ Verwende genau diese Zeichen (Liste der Lehrkraft). Mehrere Zeichen für eine St
 | gr | Grammatikfehler | He work on a farm. |
 | p | Fehler in der Zeichensetzung | The man, who I saw, must be the murderer. |
 | reg | unpassende Sprachebene / Register | The dude came at me and hit me. |
-| coll | Slang, Vulgärsprache, Umgangssprache | |
+| coll | zu lässige Umgangssprache | The guy was kinda mad, so he just took off. |
+| slang | heftiger Slang, Vulgärsprache | That whore has called the police. |
 | exp | Bedeutung des Ausdrucks, Satzteils oder Satzes nicht mehr erkennbar | |
 | meaning | nicht nachvollziehbar, logischer Fehler, Sinnfehler | |
 | ~ | Wellenlinie: Konstruktion oder Wort gerade noch akzeptabel, **kein Fehler** | |

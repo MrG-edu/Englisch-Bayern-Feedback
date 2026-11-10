@@ -80,7 +80,8 @@ Verwende genau diese Zeichen (Liste der Lehrkraft). Mehrere Zeichen für eine St
 | gr | Grammatikfehler | He work on a farm. |
 | p | Fehler in der Zeichensetzung | The man, who I saw, must be the murderer. |
 | reg | unpassende Sprachebene / Register | The dude came at me and hit me. |
-| coll | Slang, Vulgärsprache, Umgangssprache | |
+| coll | zu lässige Umgangssprache | The guy was kinda mad, so he just took off. |
+| slang | heftiger Slang, Vulgärsprache | That whore has called the police. |
 | exp | Bedeutung des Ausdrucks, Satzteils oder Satzes nicht mehr erkennbar | |
 | meaning | nicht nachvollziehbar, logischer Fehler, Sinnfehler | |
 | ~ | Wellenlinie: Konstruktion oder Wort gerade noch akzeptabel, **kein Fehler** | |
@@ -159,7 +160,7 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafiken und das Fehl
 Regeln für das JSON:
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
 - **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 1, 2, 3 oder 4 (1 Baustelle, 2 ausbaufähig, 3 solide, 4 Stärke).
-- **Korrekturzeichen** wie in SKILL.md, klein geschrieben (`coll` für coll / slang). Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
+- **Korrekturzeichen** wie in SKILL.md, klein geschrieben. Mehrere Zeichen für eine Stelle mit Leerzeichen trennen: `"gr voc"`. Die Zeichen `~` und `x` sind keine Fehler und gehören **nicht** in `fehler`, sondern in `ausdruck`.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
 - Kurze Hervorhebungen mit `<i>…</i>` sind in allen Texten erlaubt, sonst kein HTML.
 
@@ -335,7 +336,7 @@ Beispiel für eine Teilaufgabe:
   </header>
   <main id="inhalt"></main>
   <footer>
-    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll / slang · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
+    <p>ref Textbezug unklar · sp spelling · voc vocabulary · wo word order · prep preposition · t tense · gr grammar · p punctuation · reg register · coll zu lässig · slang vulgär · exp expression unklar · meaning nicht nachvollziehbar · ~~ gerade noch akzeptabel · x Wiederholung · cop übernommen · cit Zitierweise</p>
   </footer>
 </div>
 
@@ -348,7 +349,7 @@ Beispiel für eine Teilaufgabe:
 
 <script>
 (function () {
-  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "coll / slang", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
+  var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "Umgangssprache", slang: "Slang / vulgär", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 1: "Baustelle", 2: "ausbaufähig", 3: "solide", 4: "Stärke" };
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var main = document.getElementById("inhalt"), nav = document.getElementById("sprung");
@@ -710,7 +711,7 @@ Welche Seite „gegen“ und welche „für“ ist, ergibt sich aus der Meinung 
 ### Sprache
 15. **Argumentative Verknüpfungen,** abwechslungsreich: *firstly, furthermore, moreover, in addition, admittedly, on the other hand, however, nevertheless, consequently, therefore, above all*.
 16. **Meinungsäußerung nur im Schluss** mit passenden Wendungen. *I* ist **nur im Schluss** erlaubt. Einleitung und Hauptteil sind sachlich formuliert, ohne *I*.
-17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache, keine Übertreibungen wie *everybody knows*.
+17. **Sachlicher Stil.** Keine Kurzformen, keine Umgangssprache (coll) und erst recht kein Slang (slang), keine Übertreibungen wie *everybody knows*.
 18. **Zeitform:** meist simple present. Andere Zeiten, wo der Inhalt sie verlangt (z. B. bei Beispielen aus der Vergangenheit).
 
 **Länge:** keine feste Wortzahl. Maßstab ist, ob genau vier vollständige Argumente und ein begründetes Fazit drin sind.
