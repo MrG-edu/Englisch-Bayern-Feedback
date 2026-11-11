@@ -44,9 +44,9 @@ Das Skript in der Vorlage baut daraus die ganze Seite, die Grafik und die Liste 
 ```
 
 Regeln für das JSON:
-- **Maßstab:** Jahrgangsstufe, Kurs und Zielniveau nach `kriterien/niveau.md`, z. B. `"Q12 · gA · Ziel B2"`. Ohne Angabe: `"Abitur · B2/C1 (keine Angabe zu Jahrgangsstufe und Kurs)"`.
+- **Maßstab:** Jahrgangsstufe, ggf. Kurs, und Zielniveau nach `kriterien/niveau.md`, z. B. `"Jgst. 7 · Ziel A2"` oder `"Q12 · gA · Ziel B2"`. Bei geschätzter Stufe: `"vermutlich Jgst. 8 · Ziel A2+ (keine Angabe)"`.
 - **Gültiges JSON:** doppelte Anführungszeichen um alle Texte. Anführungszeichen **im** Text als `\"`. Keine Kommas nach dem letzten Element.
-- **Profil:** immer genau diese sechs Bereiche in dieser Reihenfolge. `stufe` ist 0 bis 5 (5 sehr sicher, 4 sicher, 3 solide, 2 ausbaufähig, 1 lückenhaft, 0 Baustelle), Maßstab in `kriterien/niveau.md`.
+- **Profil:** immer sechs Bereiche, Namen und Reihenfolge wie in der Datei der Jahrgangsstufe (`stufen/`); im Beispiel die Namen ab Jgst. 9. `stufe` ist 0 bis 5 (5 sehr sicher, 4 sicher, 3 solide, 2 ausbaufähig, 1 lückenhaft, 0 Baustelle), Maßstab in `kriterien/niveau.md`.
 - **inhalt** und **aufbau:** je `gut` (gelungen) und `schlecht` (zu verbessern), höchstens zwei, drei Punkte pro Liste, je ein kurzer Satz. Ein Punkt in `schlecht` darf mit *Fehlt:*, *Falsch:* oder *Überflüssig:* beginnen, mit Stelle im Ausgangstext.
 - **naechstesMal:** `inhalt` (Inhalt und Aufbau) und `sprache` mit jeweils zwei, höchstens drei Punkten, der wichtigste zuerst.
 - Leere Listen sind erlaubt (`"falsch": []`), dann fällt der Abschnitt weg.
@@ -248,7 +248,7 @@ Beispiel für eine Teilaufgabe:
 <body>
 <div class="wrap">
   <header class="kopf">
-    <p class="kicker">Englisch · Oberstufe · Rückmeldung</p>
+    <p class="kicker">Englisch · Rückmeldung</p>
     <h1>Rückmeldung zu deinem Text</h1>
     <p class="massstab" id="massstab" hidden></p>
     <p class="hinweis">Keine Note – die Bewertung macht deine Lehrkraft. KI-Feedback kann sich irren.</p>

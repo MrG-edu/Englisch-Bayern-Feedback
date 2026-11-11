@@ -1,11 +1,17 @@
 # Kriterien: Zielniveau (GER)
 
-Eigene Zusammenfassung. Grundlagen: die Übersicht „GER-Niveaustufen“ zum LehrplanPLUS Gymnasium (ISB, Stand Juli 2026), die Bewertungsraster Schreiben für die Jahrgangsstufe 11 und für die Profil- und Leistungsstufe/Abiturprüfung (ISB) sowie die Kannbeschreibungen des Gemeinsamen Europäischen Referenzrahmens zum Schreiben. **Keine Noten, Notenpunkte oder BE daraus ableiten.**
+Eigene Zusammenfassung. Grundlagen: die Übersicht „GER-Niveaustufen“ zum LehrplanPLUS Gymnasium (ISB, Stand Juli 2026), die ISB-Bewertungsraster Schreiben (A1 bis B1+, Jahrgangsstufe 11, Profil- und Leistungsstufe/Abiturprüfung) sowie die Kannbeschreibungen des Gemeinsamen Europäischen Referenzrahmens zum Schreiben. Was die einzelnen Stufen genau verlangen, steht in `stufen/`. **Keine Noten, Notenpunkte oder BE daraus ableiten.**
 
 ## Welches Niveau erwartet wird
 
 | Jahrgangsstufe | Kurs | GER | Was das fürs Schreiben heißt |
 |---|---|---|---|
+| 5 | – | A1 | A1 |
+| 6 | – | A1+ | A1+ |
+| 7 | – | A2 | A2 |
+| 8 | – | A2+ | A2+ |
+| 9 | – | B1 | B1 |
+| 10 | – | B1+ | B1+ |
 | 11 | – | B1+/B2 | sicheres B1+, Anteile von B2 |
 | 12 | gA | B2 | B2 |
 | 12 | eA | B2/C1 | sicheres B2, Anteile von C1 |
@@ -14,7 +20,7 @@ Eigene Zusammenfassung. Grundlagen: die Übersicht „GER-Niveaustufen“ zum Le
 
 Steht eine Doppelstufe da, bezieht sich in Englisch die höhere Stufe vor allem auf das Leseverstehen und zusätzlich auf Anteile in den anderen Kompetenzen. Für das Schreiben ist deshalb die **niedrigere Stufe die Basis**, die höhere zeigt, wohin es geht.
 
-**Keine Angabe?** Dann gilt der Abiturmaßstab: Jahrgangsstufe 13, B2/C1. Das schreibst du in den Bericht („Maßstab: Abitur, B2/C1 – ohne Angabe zu Jahrgangsstufe und Kurs“).
+**Keine Angabe?** Dann fragst du nach (siehe SKILL.md). Kommt keine Antwort, schätzt du die Stufe aus Aufgabe und Text und schreibst die Annahme in den Bericht („Maßstab: vermutlich Jgst. 8, A2+ – ohne Angabe“). Bei 12/13 ohne Kurs gilt B2/C1.
 
 ## B2 und C1 beim Schreiben
 
@@ -31,7 +37,7 @@ B1+ (nur Jahrgangsstufe 11): verständliche, zusammenhängende Texte zu vertraut
 ## So stimmst du die Korrektur ab
 
 1. **Fehler korrigierst du immer alle**, egal auf welcher Stufe. Ein Fehler bleibt ein Fehler.
-2. **Profil.** Die sechs Stufen (0–5) folgen den sechs Beschreibungsstufen der Bewertungsraster, ausgelegt für das Zielniveau. Für die Sprachbereiche:
+2. **Profil.** Die sechs Stufen (0–5) folgen den sechs Beschreibungsstufen der Bewertungsraster, ausgelegt für das Zielniveau. Die folgenden Beschreibungen gelten für Jgst. 11–13; für 5–10 stehen eigene Tabellen in `stufen/`. Für die Sprachbereiche:
    - **5 sehr sicher:** in hohem Maß korrekt, durchgehend eigene Formulierungen, besonders präzise und idiomatische Wortwahl, durchgängig variabler Satzbau mit komplexen Strukturen, breites Spektrum an Verknüpfungen.
    - **4 sicher:** überwiegend korrekt, Verständnis nie gestört, meist eigene Formulierungen, präzise Wortwahl, meist variabler Satzbau, meist sichere und abwechslungsreiche Verknüpfungen.
    - **3 solide:** im Wesentlichen korrekt, Verständnis höchstens geringfügig gestört, teilweise eigene Formulierungen, treffende Wortwahl, teilweise variabler Satzbau, Verknüpfungen sicher, aber wenig abwechslungsreich.

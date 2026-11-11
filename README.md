@@ -1,6 +1,6 @@
-# Oberstufe Englisch Bayern – Feedback
+# Englisch Bayern – Feedback
 
-Ein KI-Skill, der deine englischen Schreibaufgaben in den Jahrgangsstufen 12 und 13 korrigiert, ausgerichtet auf das bayerische Abitur und die Abitur-Operatoren (*outline, analyze, discuss* …).
+Ein KI-Skill, der deine englischen Schreibaufgaben am bayerischen Gymnasium korrigiert, **von der 5. Klasse bis zum Abitur**: E-Mails, Geschichten, Blogbeiträge und Briefe genauso wie die Abitur-Operatoren (*outline, analyse, discuss* …). Er richtet sich nach dem LehrplanPLUS, den ISB-Bewertungsrastern deiner Jahrgangsstufe und dem Sprachniveau, das für dich gilt (A1 bis C1).
 
 Der Skill funktioniert mit **Claude** und **ChatGPT**.
 
@@ -14,7 +14,7 @@ Du schickst deinen Text **einmal** und bekommst einen fertigen **Bericht**, für
 ✅ eine kurze Rückmeldung zur **Sprache**,
 ✅ zu beidem, worauf du beim nächsten Mal achten solltest, nur das Wichtigste.
 
-So sieht ein Bericht aus: [Beispiel öffnen](beispiele/outline-beispiel-bericht.html) (herunterladen und im Browser öffnen).
+So sieht ein Bericht aus (herunterladen und im Browser öffnen): [Blogbeitrag, Jgst. 7](beispiele/jgst7-blog-beispiel-bericht.html) · [outline, Oberstufe](beispiele/outline-beispiel-bericht.html)
 
 Das Feedback ist auf Deutsch.
 
@@ -23,19 +23,22 @@ Das Feedback ist auf Deutsch.
 
 ## Was du brauchst
 
-Füge immer **alle drei Teile** ein:
-1. die Aufgabenstellung (wörtlich),
-2. den Ausgangstext (bei Bildern oder Statistiken eine kurze Beschreibung),
-3. deinen eigenen Text.
+Füge ein:
+1. deine **Jahrgangsstufe**, in der 12 und 13 auch **gA oder eA** (z. B. „7. Klasse“ oder „Q13 eA“),
+2. die Aufgabenstellung (wörtlich),
+3. den Ausgangstext, wenn sich die Aufgabe auf einen Text bezieht (bei Bildern oder Statistiken eine kurze Beschreibung),
+4. deinen eigenen Text.
 
-Gib am besten auch deine **Jahrgangsstufe** und **gA oder eA** an (z. B. „Q13 eA“). Dann misst der Skill dein Profil und seine Vorschläge am Sprachniveau, das für dich gilt (B2 bis C1). Ohne Angabe nimmt er den Abiturmaßstab.
+Fehlt etwas, fragt der Skill einmal kurz nach und korrigiert dann. Je nach Jahrgangsstufe passt er alles an: was erwartet wird, worauf er bei der Sprache achtet und wie einfach er dir die Rückmeldung erklärt.
 
 Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 
-## Welche Operatoren schon fertig sind
+## Was schon fertig ist
 
-| Operator | Status |
+| Bereich | Status |
 |---|---|
+| Jahrgangsstufen 5–6, 7–8, 9–10, 11, 12–13 | ✅ eigene Maßstäbe nach Raster und Lehrplan |
+| Textsorten (E-Mail, Brief, Geschichte, Blog, Artikel, Bericht, Rezension, Leserbrief, Bewerbung …) | ✅ Checklisten |
 | outline / summarize / sum up | ✅ fertig |
 | point out, describe | ✅ über die outline-Checkliste, mit Unterschieden |
 | analyze / examine | ✅ fertig |
@@ -86,7 +89,9 @@ In ChatGPT erscheint die korrigierte Fassung im Canvas. Dort auf **Vorschau** ti
 skill/englisch-bayern-feedback/
 ├── SKILL.md                 Hauptanweisungen (unter 8000 Zeichen)
 └── references/
+    ├── stufen/              Maßstab, Schwerpunkte und Ton je Jahrgangsstufe
     ├── operators/           eine Datei pro Operator
+    ├── textsorten.md        Checklisten für E-Mail, Geschichte, Blog, Brief …
     ├── kriterien/           Kriterien für Inhalt, Sprache und Zielniveau (GER)
     └── bericht.md           Vorlage für den Bericht als HTML-Seite
 beispiele/                   erfundene Beispieltexte mit Musterfeedback
@@ -100,7 +105,9 @@ Nach Änderungen im Ordner `skill/` einmal `python3 build.py` ausführen.
 
 - IQB: *Gemeinsame Abituraufgabenpools der Länder – Englisch, Grundstock von Operatoren* (gilt ab Prüfungsjahr 2027)
 - ISB Bayern: Bewertungsraster Profil- und Leistungsstufe / Abiturprüfung, Moderne Fremdsprachen (Stand Juni 2024)
-- ISB Bayern: Bewertungsraster Schreiben Englisch, Jahrgangsstufe 11 (B1+/B2)
+- ISB Bayern: Bewertungsraster Schreiben A1/A1+, A2/A2+, B1/B1+ (Textproduktion und Textaufgaben) und Jahrgangsstufe 11 (B1+/B2)
+- ISB Bayern: *Schriftliche Leistungsnachweise in den Jahrgangsstufen 5–11, Moderne Fremdsprachen – Hinweise* (Stand Juli 2024)
+- LehrplanPLUS Gymnasium Englisch, Jahrgangsstufen 5–13, Kompetenzbereich Schreiben
 - ISB Bayern: *Gemeinsamer Europäischer Referenzrahmen (GER): Niveaustufen*, Ergänzende Informationen zum LehrplanPLUS Gymnasium (Stand Juli 2026)
 - Europarat: *Gemeinsamer Europäischer Referenzrahmen für Sprachen*, Kannbeschreibungen Schreiben
 - StMUK: *Schriftliche Prüfungsformen im Unterricht der modernen Fremdsprachen in der Profil- und Leistungsstufe und der Abiturprüfung* (12.06.2023)
