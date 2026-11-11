@@ -95,7 +95,7 @@ Zusätzlich für diesen Skill:
 ## Zitieren und Zeilenangaben
 
 Gilt für alle Operatoren. Fehler hier bekommen das Zeichen cit.
-- **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
+- **Wörtliches Zitat:** englische Anführungszeichen oben, doppelt ("…") oder einfach ('…'), aber im ganzen Text einheitlich. cit nur bei deutschen („…") oder gemischten. Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
 - **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
 - **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*
 

@@ -94,7 +94,7 @@ Zusätzlich für diesen Skill:
 ## Zitieren und Zeilenangaben
 
 Gilt für alle Operatoren. Fehler hier bekommen das Zeichen cit.
-- **Wörtliches Zitat:** englische Anführungszeichen oben ("…"), keine deutschen („…"). Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
+- **Wörtliches Zitat:** englische Anführungszeichen oben, doppelt ("…") oder einfach ('…'), aber im ganzen Text einheitlich. cit nur bei deutschen („…") oder gemischten. Direkt dahinter die Zeilenangabe in Klammern: *"He looked into the distance, pondering his life." (l. 17)*
 - **Zeilenangabe:** eine Zeile *(l. 17)*, zusammenhängende Zeilen *(ll. 17-18)*, einzelne Zeilen mit Komma *(ll. 17, 23)*.
 - **Verweis ohne wörtliches Zitat:** *cf.* vor der Zeilenangabe: *The narrator stands on top of a hill, thinking about his life (cf. l. 17).*
 
@@ -789,7 +789,7 @@ Weitere Muster:
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | Unter „Inhalt und Aufbau“ eine eingebettete Formulierung vorschlagen, z. B. *… describes each closure as tearing “another hole” (l. 8), which …* |
-| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Korrekturzeichen cit, richtige Form angeben. |
+| Zitierweise falsch | deutsche oder gemischte Anführungszeichen (doppelte und einfache sind beide richtig, wenn einheitlich), Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Korrekturzeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |

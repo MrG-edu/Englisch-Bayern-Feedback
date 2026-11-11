@@ -59,7 +59,7 @@ Weitere Muster:
 | Kein Beleg | Behauptung ohne Zitat oder Zeilenangabe | Passende Textstelle nennen. |
 | Falscher Fachbegriff | *alliteration* bei *big bad world* ist richtig, bei *nice and good* nicht | Richtigen Begriff nennen und kurz erklären. |
 | Zitat ohne Einbettung | Zitat steht als eigener Satz, ohne Erklärung | Unter „Inhalt und Aufbau“ eine eingebettete Formulierung vorschlagen, z. B. *… describes each closure as tearing “another hole” (l. 8), which …* |
-| Zitierweise falsch | deutsche Anführungszeichen, Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Korrekturzeichen cit, richtige Form angeben. |
+| Zitierweise falsch | deutsche oder gemischte Anführungszeichen (doppelte und einfache sind beide richtig, wenn einheitlich), Zeile fehlt, *line 12* statt *(l. 12)*, kein *cf.* beim Verweis | Korrekturzeichen cit, richtige Form angeben. |
 | Einleitung als Inhaltsangabe | Einleitung fasst nur den Inhalt zusammen | Sagen, dass die Inhaltsangabe hier überflüssig ist. |
 | Erzähler = Autor | *The author is lonely* bei einem Ich-Erzähler | *the narrator* bzw. *the protagonist* verwenden und kurz begründen. |
 | Wertung | *The author does this very well.*, *I agree* | Sagen, dass Wertung nicht in die Analyse gehört, und die Stelle nennen. |
