@@ -64,6 +64,9 @@ Jede Korrektur markierst du mit dem Element `<k>`:
 | Streichen | `<k v="" z="Zeichen">Original</k>` | `He <k v="" z="gr">did</k> went home` |
 | Einfügen (z. B. Komma, Artikel) | `<k v="Einfügung" z="Zeichen"></k>` | `First<k v="," z="p"></k> the author` |
 | Mit Kommentar unten | zusätzlich `n="Nummer"` | `<k v="deals with" z="voc" n="1">it is about</k>` |
+| Dezent (Grammatik noch nicht gelernt, ab Jgst. 7) | zusätzlich `d="1"`, ohne `n` | `<k v="I had never been" z="t" d="1">I never was</k>` |
+
+**Zwei Rottöne:** Kräftiges Rot für Fehler. Helles Rot setzt das Skript automatisch für *p*, *cit*, *~*, *x* und für alles mit `d="1"`; über dem Text erklärt eine Zeile die Farben.
 
 **Aufbau farbig (nur bei discuss):** Jeder Absatz bekommt seine Rolle als Attribute am `<p>`: `t` (Farbe: `einleitung`, `gegen`, `dafuer`, `schluss`, `gemischt`), `l` (Beschriftung, z. B. `Gegenargument 1 · stärkstes`) und nur bei einem Aufbauproblem `h` (kurzer Hinweis, z. B. `zwei Argumente in einem Absatz`). Beispiel: `<p t="gegen" l="Gegenargument 2" h="kein eigenes Beispiel">…</p>`. Regeln in `operators/discuss.md`. Das Skript färbt die Absätze und zeigt eine Legende.
 | Wellenlinie (gerade noch akzeptabel) | `<k v="Vorschlag" z="~">Original</k>` | `young people <k v="revitalize" z="~">make better</k>` |
@@ -190,6 +193,10 @@ Beispiel für eine Teilaufgabe:
   .korr .einf { color: var(--rot); font-weight: bold; }
   .korr .wellig { text-decoration: underline wavy var(--rot); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
   .korr .wdh { border-bottom: 1.5px solid var(--rot); }
+  .korr.leicht { --rot: #e58e98; }
+  .rz-l { color: #e58e98; }
+  .farb-hinweis { font-size: 13px; color: var(--ink-2); margin: 0 0 8px; }
+  .farb-hinweis b.k { color: var(--rot); } .farb-hinweis b.l { color: #e58e98; }
   .korr .wdh-x { color: var(--rot); font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; vertical-align: sub; margin-left: 1px; }
   .rand { position: absolute; right: 10px; width: 92px; color: var(--rot); font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; line-height: 1.3; padding-top: 14px; }
   details.legende { margin: 0 0 14px; border: 1px solid var(--linie); border-radius: 12px; background: #fff; }
@@ -271,6 +278,7 @@ Beispiel für eine Teilaufgabe:
 (function () {
   var KZ = { ref: "Textbezug", sp: "Rechtschreibung", voc: "Wortwahl", wo: "Wortstellung", prep: "Präposition", t: "Zeitform", gr: "Grammatik", p: "Zeichensetzung", reg: "Register", coll: "Umgangssprache", slang: "Slang / vulgär", exp: "Ausdruck", meaning: "Sinnfehler", cop: "übernommen", cit: "Zitierweise" };
   var STUFEN = { 0: "Baustelle", 1: "lückenhaft", 2: "ausbaufähig", 3: "solide", 4: "sicher", 5: "sehr sicher" };
+  var LEICHT = ["p", "cit", "~", "x"];
   var KREIS = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
   var LEGENDE = [
     ["Grammatik und Form", [["gr", "Grammatikfehler", "He work on a farm."], ["t", "falsche Zeitform", "Yesterday I haven't done my homework."], ["wo", "falsche Wortstellung", "I have been never there before."], ["prep", "falsche Präposition", "I was looking on him."], ["sp", "Rechtschreibfehler", "intresting"], ["p", "Fehler in der Zeichensetzung", "The man, who I saw, must be …"]]],
@@ -357,6 +365,8 @@ Beispiel für eine Teilaufgabe:
       blatt.querySelectorAll("k").forEach(function (k) {
         var orig = k.innerHTML, v = k.getAttribute("v") || "", z = k.getAttribute("z") || "", n = k.getAttribute("n");
         var s = el("span", "korr");
+        var codes = z.split(/\s+/).filter(Boolean), leicht = k.hasAttribute("d") || (codes.length > 0 && codes.every(function (c) { return LEICHT.indexOf(c) >= 0; }));
+        if (leicht) s.classList.add("leicht");
         if (z === "~") { s.innerHTML = '<ruby><span class="wellig"></span><rt></rt></ruby>'; s.querySelector(".wellig").innerHTML = orig; z = "~~"; }
         else if (z === "x") { s.innerHTML = '<ruby><span class="wdh"></span><rt></rt></ruby><span class="wdh-x">ⓧ</span>'; s.querySelector(".wdh").innerHTML = orig; }
         else if (orig.trim() === "") { s.innerHTML = '<ruby><span class="einf">‸</span><rt></rt></ruby>'; }
@@ -370,10 +380,11 @@ Beispiel für eine Teilaufgabe:
           var bl = el("span", "blase", text); bl.id = id; bl.setAttribute("role", "tooltip");
           var w = el("span", "info-wrap"); w.appendChild(b); w.appendChild(bl); s.appendChild(w); s.classList.add("mit-info");
         }
-        var r = el("span", "rand"); r.innerHTML = z + (nr ? ' <span class="rn nur-druck">' + nr + "</span>" : ""); s.appendChild(r);
+        var r = el("span", "rand"); r.innerHTML = '<span class="rz' + (leicht ? " rz-l" : "") + '">' + z + (nr ? ' <span class="rn nur-druck">' + nr + "</span>" : "") + "</span>"; s.appendChild(r);
         k.replaceWith(s);
       });
       if (teile.length) { var lg = el("p", "aufbau-legende"); lg.appendChild(el("b", null, "Dein Aufbau:")); [["einleitung", "Einleitung / Schluss"], ["gegen", "gegen deine Meinung"], ["dafuer", "für deine Meinung"], ["gemischt", "unklar / gemischt"]].forEach(function (x) { lg.appendChild(el("span", "teil-" + x[0], x[1])); }); sec.appendChild(lg); }
+      if (blatt.querySelector(".korr.leicht")) { var fh = el("p", "farb-hinweis"); fh.innerHTML = '<b class="k">Kräftiges Rot</b>: Fehler · <b class="l">helles Rot</b>: Kleinigkeiten wie Zeichensetzung und Zitierweise, Hinweise (~, x) und Grammatik, die du noch nicht gelernt hast'; sec.appendChild(fh); }
       if (blatt.querySelector(".info")) { var hw = el("p", "info-hinweis"); hw.innerHTML = 'Hinter manchen Korrekturen steht ein blaues <span class="info" aria-hidden="true">i</span>. Fahr mit der Maus darüber oder tipp darauf, dann erscheint eine Erklärung.'; sec.appendChild(hw); }
       sec.appendChild(blatt);
       if (a.kommentare && a.kommentare.length) { var dk = el("div", "nur-druck"); dk.appendChild(el("h3", null, "Erklärungen")); var ok = el("ol", "kommentare"); a.kommentare.forEach(function (x) { ok.appendChild(el("li", null, x)); }); dk.appendChild(ok); sec.appendChild(dk); }

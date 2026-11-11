@@ -54,6 +54,10 @@ Schreib **keine Namen** oder andere persönliche Daten in den Chat.
 | discuss | [Discuss_Merkblatt.pdf](merkblaetter/Discuss_Merkblatt.pdf): Aufbau, Formulierungshilfen, Musteraufsatz |
 | Kommasetzung | [Commas_Merkblatt.pdf](merkblaetter/Commas_Merkblatt.pdf): drei Regeln, Unterschiede zum Deutschen, Musterabsatz, Übung mit Lösung |
 
+## Updates mitbekommen
+
+Neue Versionen erscheinen unter [Releases](https://github.com/MrG-edu/Englisch-Bayern-Feedback/releases), jeweils mit der fertigen ZIP-Datei. Wer benachrichtigt werden will: oben rechts auf **Watch → Custom → Releases** klicken (GitHub-Konto nötig). Nach einem Update die neue ZIP herunterladen und den Skill neu hochladen.
+
 ## So benutzt du den Skill
 
 ### Variante 1: Claude

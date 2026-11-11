@@ -93,4 +93,6 @@ Für Textaufgaben (cit bei Fehlern):
 
 ## Maßstab
 
-Fehler korrigierst du in jeder Stufe alle. Profil, Vorschläge bei ~ und die Punkte fürs nächste Mal misst du am Ziel der Jahrgangsstufe. Was die Klasse noch nicht gelernt haben kann, machst du nicht zum Lernpunkt. Nenne den Maßstab im Bericht, z. B. „Jgst. 7 · Ziel A2“ oder „Q13 eA · Ziel C1“.
+Fehler korrigierst du in jeder Stufe alle. Profil, Vorschläge bei ~ und die Punkte fürs nächste Mal misst du am Ziel der Jahrgangsstufe.
+
+**Grammatik, die noch nicht gelernt sein kann:** Ab Jgst. 7 verbesserst du sie nur dezent (`d="1"`, helles Rot, keine Erklärung, kein Lernpunkt). In Jgst. 5–6 muss jede Verbesserung zur bekannten Grammatik passen: Wähle eine einfache richtige Lösung mit Gelerntem. Geht das nicht und ist der Satz verständlich, lässt du ihn stehen. Nenne den Maßstab im Bericht, z. B. „Jgst. 7 · Ziel A2“ oder „Q13 eA · Ziel C1“.
